@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "commit": "c0538012246968d77e27b41f9f13b020aa96ad09",
+  "config": "sha256:bebb9f06809666a598b9ec8f7076e6c276257de9a0ccb3b9c6d9250164d7d33c",
+  "objects": [
+    "drivers/nvme/host/multipath.o"
+  ],
+  "unbuilt": []
+}

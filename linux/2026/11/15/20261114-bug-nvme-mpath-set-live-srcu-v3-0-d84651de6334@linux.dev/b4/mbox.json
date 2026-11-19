@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "subject": {
+    "project": "linux",
+    "message_id": "20261114-bug-nvme-mpath-set-live-srcu-v3-0-d84651de6334@linux.dev"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "b4",
+          "version": "0.16.0",
+          "build": "debian:b4 0.16.0-2"
+        }
+      ],
+      "command": "b4 mbox",
+      "env": {},
+      "status": "pass",
+      "exit": 0,
+      "output": "Looking up 20261114-bug-nvme-mpath-set-live-srcu-v3-0-d84651de6334@linux.dev\n5 messages in the thread\nSaved build/logs/b4-mbox/thread.mbx\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "2f288d7"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-18T15:15:30Z",
+          "seconds": 1,
+          "resources": {
+            "cpu": {
+              "seconds": 0.641,
+              "user_seconds": 0.538,
+              "system_seconds": 0.103,
+              "stalled_seconds": 0.0
+            },
+            "memory": {
+              "peak": 103198720,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 3
+            },
+            "io": {
+              "stalled_seconds": 0.003
+            },
+            "tasks": {
+              "peak": 2
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "749f19a"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-18T15:28:04Z",
+          "seconds": 1,
+          "resources": {
+            "cpu": {
+              "seconds": 0.627,
+              "user_seconds": 0.481,
+              "system_seconds": 0.146,
+              "stalled_seconds": 0.0
+            },
+            "memory": {
+              "peak": 100933632,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 0
+            },
+            "io": {
+              "stalled_seconds": 0.0
+            },
+            "tasks": {
+              "peak": 2
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}

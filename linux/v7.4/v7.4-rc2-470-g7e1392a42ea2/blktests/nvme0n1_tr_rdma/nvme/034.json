@@ -1,0 +1,159 @@
+{
+  "schema": 1,
+  "subject": {
+    "project": "linux",
+    "commit": "7e1392a42ea288d70a266f6553fe06f57f8647ea",
+    "test": "nvme/034"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "blktests",
+          "version": "",
+          "build": "79c32fb31b7b",
+          "url": "https://github.com/linux-blktests/blktests/commit/79c32fb31b7bca6a4383b749030128683cf6b6b4"
+        },
+        {
+          "name": "qemu",
+          "version": "11.1.3",
+          "build": "debian:qemu-system-x86 1:11.1.3+ds-1"
+        }
+      ],
+      "command": "check nvme/034",
+      "env": {
+        "TEST_DEVS": "/dev/nvme0n1"
+      },
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:62608c959dd1c72ace32a17263a1e107a8b23f9e3730cfb60d08546e3cf79a0a",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "749f19a"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-18T16:11:35Z",
+          "seconds": 77,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3540144128
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "58a280c"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-19T11:46:44Z",
+          "seconds": 65,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3540144128
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "58a280c"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-19T11:48:02Z",
+          "seconds": 65,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3540144128
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "58a280c"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-19T11:49:19Z",
+          "seconds": 49,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3540144128
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "blktests",
+          "version": "",
+          "build": "79c32fb31b7b",
+          "url": "https://github.com/linux-blktests/blktests/commit/79c32fb31b7bca6a4383b749030128683cf6b6b4"
+        },
+        {
+          "name": "qemu",
+          "version": "11.1.3",
+          "build": "debian:qemu-system-x86 1:11.1.3+ds-1"
+        }
+      ],
+      "command": "check nvme/034",
+      "env": {
+        "TEST_DEVS": "/dev/nvme0n1"
+      },
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:62608c959dd1c72ace32a17263a1e107a8b23f9e3730cfb60d08546e3cf79a0a",
+      "status": "fail",
+      "exit": 1,
+      "output": "Running nvme/034\nFAIL: Failed to find passthru target namespace\nTest complete\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "a9b499b"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-18T20:08:52Z",
+          "seconds": 5,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3540144128
+          }
+        }
+      ]
+    }
+  ]
+}

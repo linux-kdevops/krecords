@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "subject": {
+    "project": "linux",
+    "commit": "c0538012246968d77e27b41f9f13b020aa96ad09",
+    "range": "7e1392a42ea288d70a266f6553fe06f57f8647ea..c0538012246968d77e27b41f9f13b020aa96ad09"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "checkpatch.pl",
+          "version": "",
+          "build": "tree"
+        }
+      ],
+      "command": "scripts/checkpatch.pl --strict --git 7e1392a42ea288d70a266f6553fe06f57f8647ea..c0538012246968d77e27b41f9f13b020aa96ad09",
+      "env": {},
+      "status": "pass",
+      "exit": 0,
+      "output": "-----------------------------------------------------------------------------------------------\nCommit 9a77fee0744b (\"nvme-multipath: apply delayed_removal_secs changes to a pending removal\")\n-----------------------------------------------------------------------------------------------\ntotal: 0 errors, 0 warnings, 0 checks, 9 lines checked\n\nCommit 9a77fee0744b (\"nvme-multipath: apply delayed_removal_secs changes to a pending removal\") has no obvious style problems and is ready for submission.\n----------------------------------------------------------------------------------------------\nCommit c05380122469 (\"nvme-multipath: don't wait for a grace period in nvme_mpath_set_live()\")\n----------------------------------------------------------------------------------------------\ntotal: 0 errors, 0 warnings, 0 checks, 42 lines checked\n\nCommit c05380122469 (\"nvme-multipath: don't wait for a grace period in nvme_mpath_set_live()\") has no obvious style problems and is ready for submission.\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "749f19a"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-18T15:52:52Z",
+          "seconds": 0,
+          "resources": {
+            "cpu": {
+              "seconds": 0.611,
+              "user_seconds": 0.438,
+              "system_seconds": 0.173,
+              "stalled_seconds": 0.0
+            },
+            "memory": {
+              "peak": 79773696,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 37
+            },
+            "io": {
+              "stalled_seconds": 0.003
+            },
+            "tasks": {
+              "peak": 3
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "message_id": "20261114-bug-nvme-mpath-set-live-srcu-v3-0-d84651de6334@linux.dev",
+  "subject": "[PATCH v3 0/2] nvme-multipath: requeue work fixes",
+  "author": "Qiliang Yuan <qiliang.yuan@linux.dev>",
+  "date": "2026-11-15T02:15:37Z",
+  "change_id": "20261110-bug-nvme-mpath-set-live-srcu-cbd8965f1457",
+  "revision": 3,
+  "text": "Patch 1 applies a new delayed_removal_secs to a head removal that is\nalready pending, so that clearing it fails the I/O queued without a\npath right away instead of when the old delay expires.\n\nPatch 2 stops nvme_mpath_set_live() from waiting for an SRCU grace\nperiod per namespace, which makes an ANA change with many namespaces\ntake tens to hundreds of milliseconds.\n\nSigned-off-by: Qiliang Yuan <qiliang.yuan@linux.dev>\n---\nV2 -> V3:\n- Requeue a pending head removal with the new delayed_removal_secs\n  instead of only kicking the requeue work when it is cleared, as Nilay\n  suggested\n- Rebase onto v7.4-rc2-470-g7e1392a42ea2 and update the numbers from a\n  new run\n- Don't carry Hannes's Reviewed-by on the v2 patch 1, which is rewritten\n\nV1 -> V2:\n- Add patch 1\n- Take the SRCU cookie under head->lock in patch 2 (Sashiko)\n- Rerun the tests\n\nv2: https://lore.kernel.org/r/20261111-bug-nvme-mpath-set-live-srcu-v2-0-fc772914d293@linux.dev\nv1: https://lore.kernel.org/r/20261110-bug-nvme-mpath-set-live-srcu-v1-1-1f58b405b0f8@linux.dev\n\n---\nQiliang Yuan (2):\n      nvme-multipath: apply delayed_removal_secs changes to a pending removal\n      nvme-multipath: don't wait for a grace period in nvme_mpath_set_live()\n\n drivers/nvme/host/multipath.c | 18 +++++++++++++++++-\n drivers/nvme/host/nvme.h      |  1 +\n 2 files changed, 18 insertions(+), 1 deletion(-)",
+  "patches": 2
+}

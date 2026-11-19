@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "subject": {
+    "project": "linux",
+    "message_id": "20261114-bug-nvme-mpath-set-live-srcu-v3-0-d84651de6334@linux.dev"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "b4",
+          "version": "0.16.0",
+          "build": "debian:b4 0.16.0-2"
+        }
+      ],
+      "command": "b4 shazam",
+      "env": {},
+      "status": "fail",
+      "exit": 128,
+      "output": "Looking up 20261114-bug-nvme-mpath-set-live-srcu-v3-0-d84651de6334@linux.dev\nChecking for newer revisions\nGrabbing search results from lore.kernel.org\nAnalyzing 5 messages in the thread\nLooking for additional code-review trailers on lore.kernel.org\nAnalyzing 7 code-review messages\nChecking attestation on all messages, may take a moment...\n---\n  \u001b[32m✓\u001b[0m [PATCH v3 1/2] nvme-multipath: apply delayed_removal_secs changes to a pending removal\n    + Link: https://patch.msgid.link/20261114-bug-nvme-mpath-set-live-srcu-v3-1-d84651de6334@linux.dev\n  \u001b[32m✓\u001b[0m [PATCH v3 2/2] nvme-multipath: don't wait for a grace period in nvme_mpath_set_live()\n    + Link: https://patch.msgid.link/20261114-bug-nvme-mpath-set-live-srcu-v3-2-d84651de6334@linux.dev\n  ---\n  \u001b[32m✓\u001b[0m Signed: DKIM/linux.dev\n---\nTotal patches: 2\n---\nApplying: nvme-multipath: apply delayed_removal_secs changes to a pending removal\nPatch failed at 0001 nvme-multipath: apply delayed_removal_secs changes to a pending removal\nerror: patch failed: drivers/nvme/host/multipath.c:1242\nerror: drivers/nvme/host/multipath.c: patch does not apply\nhint: Use 'git am --show-current-patch=diff' to see the failed patch\nhint: When you have resolved this problem, run \"git am --continue\".\nhint: If you prefer to skip this patch, run \"git am --skip\" instead.\nhint: To restore the original branch and stop patching, run \"git am --abort\".\nhint: Disable this message with \"git config set advice.mergeConflict false\"\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "2f288d7"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-18T15:15:44Z",
+          "seconds": 3,
+          "resources": {
+            "cpu": {
+              "seconds": 1.184,
+              "user_seconds": 0.795,
+              "system_seconds": 0.389,
+              "stalled_seconds": 0.001
+            },
+            "memory": {
+              "peak": 111788032,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 0
+            },
+            "io": {
+              "stalled_seconds": 0.0
+            },
+            "tasks": {
+              "peak": 22
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "b4",
+          "version": "0.16.0",
+          "build": "debian:b4 0.16.0-2"
+        }
+      ],
+      "command": "b4 shazam",
+      "env": {},
+      "status": "pass",
+      "exit": 0,
+      "output": "Looking up 20261114-bug-nvme-mpath-set-live-srcu-v3-0-d84651de6334@linux.dev\nChecking for newer revisions\nGrabbing search results from lore.kernel.org\nAnalyzing 5 messages in the thread\nLooking for additional code-review trailers on lore.kernel.org\nAnalyzing 7 code-review messages\nChecking attestation on all messages, may take a moment...\n---\n  \u001b[32m✓\u001b[0m [PATCH v3 1/2] nvme-multipath: apply delayed_removal_secs changes to a pending removal\n    + Link: https://patch.msgid.link/20261114-bug-nvme-mpath-set-live-srcu-v3-1-d84651de6334@linux.dev\n  \u001b[32m✓\u001b[0m [PATCH v3 2/2] nvme-multipath: don't wait for a grace period in nvme_mpath_set_live()\n    + Link: https://patch.msgid.link/20261114-bug-nvme-mpath-set-live-srcu-v3-2-d84651de6334@linux.dev\n  ---\n  \u001b[32m✓\u001b[0m Signed: DKIM/linux.dev\n---\nTotal patches: 2\n---\n Base: 7e1392a42ea288d70a266f6553fe06f57f8647ea (use --merge-base to override)\nMagic: Preparing a sparse worktree\n---\nApplying: nvme-multipath: apply delayed_removal_secs changes to a pending removal\nApplying: nvme-multipath: don't wait for a grace period in nvme_mpath_set_live()\n---\nFetching into FETCH_HEAD\nYou can now merge or checkout FETCH_HEAD\n  e.g.: git merge --no-ff -F .git/b4-cover --no-edit FETCH_HEAD --signoff\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "749f19a"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-18T15:27:46Z",
+          "seconds": 2,
+          "resources": {
+            "cpu": {
+              "seconds": 1.453,
+              "user_seconds": 1.02,
+              "system_seconds": 0.433,
+              "stalled_seconds": 0.0
+            },
+            "memory": {
+              "peak": 100892672,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 0
+            },
+            "io": {
+              "stalled_seconds": 0.0
+            },
+            "tasks": {
+              "peak": 7
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}
