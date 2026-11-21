@@ -1,0 +1,25 @@
+{
+  "schema": 2,
+  "commit": "5f22fb20497f4983094131f00a734362300d22d2",
+  "message_id": "",
+  "ref": "",
+  "trees": [
+    {
+      "remote": "origin",
+      "url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git"
+    }
+  ],
+  "base": "5f22fb20497f4983094131f00a734362300d22d2",
+  "base_name": "v7.4-rc3-602-g5f22fb20497f",
+  "base_trees": [
+    {
+      "remote": "origin",
+      "url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git"
+    }
+  ],
+  "commits": [],
+  "sources": [],
+  "docs": [],
+  "added": [],
+  "lists": []
+}
