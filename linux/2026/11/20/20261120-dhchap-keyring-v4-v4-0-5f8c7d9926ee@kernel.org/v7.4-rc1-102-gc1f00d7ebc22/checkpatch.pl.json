@@ -1,0 +1,65 @@
+{
+  "schema": 2,
+  "subject": {
+    "project": "linux",
+    "commit": "c1f00d7ebc220b44de0cfe201e1b9c4d6f315a6a",
+    "range": "68099cf27253a8c89d703a282d3d811446d9453b..c1f00d7ebc220b44de0cfe201e1b9c4d6f315a6a"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "checkpatch.pl",
+          "version": "",
+          "build": "tree"
+        }
+      ],
+      "command": "scripts/checkpatch.pl --strict --git 68099cf27253a8c89d703a282d3d811446d9453b..c1f00d7ebc220b44de0cfe201e1b9c4d6f315a6a",
+      "env": {},
+      "status": "fail",
+      "exit": 1,
+      "output": "------------------------------------------------------------------------------------\nCommit 0eca1044b5ce (\"nvme-auth: modify nvme_auth_transform_key() to return status\")\n------------------------------------------------------------------------------------\ntotal: 0 errors, 0 warnings, 0 checks, 221 lines checked\n\nCommit 0eca1044b5ce (\"nvme-auth: modify nvme_auth_transform_key() to return status\") has no obvious style problems and is ready for submission.\n-----------------------------------------------------------\nCommit 116fd5ce8dac (\"nvme-keyring: add 'dhchap' key type\")\n-----------------------------------------------------------\ntotal: 0 errors, 0 warnings, 0 checks, 239 lines checked\n\nCommit 116fd5ce8dac (\"nvme-keyring: add 'dhchap' key type\") has no obvious style problems and is ready for submission.\n-------------------------------------------------------------\nCommit 2f3399626586 (\"nvme-auth: switch to use 'struct key'\")\n-------------------------------------------------------------\nCHECK: Alignment should match open parenthesis\n#305: FILE: drivers/nvme/common/keyring.c:475:\n+struct key *nvme_dhchap_psk_create(struct key *keyring,\n+\t\tconst u8 *data, size_t data_len)\n\nCHECK: Comparison to NULL could be written \"!data\"\n#317: FILE: drivers/nvme/common/keyring.c:487:\n+\tif (data == NULL || !data_len)\n\nCHECK: Alignment should match open parenthesis\n#419: FILE: drivers/nvme/host/auth.c:1042:\n+\tctrl->host_key = nvme_auth_extract_key(ctrl->opts->keyring,\n+\t\t\t\tctrl->opts->dhchap_secret,\n\nCHECK: Alignment should match open parenthesis\n#431: FILE: drivers/nvme/host/auth.c:1051:\n+\tctrl->ctrl_key = nvme_auth_extract_key(ctrl->opts->keyring,\n+\t\t\t\tctrl->opts->dhchap_ctrl_secret,\n\nCHECK: Alignment should match open parenthesis\n#705: FILE: include/linux/nvme-keyring.h:23:\n+struct key *nvme_dhchap_psk_create(struct key *keyring,\n+\t\tconst u8 *data, size_t data_len);\n\nCHECK: Please use a blank line after function/struct/union/enum declarations\n#726: FILE: include/linux/nvme-keyring.h:46:\n+}\n+static inline struct key *nvme_dhchap_psk_refresh(struct key *keyring,\n\nCHECK: Alignment should match open parenthesis\n#727: FILE: include/linux/nvme-keyring.h:47:\n+static inline struct key *nvme_dhchap_psk_refresh(struct key *keyring,\n+\t\tconst char *hostnqn, const char *subnqn,\n\nCHECK: Please use a blank line after function/struct/union/enum declarations\n#732: FILE: include/linux/nvme-keyring.h:52:\n+}\n+static inline struct key *nvme_dhchap_psk_lookup(struct key *keyring,\n\nCHECK: Alignment should match open parenthesis\n#733: FILE: include/linux/nvme-keyring.h:53:\n+static inline struct key *nvme_dhchap_psk_lookup(struct key *keyring,\n+\t\tconst char *hostnqn, const char *subnqn, u8 hmac);\n\nCHECK: Please use a blank line after function/struct/union/enum declarations\n#737: FILE: include/linux/nvme-keyring.h:57:\n+}\n+u8 nvme_dhchap_psk_hash(struct key *key)\n\ntotal: 0 errors, 0 warnings, 10 checks, 643 lines checked\n\nNOTE: For some of the reported defects, checkpatch may be able to\n      mechanically convert to the typical style using --fix or --fix-inplace.\n\nCommit 2f3399626586 (\"nvme-auth: switch to use 'struct key'\") has style problems, please review.\n---------------------------------------------------------------------\nCommit 4fe287533f16 (\"nvme: parse dhchap keys during option parsing\")\n---------------------------------------------------------------------\nCHECK: braces {} should be used on all arms of this statement\n#389: FILE: drivers/nvme/host/sysfs.c:829:\n+\tif (key_validate(key))\n[...]\n+\telse {\n[...]\n\nCHECK: Unbalanced braces around else statement\n#391: FILE: drivers/nvme/host/sysfs.c:831:\n+\telse {\n\nCHECK: braces {} should be used on all arms of this statement\n#486: FILE: drivers/nvme/host/sysfs.c:907:\n+\tif (key_validate(key))\n[...]\n+\telse {\n[...]\n\nCHECK: Unbalanced braces around else statement\n#488: FILE: drivers/nvme/host/sysfs.c:909:\n+\telse {\n\nCHECK: Alignment should match open parenthesis\n#577: FILE: drivers/nvme/host/sysfs.c:975:\n+static ssize_t dhchap_key_show(struct device *dev,\n+\t\tstruct device_attribute *attr, char *buf)\n\nCHECK: braces {} should be used on all arms of this statement\n#586: FILE: drivers/nvme/host/sysfs.c:984:\n+\tif (key_validate(key))\n[...]\n+\telse {\n[...]\n\nCHECK: Unbalanced braces around else statement\n#588: FILE: drivers/nvme/host/sysfs.c:986:\n+\telse {\n\nCHECK: Alignment should match open parenthesis\n#601: FILE: drivers/nvme/host/sysfs.c:999:\n+static ssize_t dhchap_ctrl_key_show(struct device *dev,\n+\t\tstruct device_attribute *attr, char *buf)\n\ntotal: 0 errors, 0 warnings, 8 checks, 562 lines checked\n\nNOTE: For some of the reported defects, checkpatch may be able to\n      mechanically convert to the typical style using --fix or --fix-inplace.\n\nCommit 4fe287533f16 (\"nvme: parse dhchap keys during option parsing\") has style problems, please review.\n----------------------------------------------------------------------------\nCommit 2126979c85cf (\"nvmet-auth: parse dhchap key from configfs attribute\")\n----------------------------------------------------------------------------\nCHECK: braces {} should be used on all arms of this statement\n#290: FILE: drivers/nvme/target/configfs.c:2249:\n+\t\tif (key_validate(key))\n[...]\n+\t\telse {\n[...]\n\nCHECK: Unbalanced braces around else statement\n#292: FILE: drivers/nvme/target/configfs.c:2251:\n+\t\telse {\n\nCHECK: braces {} should be used on all arms of this statement\n#347: FILE: drivers/nvme/target/configfs.c:2306:\n+\t\tif (key_validate(key))\n[...]\n+\t\telse {\n[...]\n\nCHECK: Unbalanced braces around else statement\n#349: FILE: drivers/nvme/target/configfs.c:2308:\n+\t\telse {\n\ntotal: 0 errors, 0 warnings, 4 checks, 376 lines checked\n\nNOTE: For some of the reported defects, checkpatch may be able to\n      mechanically convert to the typical style using --fix or --fix-inplace.\n\nCommit 2126979c85cf (\"nvmet-auth: parse dhchap key from configfs attribute\") has style problems, please review.\n-------------------------------------------------------------------------------\nCommit fe4a46515454 (\"nvme: allow to pass in key description as dhchap secret\")\n-------------------------------------------------------------------------------\nCHECK: Unbalanced braces around else statement\n#236: FILE: drivers/nvme/host/sysfs.c:837:\n+\t} else\n\nCHECK: Unbalanced braces around else statement\n#303: FILE: drivers/nvme/host/sysfs.c:924:\n+\t} else\n\nCHECK: Unbalanced braces around else statement\n#499: FILE: drivers/nvme/target/configfs.c:2257:\n+\t\t} else\n\nCHECK: Unbalanced braces around else statement\n#516: FILE: drivers/nvme/target/configfs.c:2315:\n+\t\t} else\n\ntotal: 0 errors, 0 warnings, 4 checks, 451 lines checked\n\nNOTE: For some of the reported defects, checkpatch may be able to\n      mechanically convert to the typical style using --fix or --fix-inplace.\n\nCommit fe4a46515454 (\"nvme: allow to pass in key description as dhchap secret\") has style problems, please review.\n---------------------------------------------------------------------------------------\nCommit edbcc6dc0d73 (\"nvme-auth: wait for authentication to finish when changing keys\")\n---------------------------------------------------------------------------------------\ntotal: 0 errors, 0 warnings, 0 checks, 30 lines checked\n\nCommit edbcc6dc0d73 (\"nvme-auth: wait for authentication to finish when changing keys\") has no obvious style problems and is ready for submission.\n----------------------------------------------------------------------\nCommit 5ff6694c886c (\"nvme-fabrics: allow to pass in keyring by name\")\n----------------------------------------------------------------------\ntotal: 0 errors, 0 warnings, 0 checks, 37 lines checked\n\nCommit 5ff6694c886c (\"nvme-fabrics: allow to pass in keyring by name\") has no obvious style problems and is ready for submission.\n----------------------------------------------------------------------\nCommit c1f00d7ebc22 (\"nvmet: add configfs attribute 'dhchap_keyring'\")\n----------------------------------------------------------------------\nCHECK: Alignment should match open parenthesis\n#42: FILE: drivers/nvme/target/configfs.c:2351:\n+static ssize_t nvmet_host_dhchap_keyring_show(struct config_item *item,\n+\t\tchar *page)\n\nCHECK: Alignment should match open parenthesis\n#67: FILE: drivers/nvme/target/configfs.c:2376:\n+static ssize_t nvmet_host_dhchap_keyring_store(struct config_item *item,\n+\t\tconst char *page, size_t count)\n\ntotal: 0 errors, 0 warnings, 2 checks, 95 lines checked\n\nNOTE: For some of the reported defects, checkpatch may be able to\n      mechanically convert to the typical style using --fix or --fix-inplace.\n\nCommit c1f00d7ebc22 (\"nvmet: add configfs attribute 'dhchap_keyring'\") has style problems, please review.\n\nNOTE: If any of the errors are false positives, please report\n      them to the maintainer, see CHECKPATCH in MAINTAINERS.\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "b1987d2"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-21T18:53:38Z",
+          "seconds": 3,
+          "resources": {
+            "cpu": {
+              "seconds": 3.227,
+              "user_seconds": 2.573,
+              "system_seconds": 0.654,
+              "stalled_seconds": 0.001
+            },
+            "memory": {
+              "peak": 53030912,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 14
+            },
+            "io": {
+              "stalled_seconds": 0.035
+            },
+            "tasks": {
+              "peak": 3
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}

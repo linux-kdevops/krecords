@@ -1,0 +1,99 @@
+{
+  "schema": 2,
+  "commit": "c1f00d7ebc220b44de0cfe201e1b9c4d6f315a6a",
+  "message_id": "20261120-dhchap-keyring-v4-v4-0-5f8c7d9926ee@kernel.org",
+  "ref": "b4/20261120-dhchap-keyring-v4-v4-0-5f8c7d9926ee",
+  "trees": [],
+  "base": "68099cf27253a8c89d703a282d3d811446d9453b",
+  "base_name": "v7.4-rc1-93-g68099cf27253",
+  "base_trees": [
+    {
+      "remote": "origin",
+      "url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git"
+    }
+  ],
+  "commits": [
+    {
+      "commit": "0eca1044b5ce77ee840119fb626d0c120ff15bbd",
+      "subject": "nvme-auth: modify nvme_auth_transform_key() to return status",
+      "author": "Hannes Reinecke <hare@kernel.org>",
+      "link": "https://patch.msgid.link/20261120-dhchap-keyring-v4-v4-1-5f8c7d9926ee@kernel.org"
+    },
+    {
+      "commit": "116fd5ce8dacb66eddfd729021b921d4af132427",
+      "subject": "nvme-keyring: add 'dhchap' key type",
+      "author": "Hannes Reinecke <hare@kernel.org>",
+      "link": "https://patch.msgid.link/20261120-dhchap-keyring-v4-v4-2-5f8c7d9926ee@kernel.org"
+    },
+    {
+      "commit": "2f33996265865580e5eea5fd78228d1dcc5c9cb3",
+      "subject": "nvme-auth: switch to use 'struct key'",
+      "author": "Hannes Reinecke <hare@kernel.org>",
+      "link": "https://patch.msgid.link/20261120-dhchap-keyring-v4-v4-3-5f8c7d9926ee@kernel.org"
+    },
+    {
+      "commit": "4fe287533f163454b19841d193edcbbe1d4737b5",
+      "subject": "nvme: parse dhchap keys during option parsing",
+      "author": "Hannes Reinecke <hare@kernel.org>",
+      "link": "https://patch.msgid.link/20261120-dhchap-keyring-v4-v4-4-5f8c7d9926ee@kernel.org"
+    },
+    {
+      "commit": "2126979c85cf2a9c87c2d33c4355db7d6bd7c500",
+      "subject": "nvmet-auth: parse dhchap key from configfs attribute",
+      "author": "Hannes Reinecke <hare@kernel.org>",
+      "link": "https://patch.msgid.link/20261120-dhchap-keyring-v4-v4-5-5f8c7d9926ee@kernel.org"
+    },
+    {
+      "commit": "fe4a46515454cb448df690d7a2935ae9dbe6d929",
+      "subject": "nvme: allow to pass in key description as dhchap secret",
+      "author": "Hannes Reinecke <hare@kernel.org>",
+      "link": "https://patch.msgid.link/20261120-dhchap-keyring-v4-v4-6-5f8c7d9926ee@kernel.org"
+    },
+    {
+      "commit": "edbcc6dc0d73b765f9710f6d1e48a2add028cbe5",
+      "subject": "nvme-auth: wait for authentication to finish when changing keys",
+      "author": "Hannes Reinecke <hare@kernel.org>",
+      "link": "https://patch.msgid.link/20261120-dhchap-keyring-v4-v4-7-5f8c7d9926ee@kernel.org"
+    },
+    {
+      "commit": "5ff6694c886c2c79f33133aad0e424d2210ffca5",
+      "subject": "nvme-fabrics: allow to pass in keyring by name",
+      "author": "Hannes Reinecke <hare@kernel.org>",
+      "link": "https://patch.msgid.link/20261120-dhchap-keyring-v4-v4-8-5f8c7d9926ee@kernel.org"
+    },
+    {
+      "commit": "c1f00d7ebc220b44de0cfe201e1b9c4d6f315a6a",
+      "subject": "nvmet: add configfs attribute 'dhchap_keyring'",
+      "author": "Hannes Reinecke <hare@kernel.org>",
+      "link": "https://patch.msgid.link/20261120-dhchap-keyring-v4-v4-9-5f8c7d9926ee@kernel.org"
+    }
+  ],
+  "cover": {
+    "subject": "nvme-auth: switch to use the kernel keyring",
+    "author": "Hannes Reinecke <hare@kernel.org>",
+    "date": "2026-11-20T11:13:59Z",
+    "change_id": "20261120-dhchap-keyring-v4-09f0bac1d8c5",
+    "revision": 4,
+    "text": "Hey all,\n\nthe current NVMe authentication code is using a hand-crafted key\nstructure; idea was to have the initial implementation with a minimal\nset of dependencies.\n(And me not having a good grasp on how to use the kernel keyring :-)\nThat had the drawback that keys always had to be specified on the\nnvme-cli commandline, which is far from ideal from a security standpoint.\n\nSo this patchset switches the authentication code over to use the\nkernel keyring. User-facing interface (namely argument to 'nvme\nconnect') remain the same, but the key data is converted into keys\nwhich are stored as a new key type 'dhchap' with a random UUID as\ndescription in the kernel keyring.\n\nWith this I have updated the dhchap arguments to 'nvme connect' and\nthe configfs interface to either be the keydata (ie the original\ninterface) _or_ a key description referring to a pre-populated dhchap\nkey in the kernel keyring. This allows for easier provisioning of keys\nand avoids the security risk from having to specify the key data on\nthe kernel commandline.\n\nThe entire patchset can be found at\ngit://git.kernel.org/pub/scm/linux/kernel/git/hare/nvme.git\nbranch dhchap-keyring.v4\n\nAs usual, comments and reviews are welcome.\n\nChanges to v3:\n- Update to 7.4\n- Add patch to set keyring for nvmet\n\nChanges to v2:\n- Update to v7.1\n- Include reviews fromn Sagi\n- Clarify decoded PSK length\n- Add more function descriptions\n\nChanges to the original submission:\n- Dropped patches merged with upstream\n- Modified the interface to refer to keys via the description\n  and not the serial number\n\nSigned-off-by: Hannes Reinecke <hare@kernel.org>\n---\nHannes Reinecke (9):\n      nvme-auth: modify nvme_auth_transform_key() to return status\n      nvme-keyring: add 'dhchap' key type\n      nvme-auth: switch to use 'struct key'\n      nvme: parse dhchap keys during option parsing\n      nvmet-auth: parse dhchap key from configfs attribute\n      nvme: allow to pass in key description as dhchap secret\n      nvme-auth: wait for authentication to finish when changing keys\n      nvme-fabrics: allow to pass in keyring by name\n      nvmet: add configfs attribute 'dhchap_keyring'\n\n drivers/nvme/common/Kconfig    |   1 +\n drivers/nvme/common/auth.c     | 213 ++++++++++++----------------\n drivers/nvme/common/keyring.c  | 314 +++++++++++++++++++++++++++++++++++++++++\n drivers/nvme/host/Kconfig      |   1 -\n drivers/nvme/host/auth.c       | 171 +++++++++++++++-------\n drivers/nvme/host/fabrics.c    | 121 +++++++++++-----\n drivers/nvme/host/fabrics.h    |  12 +-\n drivers/nvme/host/nvme.h       |   6 +-\n drivers/nvme/host/sysfs.c      | 212 +++++++++++++++++++++-------\n drivers/nvme/target/Kconfig    |   1 -\n drivers/nvme/target/auth.c     | 229 +++++++++++++++++++-----------\n drivers/nvme/target/configfs.c | 144 ++++++++++++++++---\n drivers/nvme/target/nvmet.h    |  16 +--\n include/linux/nvme-auth.h      |  11 +-\n include/linux/nvme-keyring.h   |  26 +++-\n 15 files changed, 1092 insertions(+), 386 deletions(-)"
+  },
+  "sources": [
+    "drivers/nvme/common/auth.c",
+    "drivers/nvme/common/keyring.c",
+    "drivers/nvme/host/auth.c",
+    "drivers/nvme/host/fabrics.c",
+    "drivers/nvme/host/fabrics.h",
+    "drivers/nvme/host/nvme.h",
+    "drivers/nvme/host/sysfs.c",
+    "drivers/nvme/target/auth.c",
+    "drivers/nvme/target/configfs.c",
+    "drivers/nvme/target/nvmet.h",
+    "include/linux/nvme-auth.h",
+    "include/linux/nvme-keyring.h"
+  ],
+  "docs": [],
+  "added": [],
+  "lists": [
+    "linux-kernel@vger.kernel.org",
+    "linux-nvme@lists.infradead.org"
+  ]
+}

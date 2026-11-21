@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "subject": {
+    "project": "linux",
+    "message_id": "20261120-dhchap-keyring-v4-v4-0-5f8c7d9926ee@kernel.org"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "b4",
+          "version": "0.16.0",
+          "build": "debian:b4 0.16.0-2"
+        }
+      ],
+      "command": "b4 shazam",
+      "env": {},
+      "status": "pass",
+      "exit": 0,
+      "output": "Looking up 20261120-dhchap-keyring-v4-v4-0-5f8c7d9926ee@kernel.org\nChecking for newer revisions\nGrabbing search results from lore.kernel.org\nAnalyzing 31 messages in the thread\nLooking for additional code-review trailers on lore.kernel.org\nAnalyzing 19 code-review messages\nChecking attestation on all messages, may take a moment...\n---\n  \u001b[31m✗\u001b[0m [PATCH v4 1/9] nvme-auth: modify nvme_auth_transform_key() to return status\n    + Link: https://patch.msgid.link/20261120-dhchap-keyring-v4-v4-1-5f8c7d9926ee@kernel.org\n  \u001b[31m✗\u001b[0m [PATCH v4 2/9] nvme-keyring: add 'dhchap' key type\n    + Link: https://patch.msgid.link/20261120-dhchap-keyring-v4-v4-2-5f8c7d9926ee@kernel.org\n  \u001b[31m✗\u001b[0m [PATCH v4 3/9] nvme-auth: switch to use 'struct key'\n    + Link: https://patch.msgid.link/20261120-dhchap-keyring-v4-v4-3-5f8c7d9926ee@kernel.org\n  \u001b[31m✗\u001b[0m [PATCH v4 4/9] nvme: parse dhchap keys during option parsing\n    + Link: https://patch.msgid.link/20261120-dhchap-keyring-v4-v4-4-5f8c7d9926ee@kernel.org\n  \u001b[31m✗\u001b[0m [PATCH v4 5/9] nvmet-auth: parse dhchap key from configfs attribute\n    + Link: https://patch.msgid.link/20261120-dhchap-keyring-v4-v4-5-5f8c7d9926ee@kernel.org\n  \u001b[31m✗\u001b[0m [PATCH v4 6/9] nvme: allow to pass in key description as dhchap secret\n    + Link: https://patch.msgid.link/20261120-dhchap-keyring-v4-v4-6-5f8c7d9926ee@kernel.org\n  \u001b[31m✗\u001b[0m [PATCH v4 7/9] nvme-auth: wait for authentication to finish when changing keys\n    + Link: https://patch.msgid.link/20261120-dhchap-keyring-v4-v4-7-5f8c7d9926ee@kernel.org\n  \u001b[31m✗\u001b[0m [PATCH v4 8/9] nvme-fabrics: allow to pass in keyring by name\n    + Link: https://patch.msgid.link/20261120-dhchap-keyring-v4-v4-8-5f8c7d9926ee@kernel.org\n  \u001b[31m✗\u001b[0m [PATCH v4 9/9] nvmet: add configfs attribute 'dhchap_keyring'\n    + Link: https://patch.msgid.link/20261120-dhchap-keyring-v4-v4-9-5f8c7d9926ee@kernel.org\n  ---\n  \u001b[31m✗\u001b[0m No key: ed25519/hare@kernel.org\n  \u001b[32m✓\u001b[0m Signed: DKIM/kernel.org\n---\nTotal patches: 9\n---\n Base: 68099cf27253a8c89d703a282d3d811446d9453b (use --merge-base to override)\nMagic: Preparing a sparse worktree\n---\nApplying: nvme-auth: modify nvme_auth_transform_key() to return status\nApplying: nvme-keyring: add 'dhchap' key type\nApplying: nvme-auth: switch to use 'struct key'\nApplying: nvme: parse dhchap keys during option parsing\nApplying: nvmet-auth: parse dhchap key from configfs attribute\nApplying: nvme: allow to pass in key description as dhchap secret\nApplying: nvme-auth: wait for authentication to finish when changing keys\nApplying: nvme-fabrics: allow to pass in keyring by name\nApplying: nvmet: add configfs attribute 'dhchap_keyring'\n---\nFetching into FETCH_HEAD\nYou can now merge or checkout FETCH_HEAD\n  e.g.: git merge --no-ff -F .git/b4-cover --no-edit FETCH_HEAD --signoff\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "b1987d2"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-21T18:53:31Z",
+          "seconds": 3,
+          "resources": {
+            "cpu": {
+              "seconds": 2.353,
+              "user_seconds": 1.656,
+              "system_seconds": 0.696,
+              "stalled_seconds": 0.002
+            },
+            "memory": {
+              "peak": 266936320,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 140
+            },
+            "io": {
+              "stalled_seconds": 0.028
+            },
+            "tasks": {
+              "peak": 8
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}
