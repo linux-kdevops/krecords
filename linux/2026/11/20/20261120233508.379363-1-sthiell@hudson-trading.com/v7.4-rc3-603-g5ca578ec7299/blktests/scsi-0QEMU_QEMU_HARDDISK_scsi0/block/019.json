@@ -1,0 +1,60 @@
+{
+  "schema": 2,
+  "subject": {
+    "project": "linux",
+    "commit": "5ca578ec729996a0e852e17531410436a6924f45",
+    "test": "block/019"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "blktests",
+          "version": "",
+          "build": "954e1b58bcd5"
+        },
+        {
+          "name": "qemu",
+          "version": "11.1.3",
+          "build": "debian:qemu-system-x86 1:11.1.3+ds-1"
+        }
+      ],
+      "command": "check block/019",
+      "env": {
+        "TEST_DEVS": "/dev/disk/by-id/scsi-0QEMU_QEMU_HARDDISK_scsi0"
+      },
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:248740d46ee573ef512c3f0b421b3dda47eaa403a70d0f98c793bf348907a9fc",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "65ae759"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-21T09:47:24Z",
+          "seconds": 15,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538583552
+          },
+          "fingerprint": []
+        }
+      ]
+    }
+  ]
+}
