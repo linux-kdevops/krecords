@@ -142,6 +142,240 @@
             "cpus": 16,
             "memory": 66496024576
           }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "103bdbb"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-20T08:15:05Z",
+          "seconds": 5,
+          "resources": {
+            "cpu": {
+              "seconds": 3.995,
+              "user_seconds": 2.115,
+              "system_seconds": 1.88,
+              "stalled_seconds": 0.011
+            },
+            "memory": {
+              "peak": 1387978752,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 2099
+            },
+            "io": {
+              "stalled_seconds": 0.127
+            },
+            "tasks": {
+              "peak": 27
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "144ba6a"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-20T08:50:19Z",
+          "seconds": 6,
+          "resources": {
+            "cpu": {
+              "seconds": 4.258,
+              "user_seconds": 2.246,
+              "system_seconds": 2.012,
+              "stalled_seconds": 0.011
+            },
+            "memory": {
+              "peak": 687165440,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 1521
+            },
+            "io": {
+              "stalled_seconds": 0.124
+            },
+            "tasks": {
+              "peak": 27
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "4cb470c"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-20T09:26:06Z",
+          "seconds": 5,
+          "resources": {
+            "cpu": {
+              "seconds": 3.872,
+              "user_seconds": 2.064,
+              "system_seconds": 1.807,
+              "stalled_seconds": 0.006
+            },
+            "memory": {
+              "peak": 751652864,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 1546
+            },
+            "io": {
+              "stalled_seconds": 0.144
+            },
+            "tasks": {
+              "peak": 27
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "5b90d39"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-20T13:09:02Z",
+          "seconds": 5,
+          "resources": {
+            "cpu": {
+              "seconds": 3.971,
+              "user_seconds": 2.199,
+              "system_seconds": 1.772,
+              "stalled_seconds": 0.007
+            },
+            "memory": {
+              "peak": 1156603904,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 1942
+            },
+            "io": {
+              "stalled_seconds": 0.125
+            },
+            "tasks": {
+              "peak": 27
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "d67bd67"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-20T13:53:07Z",
+          "seconds": 5,
+          "resources": {
+            "cpu": {
+              "seconds": 3.845,
+              "user_seconds": 2.09,
+              "system_seconds": 1.754,
+              "stalled_seconds": 0.008
+            },
+            "memory": {
+              "peak": 855429120,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 1703
+            },
+            "io": {
+              "stalled_seconds": 0.172
+            },
+            "tasks": {
+              "peak": 27
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "9133338"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-20T14:25:06Z",
+          "seconds": 5,
+          "resources": {
+            "cpu": {
+              "seconds": 3.9,
+              "user_seconds": 2.117,
+              "system_seconds": 1.782,
+              "stalled_seconds": 0.011
+            },
+            "memory": {
+              "peak": 1394585600,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 2055
+            },
+            "io": {
+              "stalled_seconds": 0.226
+            },
+            "tasks": {
+              "peak": 27
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
         }
       ]
     }
