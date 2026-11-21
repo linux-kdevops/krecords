@@ -1,0 +1,9 @@
+[ 2931.986641] run blktests nvme/050 at 2026-11-21 21:49:52.912770231
+[ 2992.490696] pci 0000:01:00.0: [1b36:0010] type 00 class 0x010802 PCIe Endpoint
+[ 2992.491844] pci 0000:01:00.0: BAR 0 [mem 0xfe800000-0xfe803fff 64bit]
+[ 2992.491953] pci 0000:01:00.0: enabling Extended Tags
+[ 2992.517206] pci 0000:01:00.0: BAR 0 [mem 0xfe800000-0xfe803fff 64bit]: assigned
+[ 2992.520145] nvme nvme2: pci function 0000:01:00.0
+[ 2992.540835] nvme nvme2: 2/0/0 default/read/poll queues
+[ 2992.543245] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2992.543477] nvme nvme2: Ignoring bogus Namespace Identifiers
