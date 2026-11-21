@@ -1,0 +1,11 @@
+{
+  "schema": 2,
+  "message_id": "20261120101758.45513-1-dennylin0707@gmail.com",
+  "subject": "[PATCH v4] block: fix discard alignment for non-power-of-two granularities",
+  "author": "Hungyu Lin <dennylin0707@gmail.com>",
+  "date": "2026-11-20T10:17:58Z",
+  "change_id": "",
+  "revision": 4,
+  "text": "",
+  "patches": 1
+}

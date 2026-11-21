@@ -1,0 +1,65 @@
+{
+  "schema": 2,
+  "subject": {
+    "project": "linux",
+    "commit": "9b0f5216709bdd990b3ea0b4da8f7c2317671863",
+    "range": "6628e7d4c6b25c8d18f1345e3a20d21829aae7e4..9b0f5216709bdd990b3ea0b4da8f7c2317671863"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "checkpatch.pl",
+          "version": "",
+          "build": "tree"
+        }
+      ],
+      "command": "scripts/checkpatch.pl --strict --git 6628e7d4c6b25c8d18f1345e3a20d21829aae7e4..9b0f5216709bdd990b3ea0b4da8f7c2317671863",
+      "env": {},
+      "status": "pass",
+      "exit": 0,
+      "output": "total: 0 errors, 0 warnings, 0 checks, 46 lines checked\n\nCommit 9b0f5216709b (\"block: fix discard alignment for non-power-of-two granularities\") has no obvious style problems and is ready for submission.\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "d21d96d"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-21T23:25:37Z",
+          "seconds": 1,
+          "resources": {
+            "cpu": {
+              "seconds": 0.538,
+              "user_seconds": 0.33,
+              "system_seconds": 0.208,
+              "stalled_seconds": 0.002
+            },
+            "memory": {
+              "peak": 45895680,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 12
+            },
+            "io": {
+              "stalled_seconds": 0.007
+            },
+            "tasks": {
+              "peak": 3
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}

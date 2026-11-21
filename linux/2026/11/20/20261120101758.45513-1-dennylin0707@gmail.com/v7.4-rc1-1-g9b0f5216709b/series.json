@@ -1,0 +1,38 @@
+{
+  "schema": 2,
+  "commit": "9b0f5216709bdd990b3ea0b4da8f7c2317671863",
+  "message_id": "20261120101758.45513-1-dennylin0707@gmail.com",
+  "ref": "b4/20261120101758.45513-1-dennylin0707",
+  "trees": [],
+  "base": "6628e7d4c6b25c8d18f1345e3a20d21829aae7e4",
+  "base_name": "v7.4-rc1",
+  "base_trees": [
+    {
+      "remote": "linux-kdevops",
+      "url": "https://github.com/linux-kdevops/linux.git"
+    },
+    {
+      "remote": "origin",
+      "url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git"
+    }
+  ],
+  "commits": [
+    {
+      "commit": "9b0f5216709bdd990b3ea0b4da8f7c2317671863",
+      "subject": "block: fix discard alignment for non-power-of-two granularities",
+      "author": "Hungyu Lin <dennylin0707@gmail.com>",
+      "link": "https://patch.msgid.link/20261120101758.45513-1-dennylin0707@gmail.com"
+    }
+  ],
+  "sources": [
+    "block/blk-lib.c"
+  ],
+  "docs": [],
+  "added": [],
+  "lists": [
+    "dm-devel@lists.linux.dev",
+    "linux-block@vger.kernel.org",
+    "linux-kernel@vger.kernel.org",
+    "stable@vger.kernel.org"
+  ]
+}
