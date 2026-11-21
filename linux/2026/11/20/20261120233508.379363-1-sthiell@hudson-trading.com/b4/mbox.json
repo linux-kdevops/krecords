@@ -1,0 +1,96 @@
+{
+  "schema": 2,
+  "subject": {
+    "project": "linux",
+    "message_id": "20261120233508.379363-1-sthiell@hudson-trading.com"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "lorefetch",
+          "version": "",
+          "build": "25addf792c95",
+          "url": "https://github.com/dagomez137/lorefetch/commit/25addf792c95779f0955d93654c6e722d6c59edd"
+        }
+      ],
+      "command": "lorefetch --query '(dfn:Documentation/ABI/stable/sysfs-nvme OR dfn:Documentation/admin-guide/nvme-multipath.rst OR dfn:Documentation/fault-injection/nvme-fault-injection.rst OR dfn:Documentation/nvme OR dfn:drivers/nvme/common OR dfn:drivers/nvme/host OR dfn:include/linux/nvme-auth.h OR dfn:include/linux/nvme-fc-driver.h OR dfn:include/linux/nvme-fc.h OR dfn:include/linux/nvme-keyring.h OR dfn:include/linux/nvme-rdma.h OR dfn:include/linux/nvme-tcp.h OR dfn:include/linux/nvme.h OR dfn:include/uapi/linux/nvme_ioctl.h) AND s:PATCH AND NOT s:Re AND NOT s:FAILED AND NOT t:stable@vger.kernel.org AND d:30.days.ago..'",
+      "env": {},
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "0d2b6ae"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-21T07:37:57Z",
+          "seconds": 0,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "b4",
+          "version": "0.16.0",
+          "build": "debian:b4 0.16.0-2"
+        }
+      ],
+      "command": "b4 mbox",
+      "env": {},
+      "status": "pass",
+      "exit": 0,
+      "output": "Looking up 20261120233508.379363-1-sthiell@hudson-trading.com\n1 messages in the thread\nSaved build/logs/b4-mbox/thread.mbx\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "e557201"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-21T07:52:02Z",
+          "seconds": 1,
+          "resources": {
+            "cpu": {
+              "seconds": 0.618,
+              "user_seconds": 0.499,
+              "system_seconds": 0.119,
+              "stalled_seconds": 0.0
+            },
+            "memory": {
+              "peak": 80637952,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 5
+            },
+            "io": {
+              "stalled_seconds": 0.003
+            },
+            "tasks": {
+              "peak": 2
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}

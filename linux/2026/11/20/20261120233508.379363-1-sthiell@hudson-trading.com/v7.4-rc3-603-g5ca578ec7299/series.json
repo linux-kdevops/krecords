@@ -1,0 +1,32 @@
+{
+  "schema": 2,
+  "commit": "5ca578ec729996a0e852e17531410436a6924f45",
+  "message_id": "20261120233508.379363-1-sthiell@hudson-trading.com",
+  "ref": "b4/20261120233508.379363-1-sthiell",
+  "trees": [],
+  "base": "5f22fb20497f4983094131f00a734362300d22d2",
+  "base_name": "v7.4-rc3-602-g5f22fb20497f",
+  "base_trees": [
+    {
+      "remote": "origin",
+      "url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git"
+    }
+  ],
+  "commits": [
+    {
+      "commit": "5ca578ec729996a0e852e17531410436a6924f45",
+      "subject": "nvme-rdma: don't free I/O queues before cancelling requests",
+      "author": "Stephane Thiell <sthiell@hudson-trading.com>",
+      "link": "https://patch.msgid.link/20261120233508.379363-1-sthiell@hudson-trading.com"
+    }
+  ],
+  "sources": [
+    "drivers/nvme/host/rdma.c"
+  ],
+  "docs": [],
+  "added": [],
+  "lists": [
+    "linux-nvme@lists.infradead.org",
+    "stable@vger.kernel.org"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 2,
+  "subject": {
+    "project": "linux",
+    "commit": "5ca578ec729996a0e852e17531410436a6924f45",
+    "range": "5f22fb20497f4983094131f00a734362300d22d2..5ca578ec729996a0e852e17531410436a6924f45"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "checkpatch.pl",
+          "version": "",
+          "build": "tree"
+        }
+      ],
+      "command": "scripts/checkpatch.pl --strict --git 5f22fb20497f4983094131f00a734362300d22d2..5ca578ec729996a0e852e17531410436a6924f45",
+      "env": {},
+      "status": "pass",
+      "exit": 0,
+      "output": "total: 0 errors, 0 warnings, 0 checks, 24 lines checked\n\nCommit 5ca578ec7299 (\"nvme-rdma: don't free I/O queues before cancelling requests\") has no obvious style problems and is ready for submission.\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "e557201"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-21T07:52:16Z",
+          "seconds": 0,
+          "resources": {
+            "cpu": {
+              "seconds": 0.532,
+              "user_seconds": 0.33,
+              "system_seconds": 0.202,
+              "stalled_seconds": 0.002
+            },
+            "memory": {
+              "peak": 44515328,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 3
+            },
+            "io": {
+              "stalled_seconds": 0.002
+            },
+            "tasks": {
+              "peak": 3
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}

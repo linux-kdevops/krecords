@@ -1,0 +1,11 @@
+{
+  "schema": 2,
+  "message_id": "20261120233508.379363-1-sthiell@hudson-trading.com",
+  "subject": "[PATCH] nvme-rdma: don't free I/O queues before cancelling requests",
+  "author": "Stephane Thiell <sthiell@hudson-trading.com>",
+  "date": "2026-11-20T23:35:08Z",
+  "change_id": "",
+  "revision": 1,
+  "text": "",
+  "patches": 1
+}
