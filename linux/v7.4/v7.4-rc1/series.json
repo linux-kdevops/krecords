@@ -1,0 +1,33 @@
+{
+  "schema": 2,
+  "commit": "6628e7d4c6b25c8d18f1345e3a20d21829aae7e4",
+  "message_id": "",
+  "ref": "",
+  "trees": [
+    {
+      "remote": "linux-kdevops",
+      "url": "https://github.com/linux-kdevops/linux.git"
+    },
+    {
+      "remote": "origin",
+      "url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git"
+    }
+  ],
+  "base": "6628e7d4c6b25c8d18f1345e3a20d21829aae7e4",
+  "base_name": "v7.4-rc1",
+  "base_trees": [
+    {
+      "remote": "linux-kdevops",
+      "url": "https://github.com/linux-kdevops/linux.git"
+    },
+    {
+      "remote": "origin",
+      "url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git"
+    }
+  ],
+  "commits": [],
+  "sources": [],
+  "docs": [],
+  "added": [],
+  "lists": []
+}
