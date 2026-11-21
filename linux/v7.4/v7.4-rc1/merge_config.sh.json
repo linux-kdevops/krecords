@@ -72,6 +72,45 @@
             "cpus": 16,
             "memory": 66496024576
           }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "d21d96d"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-21T23:30:02Z",
+          "seconds": 3,
+          "resources": {
+            "cpu": {
+              "seconds": 3.589,
+              "user_seconds": 1.931,
+              "system_seconds": 1.659,
+              "stalled_seconds": 0.009
+            },
+            "memory": {
+              "peak": 329433088,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 201
+            },
+            "io": {
+              "stalled_seconds": 0.027
+            },
+            "tasks": {
+              "peak": 27
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
         }
       ]
     }
