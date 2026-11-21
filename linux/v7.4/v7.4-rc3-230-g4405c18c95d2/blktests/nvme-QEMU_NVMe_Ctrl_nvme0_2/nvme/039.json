@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "subject": {
+    "project": "linux",
+    "commit": "4405c18c95d2d0f99f6c581ef0ee8591a1aa6ccd",
+    "test": "nvme/039"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "blktests",
+          "version": "",
+          "build": "9bc1d8b0d5d0"
+        },
+        {
+          "name": "qemu",
+          "version": "11.1.3",
+          "build": "debian:qemu-system-x86 1:11.1.3+ds-1"
+        }
+      ],
+      "command": "check nvme/039",
+      "env": {
+        "TEST_DEVS": "/dev/disk/by-id/nvme-QEMU_NVMe_Ctrl_nvme0_2"
+      },
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:248740d46ee573ef512c3f0b421b3dda47eaa403a70d0f98c793bf348907a9fc",
+      "status": "fail",
+      "exit": 1,
+      "output": "Running nvme/039\n Read(0x2) @ LBA 0, 1 blocks, Unrecovered Read Error (sct 0x2 / sc 0x81) DNR \n Read(0x2) @ LBA 0, 1 blocks, Unknown (sct 0x3 / sc 0x75) DNR \n Write(0x1) @ LBA 0, 1 blocks, Write Fault (sct 0x2 / sc 0x80) DNR \n Identify(0x6), Access Denied (sct 0x2 / sc 0x86) DNR cdw10=0x1 cdw11=0x0 cdw12=0x0 cdw13=0x0 cdw14=0x0 cdw15=0x0\nTest complete\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "20c441a"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-20T19:33:52Z",
+          "seconds": 5,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538591744
+          }
+        }
+      ]
+    }
+  ]
+}

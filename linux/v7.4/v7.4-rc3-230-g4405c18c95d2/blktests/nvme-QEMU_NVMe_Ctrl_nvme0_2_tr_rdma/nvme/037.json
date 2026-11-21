@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "subject": {
+    "project": "linux",
+    "commit": "4405c18c95d2d0f99f6c581ef0ee8591a1aa6ccd",
+    "test": "nvme/037"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "blktests",
+          "version": "",
+          "build": "9bc1d8b0d5d0"
+        },
+        {
+          "name": "qemu",
+          "version": "11.1.3",
+          "build": "debian:qemu-system-x86 1:11.1.3+ds-1"
+        }
+      ],
+      "command": "check nvme/037",
+      "env": {
+        "TEST_DEVS": "/dev/disk/by-id/nvme-QEMU_NVMe_Ctrl_nvme0_2"
+      },
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:248740d46ee573ef512c3f0b421b3dda47eaa403a70d0f98c793bf348907a9fc",
+      "status": "fail",
+      "exit": 1,
+      "output": "Running nvme/037\nFAIL: Failed to find passthru target namespace\nTest complete\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "20c441a"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-20T19:33:23Z",
+          "seconds": 6,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538591744
+          }
+        }
+      ]
+    }
+  ]
+}
