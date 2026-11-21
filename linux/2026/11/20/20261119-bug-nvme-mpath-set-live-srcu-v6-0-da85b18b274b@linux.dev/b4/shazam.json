@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "subject": {
+    "project": "linux",
+    "message_id": "20261119-bug-nvme-mpath-set-live-srcu-v6-0-da85b18b274b@linux.dev"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "b4",
+          "version": "0.16.0",
+          "build": "debian:b4 0.16.0-2"
+        }
+      ],
+      "command": "b4 shazam",
+      "env": {},
+      "status": "pass",
+      "exit": 0,
+      "output": "Looking up 20261119-bug-nvme-mpath-set-live-srcu-v6-0-da85b18b274b@linux.dev\nChecking for newer revisions\nGrabbing search results from lore.kernel.org\nAnalyzing 6 messages in the thread\nLooking for additional code-review trailers on lore.kernel.org\nAnalyzing 19 code-review messages\nChecking attestation on all messages, may take a moment...\n---\n  \u001b[32m✓\u001b[0m [PATCH v6 1/3] nvme-multipath: keep a large delayed_removal_secs from wrapping around\n    + Link: https://patch.msgid.link/20261119-bug-nvme-mpath-set-live-srcu-v6-1-da85b18b274b@linux.dev\n  \u001b[32m✓\u001b[0m [PATCH v6 2/3] nvme-multipath: apply delayed_removal_secs changes to a pending removal\n    + Link: https://patch.msgid.link/20261119-bug-nvme-mpath-set-live-srcu-v6-2-da85b18b274b@linux.dev\n  \u001b[32m✓\u001b[0m [PATCH v6 3/3] nvme-multipath: don't wait for a grace period in nvme_mpath_set_live()\n    + Link: https://patch.msgid.link/20261119-bug-nvme-mpath-set-live-srcu-v6-3-da85b18b274b@linux.dev\n  ---\n  \u001b[32m✓\u001b[0m Signed: DKIM/linux.dev\n---\nTotal patches: 3\n---\n Base: base-commit 4405c18c95d2d0f99f6c581ef0ee8591a1aa6ccd not known, ignoring\n Base: attempting to guess base-commit...\n Base: tags/v7.4-rc2-470-g7e1392a42ea28 (exact match)\n Base: tags/v7.4-rc2-470-g7e1392a42ea28 (use --merge-base to override)\nMagic: Preparing a sparse worktree\n---\nApplying: nvme-multipath: keep a large delayed_removal_secs from wrapping around\nApplying: nvme-multipath: apply delayed_removal_secs changes to a pending removal\nApplying: nvme-multipath: don't wait for a grace period in nvme_mpath_set_live()\n---\nFetching into FETCH_HEAD\nYou can now merge or checkout FETCH_HEAD\n  e.g.: git merge --no-ff -F .git/b4-cover --no-edit FETCH_HEAD --signoff\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "20c441a"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-20T16:12:23Z",
+          "seconds": 5,
+          "resources": {
+            "cpu": {
+              "seconds": 2.937,
+              "user_seconds": 1.878,
+              "system_seconds": 1.059,
+              "stalled_seconds": 0.001
+            },
+            "memory": {
+              "peak": 712785920,
+              "swap_peak": 0,
+              "stalled_seconds": 0.002,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 599
+            },
+            "io": {
+              "stalled_seconds": 0.037
+            },
+            "tasks": {
+              "peak": 8
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "b4",
+          "version": "0.16.0",
+          "build": "debian:b4 0.16.0-2"
+        }
+      ],
+      "command": "b4 shazam",
+      "env": {},
+      "status": "pass",
+      "exit": 0,
+      "output": "Looking up 20261119-bug-nvme-mpath-set-live-srcu-v6-0-da85b18b274b@linux.dev\nChecking for newer revisions\nGrabbing search results from lore.kernel.org\nAnalyzing 9 messages in the thread\nLooking for additional code-review trailers on lore.kernel.org\nAnalyzing 19 code-review messages\nChecking attestation on all messages, may take a moment...\n---\n  \u001b[32m✓\u001b[0m [PATCH v6 1/3] nvme-multipath: keep a large delayed_removal_secs from wrapping around\n    + Reviewed-by: Nilay Shroff <nilay@linux.ibm.com> (\u001b[32m✓\u001b[0m DKIM/ibm.com)\n    + Link: https://patch.msgid.link/20261119-bug-nvme-mpath-set-live-srcu-v6-1-da85b18b274b@linux.dev\n  \u001b[32m✓\u001b[0m [PATCH v6 2/3] nvme-multipath: apply delayed_removal_secs changes to a pending removal\n    + Link: https://patch.msgid.link/20261119-bug-nvme-mpath-set-live-srcu-v6-2-da85b18b274b@linux.dev\n  \u001b[32m✓\u001b[0m [PATCH v6 3/3] nvme-multipath: don't wait for a grace period in nvme_mpath_set_live()\n    + Link: https://patch.msgid.link/20261119-bug-nvme-mpath-set-live-srcu-v6-3-da85b18b274b@linux.dev\n  ---\n  \u001b[32m✓\u001b[0m Signed: DKIM/linux.dev\n---\nTotal patches: 3\n---\n Base: 4405c18c95d2d0f99f6c581ef0ee8591a1aa6ccd (use --merge-base to override)\nMagic: Preparing a sparse worktree\n---\nApplying: nvme-multipath: keep a large delayed_removal_secs from wrapping around\nApplying: nvme-multipath: apply delayed_removal_secs changes to a pending removal\nApplying: nvme-multipath: don't wait for a grace period in nvme_mpath_set_live()\n---\nFetching into FETCH_HEAD\nYou can now merge or checkout FETCH_HEAD\n  e.g.: git merge --no-ff -F .git/b4-cover --no-edit FETCH_HEAD --signoff\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "20c441a"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-20T18:42:16Z",
+          "seconds": 3,
+          "resources": {
+            "cpu": {
+              "seconds": 1.662,
+              "user_seconds": 1.186,
+              "system_seconds": 0.477,
+              "stalled_seconds": 0.0
+            },
+            "memory": {
+              "peak": 93982720,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 6
+            },
+            "io": {
+              "stalled_seconds": 0.001
+            },
+            "tasks": {
+              "peak": 7
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}
