@@ -1,0 +1,27 @@
+[ 7092.847795] run blktests nvme/050 at 2026-11-21 22:59:13.670532631
+[ 7093.175112] FAULT_INJECTION: forcing a failure.
+[ 7093.175112] name fail_io_timeout, interval 1, probability 100, space 0, times -1
+[ 7093.175112] FAULT_INJECTION: forcing a failure.
+[ 7093.175112] name fail_io_timeout, interval 1, probability 100, space 0, times -1
+[ 7124.721309] nvme nvme2: I/O tag 0 (1000) opcode 0x2 (Read) QID 1 timeout, aborting req_op:READ(0) size:4096
+[ 7124.721391] nvme nvme2: Abort status: 0x0
+[ 7124.721398] nvme nvme2: I/O tag 448 (31c0) opcode 0x2 (Read) QID 2 timeout, aborting req_op:READ(0) size:4096
+[ 7124.721439] nvme nvme2: Abort status: 0x0
+[ 7155.438032] nvme nvme2: I/O tag 0 (1000) opcode 0x2 (Read) QID 1 timeout, reset controller
+[ 7155.491588] nvme nvme2: 2/0/0 default/read/poll queues
+[ 7155.491772] FAULT_INJECTION: forcing a failure.
+[ 7155.491772] name fail_io_timeout, interval 1, probability 100, space 0, times -1
+[ 7155.491779] FAULT_INJECTION: forcing a failure.
+[ 7155.491779] name fail_io_timeout, interval 1, probability 100, space 0, times -1
+[ 7186.154738] nvme nvme2: I/O tag 0 (2000) QID 1 timeout, disable controller
+[ 7186.210721] I/O error, dev nvme2n1, sector 489576 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[ 7186.210727] I/O error, dev nvme2n1, sector 2048968 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[ 7186.210911] nvme nvme2: Disabling device after reset failure: 0
+[ 7186.332962] pci 0000:01:00.0: [1b36:0010] type 00 class 0x010802 PCIe Endpoint
+[ 7186.333943] pci 0000:01:00.0: BAR 0 [mem 0xfe800000-0xfe803fff 64bit]
+[ 7186.334079] pci 0000:01:00.0: enabling Extended Tags
+[ 7186.357329] pci 0000:01:00.0: BAR 0 [mem 0xfe800000-0xfe803fff 64bit]: assigned
+[ 7186.359831] nvme nvme2: pci function 0000:01:00.0
+[ 7186.379659] nvme nvme2: 2/0/0 default/read/poll queues
+[ 7186.380345] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 7186.380593] nvme nvme2: Ignoring bogus Namespace Identifiers
