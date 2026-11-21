@@ -1,0 +1,15 @@
+{
+  "schema": 2,
+  "commit": "c1f00d7ebc220b44de0cfe201e1b9c4d6f315a6a",
+  "config": "sha256:4adaf7b8604781482ff23b7591468bc71a03b09b8bbc99379fb45d13427174bb",
+  "objects": [
+    "drivers/nvme/common/auth.o",
+    "drivers/nvme/common/keyring.o",
+    "drivers/nvme/host/auth.o",
+    "drivers/nvme/host/fabrics.o",
+    "drivers/nvme/host/sysfs.o",
+    "drivers/nvme/target/auth.o",
+    "drivers/nvme/target/configfs.o"
+  ],
+  "unbuilt": []
+}
