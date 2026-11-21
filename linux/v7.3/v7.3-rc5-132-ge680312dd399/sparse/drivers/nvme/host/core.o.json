@@ -1,0 +1,156 @@
+{
+  "schema": 1,
+  "subject": {
+    "project": "linux",
+    "commit": "e680312dd3990197297b485e27b53c33d371c279",
+    "file": "drivers/nvme/host/core.o"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "make",
+          "version": "4.4.1",
+          "build": "debian:make 4.4.1-3"
+        },
+        {
+          "name": "sparse",
+          "version": "0.6.5",
+          "build": "debian:sparse 0.6.5~rc1-2"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "make C=2 CF=-Wsparse-error drivers/nvme/host/core.o",
+      "env": {},
+      "build": {
+        "configuration": [
+          "block-layer",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:c2ac7d889cc347a5bfa904250364947261bf9d387e6516f20db03cd125d3e840",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "cbff4ed"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-16T15:02:48Z",
+          "seconds": 2,
+          "resources": {
+            "cpu": {
+              "seconds": 2.612,
+              "user_seconds": 1.36,
+              "system_seconds": 1.252,
+              "stalled_seconds": 0.005
+            },
+            "memory": {
+              "peak": 130830336,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 13
+            },
+            "io": {
+              "stalled_seconds": 0.003
+            },
+            "tasks": {
+              "peak": 39
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "make",
+          "version": "4.4.1",
+          "build": "debian:make 4.4.1-3"
+        },
+        {
+          "name": "sparse",
+          "version": "0.6.5",
+          "build": "v0.6.5-rc1-21-g84ec0658"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "make C=2 CF=-Wsparse-error drivers/nvme/host/core.o",
+      "env": {},
+      "build": {
+        "configuration": [
+          "block-layer",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:c2ac7d889cc347a5bfa904250364947261bf9d387e6516f20db03cd125d3e840",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "50db966"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-16T16:08:42Z",
+          "seconds": 2,
+          "resources": {
+            "cpu": {
+              "seconds": 2.598,
+              "user_seconds": 1.399,
+              "system_seconds": 1.2,
+              "stalled_seconds": 0.003
+            },
+            "memory": {
+              "peak": 129953792,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 9
+            },
+            "io": {
+              "stalled_seconds": 0.001
+            },
+            "tasks": {
+              "peak": 36
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}

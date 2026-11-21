@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "subject": {
+    "project": "linux",
+    "commit": "e680312dd3990197297b485e27b53c33d371c279",
+    "file": "block/blk-settings.o"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "make",
+          "version": "4.4.1",
+          "build": "debian:make 4.4.1-3"
+        },
+        {
+          "name": "sparse",
+          "version": "0.6.5",
+          "build": "debian:sparse 0.6.5~rc1-2"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "make C=2 CF=-Wsparse-error block/blk-settings.o",
+      "env": {},
+      "build": {
+        "configuration": [
+          "block-layer",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:c2ac7d889cc347a5bfa904250364947261bf9d387e6516f20db03cd125d3e840",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "cbff4ed"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-16T15:02:43Z",
+          "seconds": 2,
+          "resources": {
+            "cpu": {
+              "seconds": 2.609,
+              "user_seconds": 1.33,
+              "system_seconds": 1.279,
+              "stalled_seconds": 0.004
+            },
+            "memory": {
+              "peak": 130310144,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 17
+            },
+            "io": {
+              "stalled_seconds": 0.002
+            },
+            "tasks": {
+              "peak": 39
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "087ac6a"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-16T15:22:46Z",
+          "seconds": 2,
+          "resources": {
+            "cpu": {
+              "seconds": 2.607,
+              "user_seconds": 1.282,
+              "system_seconds": 1.325,
+              "stalled_seconds": 0.004
+            },
+            "memory": {
+              "peak": 135024640,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 21
+            },
+            "io": {
+              "stalled_seconds": 0.003
+            },
+            "tasks": {
+              "peak": 40
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "make",
+          "version": "4.4.1",
+          "build": "debian:make 4.4.1-3"
+        },
+        {
+          "name": "sparse",
+          "version": "0.6.5",
+          "build": "v0.6.5-rc1-21-g84ec0658"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "make C=2 CF=-Wsparse-error block/blk-settings.o",
+      "env": {},
+      "build": {
+        "configuration": [
+          "block-layer",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:c2ac7d889cc347a5bfa904250364947261bf9d387e6516f20db03cd125d3e840",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "50db966"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-16T16:08:37Z",
+          "seconds": 2,
+          "resources": {
+            "cpu": {
+              "seconds": 2.598,
+              "user_seconds": 1.333,
+              "system_seconds": 1.265,
+              "stalled_seconds": 0.004
+            },
+            "memory": {
+              "peak": 117313536,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 9
+            },
+            "io": {
+              "stalled_seconds": 0.002
+            },
+            "tasks": {
+              "peak": 36
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}

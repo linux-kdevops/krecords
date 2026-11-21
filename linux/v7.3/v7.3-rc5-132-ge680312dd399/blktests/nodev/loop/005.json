@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "subject": {
+    "project": "linux",
+    "commit": "e680312dd3990197297b485e27b53c33d371c279",
+    "test": "loop/005"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "blktests",
+          "version": "",
+          "build": "79c32fb31b7b"
+        },
+        {
+          "name": "qemu",
+          "version": "11.0.92",
+          "build": "v11.1.0-rc2-19-gc627336760"
+        }
+      ],
+      "command": "check loop/005",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:187d968770ca684961376e4f167f1390d0240a6e96260c9d286b77477622f67f",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "6694c61"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-18T08:21:14Z",
+          "seconds": 0,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 4,
+            "memory": 1766567936
+          }
+        }
+      ]
+    }
+  ]
+}
