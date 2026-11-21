@@ -1,0 +1,11 @@
+{
+  "schema": 2,
+  "message_id": "20261116-bug-block-elevator-unchanged-v3-0-cb4dda2dadf4@linux.dev",
+  "subject": "[PATCH v3 0/2] block: make changing to the current I/O scheduler cheap again",
+  "author": "Qiliang Yuan <qiliang.yuan@linux.dev>",
+  "date": "2026-11-17T02:56:53Z",
+  "change_id": "20261111-bug-block-elevator-unchanged-a6cd2d761d38",
+  "revision": 3,
+  "text": "Writing the scheduler a queue already uses to queue/scheduler takes\nabout 10 ms and freezes the queue, which stalls I/O on live disks every\ntime a udev rule or tuning tool sets the scheduler unconditionally.\n\nPatch 1 stops requesting a \"none-iosched\" module on every write of\n\"none\". Patch 2 returns before freezing the queue when the elevator\nwouldn't change.\n\nOn a null_blk disk (median of 20 writes, all kernels measured in the\nsame run):\n\n  operation                   base (ms)  patch 1 (ms)  patch 1+2 (ms)\n  none -> none                    13.10          9.11            0.08\n  mq-deadline -> mq-deadline      10.95          9.05            0.08\n  mq-deadline -> none             13.00          7.97            6.03\n\nSigned-off-by: Qiliang Yuan <qiliang.yuan@linux.dev>\n---\nV2 -> V3:\n- Point Fixes in patch 2 at the commit that added the freeze, as\n  Christoph pointed out\n- Add Christoph's Reviewed-by to patch 2\n- Rebase onto v7.4-rc2-1025-g666539eecdf4\n\nV1 -> V2:\n- Keep the elevator check under the freeze and note the race in the\n  comment, as Christoph suggested\n- Say \"change\" instead of \"rewrite\" in the cover letter subject\n- Rebase onto v7.4-rc2-470-g7e1392a42ea2 and update the numbers from a\n  new run\n\nv2: https://lore.kernel.org/r/20261114-bug-block-elevator-unchanged-v2-0-5a1fe7d72fa0@linux.dev\nv1: https://lore.kernel.org/r/20261111-bug-block-elevator-unchanged-v1-0-583198bd4e21@linux.dev\n\n---\nQiliang Yuan (2):\n      block: don't request a module for the none elevator\n      block: return early when the elevator doesn't change\n\n block/elevator.c | 17 +++++++++++++++++\n 1 file changed, 17 insertions(+)",
+  "patches": 2
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "subject": {
+    "project": "linux",
+    "message_id": "20261116-bug-block-elevator-unchanged-v3-0-cb4dda2dadf4@linux.dev"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "b4",
+          "version": "0.16.0",
+          "build": "debian:b4 0.16.0-2"
+        }
+      ],
+      "command": "b4 shazam",
+      "env": {},
+      "status": "pass",
+      "exit": 0,
+      "output": "Looking up 20261116-bug-block-elevator-unchanged-v3-0-cb4dda2dadf4@linux.dev\nChecking for newer revisions\nGrabbing search results from lore.kernel.org\nAnalyzing 6 messages in the thread\nLooking for additional code-review trailers on lore.kernel.org\nAnalyzing 13 code-review messages\nChecking attestation on all messages, may take a moment...\n---\n  \u001b[32m✓\u001b[0m [PATCH v3 1/2] block: don't request a module for the none elevator\n    + Reviewed-by: Hannes Reinecke <hare@kernel.org> (\u001b[32m✓\u001b[0m DKIM/suse.de)\n    + Link: https://patch.msgid.link/20261116-bug-block-elevator-unchanged-v3-1-cb4dda2dadf4@linux.dev\n  \u001b[32m✓\u001b[0m [PATCH v3 2/2] block: return early when the elevator doesn't change\n    + Reviewed-by: Nilay Shroff <nilay@linux.ibm.com> (\u001b[32m✓\u001b[0m DKIM/ibm.com)\n    + Reviewed-by: Hannes Reinecke <hare@kernel.org> (\u001b[32m✓\u001b[0m DKIM/suse.de)\n    + Link: https://patch.msgid.link/20261116-bug-block-elevator-unchanged-v3-2-cb4dda2dadf4@linux.dev\n  ---\n  \u001b[32m✓\u001b[0m Signed: DKIM/linux.dev\n---\nTotal patches: 2\n---\n Base: 666539eecdf4db623f5e3c3e55cf9f2dfad24aa4 (use --merge-base to override)\nMagic: Preparing a sparse worktree\n---\nApplying: block: don't request a module for the none elevator\nApplying: block: return early when the elevator doesn't change\n---\nFetching into FETCH_HEAD\nYou can now merge or checkout FETCH_HEAD\n  e.g.: git merge --no-ff -F .git/b4-cover --no-edit FETCH_HEAD --signoff\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "b1987d2"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-21T20:51:06Z",
+          "seconds": 4,
+          "resources": {
+            "cpu": {
+              "seconds": 1.871,
+              "user_seconds": 1.255,
+              "system_seconds": 0.617,
+              "stalled_seconds": 0.001
+            },
+            "memory": {
+              "peak": 261492736,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 162
+            },
+            "io": {
+              "stalled_seconds": 0.019
+            },
+            "tasks": {
+              "peak": 7
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}
