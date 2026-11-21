@@ -1,0 +1,161 @@
+[ 2648.015811] run blktests block/011 at 2026-11-21 19:47:57.857638261
+[ 2680.425322] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 2680.505822] nvme nvme2: 2/0/0 default/read/poll queues
+[ 2680.506758] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2680.506830] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2711.141778] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 2711.220914] nvme nvme2: 2/0/0 default/read/poll queues
+[ 2711.222406] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2711.222444] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2741.866197] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 2741.934248] nvme nvme2: 2/0/0 default/read/poll queues
+[ 2741.935533] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2741.936322] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2772.594600] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 2772.659961] nvme nvme2: 2/0/0 default/read/poll queues
+[ 2772.661285] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2772.661504] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2803.306926] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 2803.376629] nvme nvme2: 2/0/0 default/read/poll queues
+[ 2803.378661] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2803.378699] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2834.023214] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 2834.091800] nvme nvme2: 2/0/0 default/read/poll queues
+[ 2834.093435] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2834.093590] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2864.747461] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 2864.818096] nvme nvme2: 2/0/0 default/read/poll queues
+[ 2864.819662] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2864.819744] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2895.463965] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 2895.532839] nvme nvme2: 2/0/0 default/read/poll queues
+[ 2895.534353] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2895.534417] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2926.191848] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 2926.267776] nvme nvme2: 2/0/0 default/read/poll queues
+[ 2926.269418] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2926.269465] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2956.904021] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 2956.974553] nvme nvme2: 2/0/0 default/read/poll queues
+[ 2956.976372] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2956.977214] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2987.636162] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 2987.708030] nvme nvme2: 2/0/0 default/read/poll queues
+[ 2987.711042] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 2987.711093] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3018.356234] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3018.440517] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3018.442166] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3018.442243] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3049.064362] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3049.134659] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3049.136743] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3049.137795] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3079.792412] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3079.849297] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3079.850888] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3079.851022] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3110.508426] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3110.580700] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3110.582226] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3110.582287] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3141.232450] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3141.301017] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3141.304186] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3141.305413] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3171.944480] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3172.009507] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3172.012569] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3172.012620] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3202.668428] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3202.730594] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3202.732639] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3202.733995] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3233.392379] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3233.458257] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3233.459837] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3233.460794] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3264.104323] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3264.179710] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3264.181326] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3264.181429] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3294.828239] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3294.901267] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3294.902679] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3294.902729] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3325.548166] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3325.623007] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3325.623951] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3325.623992] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3356.264044] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3356.349483] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3356.351670] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3356.351734] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3386.987950] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3387.058500] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3387.060953] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3387.061794] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3417.703786] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3417.776338] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3417.778300] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3417.778371] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3448.431663] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3448.489052] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3448.490858] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3448.493923] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3479.143481] nvme nvme2: I/O tag 11 (300b) opcode 0x2 (Read) QID 2 timeout, aborting req_op:READ(0) size:4096
+[ 3479.143522] nvme nvme2: I/O tag 12 (100c) opcode 0x2 (Read) QID 2 timeout, aborting req_op:READ(0) size:4096
+[ 3509.863344] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3509.910609] nvme nvme2: Abort status: 0x371
+[ 3509.910616] nvme nvme2: Abort status: 0x371
+[ 3509.932855] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3509.934505] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3509.935982] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3540.587168] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3540.658556] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3540.661055] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3540.661216] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3571.310982] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3571.379875] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3571.381531] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3571.381591] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3602.022805] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3602.088097] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3602.089724] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3602.089782] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3632.746575] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3632.815201] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3632.816631] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3632.816675] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3663.462397] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3663.530868] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3663.533208] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3663.533256] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3694.174913] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3694.236572] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3694.239797] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3694.240539] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3724.905971] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3724.985694] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3724.987676] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3724.987718] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3755.621754] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3755.703534] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3755.705749] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3755.705858] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3786.341510] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3786.428010] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3786.429525] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3786.429576] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3817.069367] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3817.144872] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3817.146326] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3817.147293] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3847.785030] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3847.861138] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3847.862664] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3847.863457] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3878.504784] nvme nvme2: controller is down; will reset: CSTS=0x2, PCI_STATUS=0x10
+[ 3878.561628] nvme nvme2: 2/0/0 default/read/poll queues
+[ 3878.564876] nvme nvme2: Ignoring bogus Namespace Identifiers
+[ 3878.564924] nvme nvme2: Ignoring bogus Namespace Identifiers
