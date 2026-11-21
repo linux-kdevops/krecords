@@ -1,0 +1,985 @@
+{
+  "schema": 1,
+  "subject": {
+    "project": "linux",
+    "commit": "c8c68c8ed043de84233c65ef43781a5a9d25b9e8"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "make",
+          "version": "4.4.1",
+          "build": "debian:make 4.4.1-3"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "make",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:1aaff3521fa00b3309006e65f2d0516ba02a013e7b167e30961143a0a444108b",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "715b873"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-17T14:48:21Z",
+          "seconds": 14,
+          "resources": {
+            "cpu": {
+              "seconds": 22.114,
+              "user_seconds": 14.794,
+              "system_seconds": 7.32,
+              "stalled_seconds": 0.077
+            },
+            "memory": {
+              "peak": 570327040,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 213
+            },
+            "io": {
+              "stalled_seconds": 0.128
+            },
+            "tasks": {
+              "peak": 54
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "make",
+          "version": "4.4.1",
+          "build": "debian:make 4.4.1-3"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "make",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:589a65effaf6d2efebbcc0b4ab620073275b159a2d293cfd3ebaf249ff3eb954",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "91dfe28"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-17T15:16:05Z",
+          "seconds": 13,
+          "resources": {
+            "cpu": {
+              "seconds": 20.226,
+              "user_seconds": 12.89,
+              "system_seconds": 7.336,
+              "stalled_seconds": 0.106
+            },
+            "memory": {
+              "peak": 547999744,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 134
+            },
+            "io": {
+              "stalled_seconds": 0.074
+            },
+            "tasks": {
+              "peak": 55
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "make",
+          "version": "4.4.1",
+          "build": "debian:make 4.4.1-3"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "make",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:2ba5227c2d156b82bc15e21b2466d1fb41d492feec3fff080e0af688ade35353",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "302a0ce"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-17T15:19:46Z",
+          "seconds": 18,
+          "resources": {
+            "cpu": {
+              "seconds": 84.938,
+              "user_seconds": 72.268,
+              "system_seconds": 12.67,
+              "stalled_seconds": 0.8
+            },
+            "memory": {
+              "peak": 1705889792,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 12
+            },
+            "io": {
+              "stalled_seconds": 0.017
+            },
+            "tasks": {
+              "peak": 76
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "make",
+          "version": "4.4.1",
+          "build": "debian:make 4.4.1-3"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "make",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:187d968770ca684961376e4f167f1390d0240a6e96260c9d286b77477622f67f",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "fa54005"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-17T16:01:57Z",
+          "seconds": 200,
+          "resources": {
+            "cpu": {
+              "seconds": 2520.037,
+              "user_seconds": 2323.36,
+              "system_seconds": 196.677,
+              "stalled_seconds": 24.521
+            },
+            "memory": {
+              "peak": 4380717056,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 142
+            },
+            "io": {
+              "stalled_seconds": 0.201
+            },
+            "tasks": {
+              "peak": 120
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "make",
+          "version": "4.4.1",
+          "build": "debian:make 4.4.1-3"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "make",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:c159a85d968dfca5ba40eb7f4dd67f4c003a1b9e5105305d9cfc3657be575dc0",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "01282bf"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-18T08:53:51Z",
+          "seconds": 33,
+          "resources": {
+            "cpu": {
+              "seconds": 210.358,
+              "user_seconds": 181.932,
+              "system_seconds": 28.426,
+              "stalled_seconds": 2.987
+            },
+            "memory": {
+              "peak": 3971174400,
+              "swap_peak": 0,
+              "stalled_seconds": 0.003,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 257
+            },
+            "io": {
+              "stalled_seconds": 0.09
+            },
+            "tasks": {
+              "peak": 55
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "make",
+          "version": "4.4.1",
+          "build": "debian:make 4.4.1-3"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "make",
+      "env": {},
+      "build": {
+        "configuration": [
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:877ada7fc377fbb0bd58a267dabddaa7ba3870bd0baf9899f6e840f29767ee7f",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "3ba922c"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-17T09:44:18Z",
+          "seconds": 108,
+          "resources": {
+            "cpu": {
+              "seconds": 1191.429,
+              "user_seconds": 1026.115,
+              "system_seconds": 165.315,
+              "stalled_seconds": 11.338
+            },
+            "memory": {
+              "peak": 2986172416,
+              "swap_peak": 0,
+              "stalled_seconds": 0.002,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 411
+            },
+            "io": {
+              "stalled_seconds": 0.148
+            },
+            "tasks": {
+              "peak": 88
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "make",
+          "version": "4.4.1",
+          "build": "debian:make 4.4.1-3"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "make",
+      "env": {},
+      "build": {
+        "configuration": [
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:1297ed1b5f497e4d7559e749b14a1969fd34abea8bd2f2a4d683ab13b194538b",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "22fa8a6"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-17T10:11:11Z",
+          "seconds": 13,
+          "resources": {
+            "cpu": {
+              "seconds": 25.227,
+              "user_seconds": 16.966,
+              "system_seconds": 8.262,
+              "stalled_seconds": 0.136
+            },
+            "memory": {
+              "peak": 609673216,
+              "swap_peak": 0,
+              "stalled_seconds": 0.006,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 148
+            },
+            "io": {
+              "stalled_seconds": 0.023
+            },
+            "tasks": {
+              "peak": 69
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "e68e94f"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-17T10:20:25Z",
+          "seconds": 128,
+          "resources": {
+            "cpu": {
+              "seconds": 1433.565,
+              "user_seconds": 1232.182,
+              "system_seconds": 201.383,
+              "stalled_seconds": 17.498
+            },
+            "memory": {
+              "peak": 2724089856,
+              "swap_peak": 0,
+              "stalled_seconds": 0.011,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 46
+            },
+            "io": {
+              "stalled_seconds": 0.138
+            },
+            "tasks": {
+              "peak": 92
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "make",
+          "version": "4.4.1",
+          "build": "debian:make 4.4.1-3"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "make",
+      "env": {},
+      "build": {
+        "configuration": [
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:99bd94f157030d85f60a20efbb254a86e523ccd8a4670210817b09b04401a174",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "34130f1"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-17T12:07:07Z",
+          "seconds": 50,
+          "resources": {
+            "cpu": {
+              "seconds": 409.182,
+              "user_seconds": 355.999,
+              "system_seconds": 53.183,
+              "stalled_seconds": 3.899
+            },
+            "memory": {
+              "peak": 2990940160,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 490
+            },
+            "io": {
+              "stalled_seconds": 0.123
+            },
+            "tasks": {
+              "peak": 94
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "make",
+          "version": "4.4.1",
+          "build": "debian:make 4.4.1-3"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "make",
+      "env": {},
+      "build": {
+        "configuration": [
+          "block-layer",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:c2ac7d889cc347a5bfa904250364947261bf9d387e6516f20db03cd125d3e840",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "7d10593"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-16T13:46:34Z",
+          "seconds": 2,
+          "resources": {
+            "cpu": {
+              "seconds": 8.489,
+              "user_seconds": 5.142,
+              "system_seconds": 3.347,
+              "stalled_seconds": 0.086
+            },
+            "memory": {
+              "peak": 180109312,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 43
+            },
+            "io": {
+              "stalled_seconds": 0.013
+            },
+            "tasks": {
+              "peak": 55
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "a1e5f13"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-16T14:07:56Z",
+          "seconds": 2,
+          "resources": {
+            "cpu": {
+              "seconds": 8.436,
+              "user_seconds": 5.196,
+              "system_seconds": 3.241,
+              "stalled_seconds": 0.072
+            },
+            "memory": {
+              "peak": 157462528,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 32
+            },
+            "io": {
+              "stalled_seconds": 0.03
+            },
+            "tasks": {
+              "peak": 57
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "9bfd997"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-16T14:39:03Z",
+          "seconds": 2,
+          "resources": {
+            "cpu": {
+              "seconds": 8.52,
+              "user_seconds": 5.258,
+              "system_seconds": 3.262,
+              "stalled_seconds": 0.066
+            },
+            "memory": {
+              "peak": 331018240,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 48
+            },
+            "io": {
+              "stalled_seconds": 0.092
+            },
+            "tasks": {
+              "peak": 55
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "963417f"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-16T14:46:52Z",
+          "seconds": 0,
+          "resources": {
+            "cpu": {
+              "seconds": 0.787,
+              "user_seconds": 0.314,
+              "system_seconds": 0.473,
+              "stalled_seconds": 0.001
+            },
+            "memory": {
+              "peak": 160514048,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 34
+            },
+            "io": {
+              "stalled_seconds": 0.006
+            },
+            "tasks": {
+              "peak": 22
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "963417f"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-16T14:47:17Z",
+          "seconds": 2,
+          "resources": {
+            "cpu": {
+              "seconds": 8.422,
+              "user_seconds": 5.069,
+              "system_seconds": 3.352,
+              "stalled_seconds": 0.104
+            },
+            "memory": {
+              "peak": 148439040,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 28
+            },
+            "io": {
+              "stalled_seconds": 0.015
+            },
+            "tasks": {
+              "peak": 59
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "963417f"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-16T14:51:54Z",
+          "seconds": 2,
+          "resources": {
+            "cpu": {
+              "seconds": 8.478,
+              "user_seconds": 5.087,
+              "system_seconds": 3.39,
+              "stalled_seconds": 0.097
+            },
+            "memory": {
+              "peak": 148746240,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 27
+            },
+            "io": {
+              "stalled_seconds": 0.008
+            },
+            "tasks": {
+              "peak": 59
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "963417f"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-16T14:52:05Z",
+          "seconds": 2,
+          "resources": {
+            "cpu": {
+              "seconds": 8.343,
+              "user_seconds": 5.199,
+              "system_seconds": 3.145,
+              "stalled_seconds": 0.131
+            },
+            "memory": {
+              "peak": 150700032,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 30
+            },
+            "io": {
+              "stalled_seconds": 0.004
+            },
+            "tasks": {
+              "peak": 57
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "963417f"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-16T14:52:20Z",
+          "seconds": 2,
+          "resources": {
+            "cpu": {
+              "seconds": 8.456,
+              "user_seconds": 5.111,
+              "system_seconds": 3.345,
+              "stalled_seconds": 0.074
+            },
+            "memory": {
+              "peak": 146493440,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 25
+            },
+            "io": {
+              "stalled_seconds": 0.004
+            },
+            "tasks": {
+              "peak": 57
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "26c68ac"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-17T08:31:25Z",
+          "seconds": 3,
+          "resources": {
+            "cpu": {
+              "seconds": 8.528,
+              "user_seconds": 5.226,
+              "system_seconds": 3.303,
+              "stalled_seconds": 0.097
+            },
+            "memory": {
+              "peak": 235012096,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 3
+            },
+            "io": {
+              "stalled_seconds": 0.038
+            },
+            "tasks": {
+              "peak": 55
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}

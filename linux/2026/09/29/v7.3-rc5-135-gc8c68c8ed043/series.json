@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "commit": "c8c68c8ed043de84233c65ef43781a5a9d25b9e8",
+  "message_id": "",
+  "ref": "b4/nvme-mam",
+  "trees": [],
+  "base": "e680312dd3990197297b485e27b53c33d371c279",
+  "base_name": "v7.3-rc5-132-ge680312dd399",
+  "base_trees": [],
+  "commits": [
+    {
+      "commit": "a050091890d1269da8c2c74cb41c1ff130a20b18",
+      "subject": "block: add BLK_FEAT_ATOMIC_WRITE_MULTI",
+      "author": "Daniel Gomez <da.gomez@samsung.com>",
+      "link": ""
+    },
+    {
+      "commit": "c8c68c8ed043de84233c65ef43781a5a9d25b9e8",
+      "subject": "nvme: enable multiple atomicity mode",
+      "author": "Daniel Gomez <da.gomez@samsung.com>",
+      "link": ""
+    }
+  ],
+  "cover": {
+    "subject": "Support for Multiple Atomicity Mode",
+    "author": "Daniel Gomez <da.gomez@samsung.com>",
+    "date": "2026-09-29T10:19:18Z",
+    "change_id": "20260929-nvme-mam-073f2ed13bdc",
+    "revision": 1,
+    "text": "NVMe has 2 atomic modes: Single Atomicity Mode (SAM) and Multiple\nAtomicity Mode (MAM). In SAM mode, as per spec, commands that cross\nthe atomic boundaries may or may not be guaranteed to be atomic. In MAM\nmode, commands that cross the atomic boundaries will be guaranteed to\nbe atomic at the LBA subrange atomic boundaries, resulting in multiple\natomic operations.\n\nThis series adds a new block layer feature BLK_FEAT_ATOMIC_WRITE_MULTI\nthat gets enabled when an NVMe controller exposes MAM guarantees. In\nthis case, and when the block IO requests are SAM compliant, allow the\nblock layer to merge atomic command requests that are contiguous in the\nLBA ranges, leveraging block plug-merge infra, and effectively\nincreasing the size of the command up to the maximum hardware\ncapabilities. The merged command is not atomic as a whole, so it becomes\na carrier of multiple atomic commands. This is possible because the\nRWF_ATOMIC that the user has requested is honored at the LBA subrange\nlater at the controller side when the carrier command is split at the\natomic boundaries.\n\nMAM QEMU NVMe series [1] covers emulation functionality for testing.\n\nWhile I think this small feature is worth having (hence this RFC)\nfor users sending atomic write commands that are contiguous, the\nquestion I'd also like to discuss really is how to also expose clear\nMAM semantics to userspace for users who can send larger commands,\nso they avoid syscall overhead [2] and splitting, and still get the\natomic guarantees in the LBA subranges. RWF_ATOMIC currently exposes\nSAM semantics, but I think MAM may be confusing for users, as it's not\nsimply a larger atomic write but an atomic carrier. Thoughts? What can\nwork best to leverage MAM from userspace without conflicting with SAM?\n\nCommand line logs covering functionality with nvme-cli, fio and\nblktrace:\n\nnvme id-ns -H /dev/nvme0n1\nNVME Identify Namespace 1:\n{..}\nnsfeat  : 0x76\n  [7:7] : 0     NPRG, NPRA and NORS are Not Supported\n  [6:6] : 0x1   Multiple Atomicity Mode applies to write operations\n  [5:4] : 0x3   NPWG, NPWA, NPDG, NPDGL, NPDA, and NOWS are Supported\n{..}\n\nSequential atomic write workflows can benefit from the block layer\nplug-merge as the following fio atomic write workload:\n\nfio --name=atomic-merge --filename=/dev/nvme0n1 \\\n  --rw=write --bs=16k --size=64k \\\n  --ioengine=io_uring \\\n  --iodepth=4 --iodepth_batch_submit=4 \\\n  --atomic=1 --direct=1\n\nThe output below from btrace confirms the merging results into one\nsingle command:\n\nbtrace /dev/nvme0n1\n259,2    3        1     0.000000000  2725  Q  WS 0 + 32 [fio]\n259,2    3        2     0.000003450  2725  G  WS 0 + 32 [fio]\n259,2    3        3     0.000004250  2725  P   N [fio]\n259,2    3        4     0.000005440  2725  Q  WS 32 + 32 [fio]\n259,2    3        5     0.000006400  2725  M  WS 32 + 32 [fio]\n259,2    3        6     0.000007360  2725  Q  WS 64 + 32 [fio]\n259,2    3        7     0.000007490  2725  M  WS 64 + 32 [fio]\n259,2    3        8     0.000008340  2725  Q  WS 96 + 32 [fio]\n259,2    3        9     0.000008460  2725  M  WS 96 + 32 [fio]\n259,2    3       10     0.000009270  2725  U   N [fio] 1\n259,2    3       11     0.000013460  2725  D  WS 0 + 128 [fio]\n259,2    3       12     0.000239642     0  C  WS 0 + 128 [0]\n\nLink: https://lore.kernel.org/all/20260825-nvme-mam-v1-0-afc38ac713ef@samsung.com/ [1]\nLink: https://kernel-recipes.org/en/2026/postgres-on-vs-with-linux/ [2]\n\n\n\n\nTo: Jens Axboe <axboe@kernel.dk>\nTo: Keith Busch <kbusch@kernel.org>\nTo: Christoph Hellwig <hch@lst.de>\nTo: Sagi Grimberg <sagi@grimberg.me>\nCc: linux-block@vger.kernel.org\nCc: linux-kernel@vger.kernel.org\nCc: linux-nvme@lists.infradead.org\nCc: Andres Freund <andres@anarazel.de>\nCc: Pankaj Raghav <pankaj.raghav@linux.dev>\nCc: Daniel Gomez <da.gomez@kernel.org>\nCc: GOST <gost.dev@samsung.com>\nSigned-off-by: Daniel Gomez <da.gomez@samsung.com>"
+  },
+  "sources": [
+    "block/blk-merge.c",
+    "block/blk-settings.c",
+    "block/blk.h",
+    "drivers/nvme/host/core.c",
+    "include/linux/blkdev.h",
+    "include/linux/nvme.h"
+  ],
+  "docs": [],
+  "added": [],
+  "lists": []
+}

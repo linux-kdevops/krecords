@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "commit": "c8c68c8ed043de84233c65ef43781a5a9d25b9e8",
+  "config": "sha256:c2ac7d889cc347a5bfa904250364947261bf9d387e6516f20db03cd125d3e840",
+  "objects": [
+    "block/blk-merge.o",
+    "block/blk-settings.o",
+    "drivers/nvme/host/core.o"
+  ],
+  "unbuilt": []
+}

@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "subject": {
+    "project": "linux",
+    "commit": "c8c68c8ed043de84233c65ef43781a5a9d25b9e8",
+    "range": "0aaf3387507706b810e1458f67e47a07578f9fd6..c8c68c8ed043de84233c65ef43781a5a9d25b9e8"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "checkpatch.pl",
+          "version": "",
+          "build": "tree"
+        }
+      ],
+      "command": "scripts/checkpatch.pl --strict --git 0aaf3387507706b810e1458f67e47a07578f9fd6..c8c68c8ed043de84233c65ef43781a5a9d25b9e8",
+      "env": {},
+      "status": "fail",
+      "exit": 1,
+      "output": "--------------------------------------------------------------\nCommit a050091890d1 (\"block: add BLK_FEAT_ATOMIC_WRITE_MULTI\")\n--------------------------------------------------------------\ntotal: 0 errors, 0 warnings, 0 checks, 54 lines checked\nCommit a050091890d1 (\"block: add BLK_FEAT_ATOMIC_WRITE_MULTI\") has no obvious style problems and is ready for submission.\n------------------------------------------------------------\nCommit c8c68c8ed043 (\"nvme: enable multiple atomicity mode\")\n------------------------------------------------------------\nCHECK: Alignment should match open parenthesis\n#73: FILE: drivers/nvme/host/core.c:2081:\n+\t\t\t\tdev_warn_once(ns->ctrl->device,\n+\t\t\t\t\t\"Inconsistent MAM parameters, ignoring\\n\");\ntotal: 0 errors, 0 warnings, 1 checks, 54 lines checked\nNOTE: For some of the reported defects, checkpatch may be able to\n      mechanically convert to the typical style using --fix or --fix-inplace.\nCommit c8c68c8ed043 (\"nvme: enable multiple atomicity mode\") has style problems, please review.\nNOTE: If any of the errors are false positives, please report\n      them to the maintainer, see CHECKPATCH in MAINTAINERS.\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "d1feea1"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-16T15:00:53Z",
+          "seconds": 1,
+          "resources": {
+            "cpu": {
+              "seconds": 1.139,
+              "user_seconds": 0.871,
+              "system_seconds": 0.268,
+              "stalled_seconds": 0.0
+            },
+            "memory": {
+              "peak": 70848512,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 28
+            },
+            "io": {
+              "stalled_seconds": 0.003
+            },
+            "tasks": {
+              "peak": 3
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "checkpatch.pl",
+          "version": "",
+          "build": "tree"
+        }
+      ],
+      "command": "scripts/checkpatch.pl --strict --git 0aaf3387507706b810e1458f67e47a07578f9fd6..c8c68c8ed043de84233c65ef43781a5a9d25b9e8",
+      "env": {},
+      "status": "fail",
+      "exit": 1,
+      "output": "--------------------------------------------------------------\nCommit a050091890d1 (\"block: add BLK_FEAT_ATOMIC_WRITE_MULTI\")\n--------------------------------------------------------------\ntotal: 0 errors, 0 warnings, 0 checks, 54 lines checked\n\nCommit a050091890d1 (\"block: add BLK_FEAT_ATOMIC_WRITE_MULTI\") has no obvious style problems and is ready for submission.\n------------------------------------------------------------\nCommit c8c68c8ed043 (\"nvme: enable multiple atomicity mode\")\n------------------------------------------------------------\nCHECK: Alignment should match open parenthesis\n#73: FILE: drivers/nvme/host/core.c:2081:\n+\t\t\t\tdev_warn_once(ns->ctrl->device,\n+\t\t\t\t\t\"Inconsistent MAM parameters, ignoring\\n\");\n\ntotal: 0 errors, 0 warnings, 1 checks, 54 lines checked\n\nNOTE: For some of the reported defects, checkpatch may be able to\n      mechanically convert to the typical style using --fix or --fix-inplace.\n\nCommit c8c68c8ed043 (\"nvme: enable multiple atomicity mode\") has style problems, please review.\n\nNOTE: If any of the errors are false positives, please report\n      them to the maintainer, see CHECKPATCH in MAINTAINERS.\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "26c68ac"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-17T08:31:52Z",
+          "seconds": 2,
+          "resources": {
+            "cpu": {
+              "seconds": 1.119,
+              "user_seconds": 0.829,
+              "system_seconds": 0.29,
+              "stalled_seconds": 0.0
+            },
+            "memory": {
+              "peak": 54988800,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 14
+            },
+            "io": {
+              "stalled_seconds": 0.001
+            },
+            "tasks": {
+              "peak": 3
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,751 @@
+{
+  "schema": 1,
+  "subject": {
+    "project": "linux",
+    "commit": "c8c68c8ed043de84233c65ef43781a5a9d25b9e8"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "merge_config.sh",
+          "version": "",
+          "build": "tree"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "scripts/kconfig/merge_config.sh -n -O build build/kfragments/core/64bit.config build/kfragments/core/modules.config build/kfragments/core/core.config build/kfragments/core/systemd.config build/kfragments/core/initrd.config build/kfragments/core/acpi-poweroff.config build/kfragments/arch/x86_64.config build/kfragments/test/kunit.config build/kfragments/builtin/test/kunit.config build/kfragments/rust/rust.config build/kfragments/storage/block-layer.config build/kfragments/storage/iosched.config build/kfragments/storage/partitions.config build/kfragments/storage/block-devices.config build/kfragments/storage/rnull.config build/kfragments/storage/block-test-devices.config build/kfragments/storage/scsi-debug.config build/kfragments/storage/zoned.config build/kfragments/storage/block-drivers.config build/kfragments/storage/ublk.config build/kfragments/storage/rnbd.config build/kfragments/storage/nvme.config build/kfragments/storage/nvme-fabrics.config build/kfragments/storage/nvme-tls.config build/kfragments/mem/zram.config build/kfragments/mem/zram-backends.config build/kfragments/virt/xen.config build/kfragments/debug/blktrace.config build/kfragments/debug/fault-injection.config build/kfragments/fs/btrfs.config build/kfragments/core/ikconfig.config build/kfragments/builtin/core/ikconfig.config build/kfragments/core/localversion.config build/kfragments/fs/ext4.config build/kfragments/fs/fat.config build/kfragments/fs/encryption.config build/kfragments/debug/tracing.config build/kfragments/virt/virtio-fs.config build/kfragments/virt/virtio-net.config build/kfragments/virt/vsock.config build/kfragments/virt/virtio-extras.config build/kfragments/builtin/virt/vsock.config build/kfragments/builtin/virt/virtio-fs.config",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:1aaff3521fa00b3309006e65f2d0516ba02a013e7b167e30961143a0a444108b",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "715b873"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-17T14:46:24Z",
+          "seconds": 5,
+          "resources": {
+            "cpu": {
+              "seconds": 5.292,
+              "user_seconds": 2.786,
+              "system_seconds": 2.506,
+              "stalled_seconds": 0.004
+            },
+            "memory": {
+              "peak": 248602624,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 267
+            },
+            "io": {
+              "stalled_seconds": 0.023
+            },
+            "tasks": {
+              "peak": 27
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "merge_config.sh",
+          "version": "",
+          "build": "tree"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "scripts/kconfig/merge_config.sh -n -O build build/kfragments/core/64bit.config build/kfragments/core/modules.config build/kfragments/core/core.config build/kfragments/core/systemd.config build/kfragments/core/initrd.config build/kfragments/core/acpi-poweroff.config build/kfragments/arch/x86_64.config build/kfragments/test/kunit.config build/kfragments/builtin/test/kunit.config build/kfragments/rust/rust.config build/kfragments/storage/block-layer.config build/kfragments/storage/iosched.config build/kfragments/storage/partitions.config build/kfragments/storage/block-devices.config build/kfragments/storage/rnull.config build/kfragments/storage/block-test-devices.config build/kfragments/storage/scsi-debug.config build/kfragments/storage/zoned.config build/kfragments/storage/block-drivers.config build/kfragments/storage/ublk.config build/kfragments/storage/rnbd.config build/kfragments/storage/nvme.config build/kfragments/storage/nvme-fabrics.config build/kfragments/storage/nvme-tls.config build/kfragments/mem/zram.config build/kfragments/mem/zram-backends.config build/kfragments/virt/xen.config build/kfragments/debug/blktrace.config build/kfragments/debug/fault-injection.config build/kfragments/fs/btrfs.config build/kfragments/core/ikconfig.config build/kfragments/core/localversion.config build/kfragments/fs/ext4.config build/kfragments/fs/fat.config build/kfragments/fs/encryption.config build/kfragments/debug/tracing.config build/kfragments/virt/virtio-fs.config build/kfragments/virt/virtio-net.config build/kfragments/virt/vsock.config build/kfragments/virt/virtio-extras.config build/kfragments/builtin/virt/vsock.config build/kfragments/builtin/virt/virtio-fs.config",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:589a65effaf6d2efebbcc0b4ab620073275b159a2d293cfd3ebaf249ff3eb954",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "91dfe28"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-17T15:15:58Z",
+          "seconds": 5,
+          "resources": {
+            "cpu": {
+              "seconds": 5.311,
+              "user_seconds": 2.902,
+              "system_seconds": 2.409,
+              "stalled_seconds": 0.008
+            },
+            "memory": {
+              "peak": 177963008,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 85
+            },
+            "io": {
+              "stalled_seconds": 0.017
+            },
+            "tasks": {
+              "peak": 27
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "merge_config.sh",
+          "version": "",
+          "build": "tree"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "scripts/kconfig/merge_config.sh -n -O build build/kfragments/core/64bit.config build/kfragments/core/modules.config build/kfragments/core/core.config build/kfragments/core/systemd.config build/kfragments/core/initrd.config build/kfragments/core/acpi-poweroff.config build/kfragments/arch/x86_64.config build/kfragments/test/kunit.config build/kfragments/builtin/test/kunit.config build/kfragments/rust/rust.config build/kfragments/storage/block-layer.config build/kfragments/storage/iosched.config build/kfragments/storage/partitions.config build/kfragments/storage/block-devices.config build/kfragments/storage/rnull.config build/kfragments/storage/block-test-devices.config build/kfragments/storage/scsi-debug.config build/kfragments/storage/zoned.config build/kfragments/storage/block-drivers.config build/kfragments/storage/ublk.config build/kfragments/storage/rnbd.config build/kfragments/storage/dm-targets.config build/kfragments/storage/nvme.config build/kfragments/storage/nvme-fabrics.config build/kfragments/storage/nvme-tls.config build/kfragments/mem/zram.config build/kfragments/mem/zram-backends.config build/kfragments/virt/xen.config build/kfragments/debug/blktrace.config build/kfragments/debug/fault-injection.config build/kfragments/fs/btrfs.config build/kfragments/core/ikconfig.config build/kfragments/core/localversion.config build/kfragments/fs/ext4.config build/kfragments/fs/fat.config build/kfragments/fs/encryption.config build/kfragments/debug/tracing.config build/kfragments/virt/virtio-fs.config build/kfragments/virt/virtio-net.config build/kfragments/virt/vsock.config build/kfragments/virt/virtio-extras.config build/kfragments/builtin/virt/vsock.config build/kfragments/builtin/virt/virtio-fs.config",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:2ba5227c2d156b82bc15e21b2466d1fb41d492feec3fff080e0af688ade35353",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "302a0ce"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-17T15:19:40Z",
+          "seconds": 5,
+          "resources": {
+            "cpu": {
+              "seconds": 5.236,
+              "user_seconds": 3.01,
+              "system_seconds": 2.226,
+              "stalled_seconds": 0.005
+            },
+            "memory": {
+              "peak": 103157760,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 2
+            },
+            "io": {
+              "stalled_seconds": 0.0
+            },
+            "tasks": {
+              "peak": 27
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "merge_config.sh",
+          "version": "",
+          "build": "tree"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "scripts/kconfig/merge_config.sh -n -O build build/kfragments/core/64bit.config build/kfragments/core/modules.config build/kfragments/core/core.config build/kfragments/core/systemd.config build/kfragments/core/initrd.config build/kfragments/core/acpi-poweroff.config build/kfragments/arch/x86_64.config build/kfragments/test/kunit.config build/kfragments/builtin/test/kunit.config build/kfragments/rust/rust.config build/kfragments/storage/block-layer.config build/kfragments/storage/iosched.config build/kfragments/storage/partitions.config build/kfragments/storage/block-devices.config build/kfragments/storage/rnull.config build/kfragments/storage/block-test-devices.config build/kfragments/storage/scsi-debug.config build/kfragments/storage/zoned.config build/kfragments/storage/block-drivers.config build/kfragments/storage/ublk.config build/kfragments/storage/rnbd.config build/kfragments/storage/dm-targets.config build/kfragments/storage/md-raid.config build/kfragments/storage/nvme.config build/kfragments/storage/nvme-fabrics.config build/kfragments/storage/nvme-tls.config build/kfragments/mem/zram.config build/kfragments/mem/zram-backends.config build/kfragments/virt/xen.config build/kfragments/debug/blktrace.config build/kfragments/debug/fault-injection.config build/kfragments/fs/btrfs.config build/kfragments/fs/f2fs.config build/kfragments/core/ikconfig.config build/kfragments/core/localversion.config build/kfragments/fs/ext4.config build/kfragments/fs/fat.config build/kfragments/fs/encryption.config build/kfragments/debug/kasan.config build/kfragments/debug/atomic-sleep.config build/kfragments/debug/debug-heavy.config build/kfragments/debug/tracing.config build/kfragments/storage/srp-target.config build/kfragments/virt/virtio-fs.config build/kfragments/virt/virtio-net.config build/kfragments/virt/vsock.config build/kfragments/virt/virtio-extras.config build/kfragments/builtin/virt/vsock.config build/kfragments/builtin/virt/virtio-fs.config",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:187d968770ca684961376e4f167f1390d0240a6e96260c9d286b77477622f67f",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "fa54005"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-17T16:01:42Z",
+          "seconds": 5,
+          "resources": {
+            "cpu": {
+              "seconds": 5.287,
+              "user_seconds": 2.956,
+              "system_seconds": 2.331,
+              "stalled_seconds": 0.007
+            },
+            "memory": {
+              "peak": 132665344,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 2
+            },
+            "io": {
+              "stalled_seconds": 0.02
+            },
+            "tasks": {
+              "peak": 27
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "merge_config.sh",
+          "version": "",
+          "build": "tree"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "scripts/kconfig/merge_config.sh -n -O build build/kfragments/core/64bit.config build/kfragments/core/modules.config build/kfragments/core/core.config build/kfragments/core/systemd.config build/kfragments/core/initrd.config build/kfragments/core/acpi-poweroff.config build/kfragments/arch/x86_64.config build/kfragments/test/kunit.config build/kfragments/builtin/test/kunit.config build/kfragments/rust/rust.config build/kfragments/storage/block-layer.config build/kfragments/storage/iosched.config build/kfragments/storage/partitions.config build/kfragments/storage/block-devices.config build/kfragments/storage/rnull.config build/kfragments/storage/block-test-devices.config build/kfragments/storage/scsi-debug.config build/kfragments/storage/zoned.config build/kfragments/storage/block-drivers.config build/kfragments/storage/ublk.config build/kfragments/storage/rnbd.config build/kfragments/storage/dm-targets.config build/kfragments/storage/md-raid.config build/kfragments/storage/nvme.config build/kfragments/storage/nvme-fabrics.config build/kfragments/storage/nvme-tls.config build/kfragments/mem/zram.config build/kfragments/mem/zram-backends.config build/kfragments/virt/xen.config build/kfragments/debug/blktrace.config build/kfragments/debug/fault-injection.config build/kfragments/fs/btrfs.config build/kfragments/fs/f2fs.config build/kfragments/core/ikconfig.config build/kfragments/core/localversion.config build/kfragments/fs/ext4.config build/kfragments/fs/xfs.config build/kfragments/fs/fat.config build/kfragments/fs/encryption.config build/kfragments/debug/kasan.config build/kfragments/debug/atomic-sleep.config build/kfragments/debug/debug-heavy.config build/kfragments/debug/tracing.config build/kfragments/storage/srp-target.config build/kfragments/virt/virtio-fs.config build/kfragments/virt/virtio-net.config build/kfragments/virt/vsock.config build/kfragments/virt/virtio-extras.config build/kfragments/builtin/virt/vsock.config build/kfragments/builtin/virt/virtio-fs.config",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:c159a85d968dfca5ba40eb7f4dd67f4c003a1b9e5105305d9cfc3657be575dc0",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "01282bf"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-18T08:53:27Z",
+          "seconds": 6,
+          "resources": {
+            "cpu": {
+              "seconds": 5.327,
+              "user_seconds": 2.802,
+              "system_seconds": 2.526,
+              "stalled_seconds": 0.008
+            },
+            "memory": {
+              "peak": 114515968,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 1
+            },
+            "io": {
+              "stalled_seconds": 0.028
+            },
+            "tasks": {
+              "peak": 27
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "merge_config.sh",
+          "version": "",
+          "build": "tree"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "scripts/kconfig/merge_config.sh -n -O build build/kfragments/core/64bit.config build/kfragments/core/modules.config build/kfragments/core/core.config build/kfragments/core/systemd.config build/kfragments/core/initrd.config build/kfragments/core/acpi-poweroff.config build/kfragments/arch/x86_64.config build/kfragments/test/kunit.config build/kfragments/builtin/test/kunit.config build/kfragments/rust/rust.config build/kfragments/storage/block-layer.config build/kfragments/storage/iosched.config build/kfragments/storage/partitions.config build/kfragments/storage/block-devices.config build/kfragments/storage/rnull.config build/kfragments/storage/block-test-devices.config build/kfragments/storage/zoned.config build/kfragments/storage/block-drivers.config build/kfragments/storage/ublk.config build/kfragments/storage/rnbd.config build/kfragments/storage/nvme.config build/kfragments/storage/nvme-fabrics.config build/kfragments/storage/nvme-tls.config build/kfragments/mem/zram.config build/kfragments/mem/zram-backends.config build/kfragments/virt/xen.config build/kfragments/debug/blktrace.config build/kfragments/debug/fault-injection.config build/kfragments/fs/btrfs.config build/kfragments/fs/ext4.config build/kfragments/fs/fat.config build/kfragments/fs/encryption.config build/kfragments/debug/tracing.config build/kfragments/virt/virtio-fs.config build/kfragments/virt/virtio-net.config build/kfragments/virt/vsock.config build/kfragments/virt/virtio-extras.config build/kfragments/builtin/virt/virtio-fs.config",
+      "env": {},
+      "build": {
+        "configuration": [
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:877ada7fc377fbb0bd58a267dabddaa7ba3870bd0baf9899f6e840f29767ee7f",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "3ba922c"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-17T09:44:12Z",
+          "seconds": 5,
+          "resources": {
+            "cpu": {
+              "seconds": 5.387,
+              "user_seconds": 2.922,
+              "system_seconds": 2.465,
+              "stalled_seconds": 0.006
+            },
+            "memory": {
+              "peak": 165122048,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 44
+            },
+            "io": {
+              "stalled_seconds": 0.023
+            },
+            "tasks": {
+              "peak": 27
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "merge_config.sh",
+          "version": "",
+          "build": "tree"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "scripts/kconfig/merge_config.sh -n -O build build/kfragments/core/64bit.config build/kfragments/core/modules.config build/kfragments/core/core.config build/kfragments/core/systemd.config build/kfragments/core/initrd.config build/kfragments/core/acpi-poweroff.config build/kfragments/arch/x86_64.config build/kfragments/test/kunit.config build/kfragments/builtin/test/kunit.config build/kfragments/rust/rust.config build/kfragments/storage/block-layer.config build/kfragments/storage/iosched.config build/kfragments/storage/partitions.config build/kfragments/storage/block-devices.config build/kfragments/storage/rnull.config build/kfragments/storage/block-test-devices.config build/kfragments/storage/zoned.config build/kfragments/storage/block-drivers.config build/kfragments/storage/ublk.config build/kfragments/storage/rnbd.config build/kfragments/storage/nvme.config build/kfragments/storage/nvme-fabrics.config build/kfragments/storage/nvme-tls.config build/kfragments/mem/zram.config build/kfragments/mem/zram-backends.config build/kfragments/virt/xen.config build/kfragments/debug/blktrace.config build/kfragments/debug/fault-injection.config build/kfragments/fs/btrfs.config build/kfragments/core/localversion.config build/kfragments/fs/ext4.config build/kfragments/fs/fat.config build/kfragments/fs/encryption.config build/kfragments/debug/tracing.config build/kfragments/virt/virtio-fs.config build/kfragments/virt/virtio-net.config build/kfragments/virt/vsock.config build/kfragments/virt/virtio-extras.config build/kfragments/builtin/virt/virtio-fs.config",
+      "env": {},
+      "build": {
+        "configuration": [
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:1297ed1b5f497e4d7559e749b14a1969fd34abea8bd2f2a4d683ab13b194538b",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "22fa8a6"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-17T10:11:05Z",
+          "seconds": 5,
+          "resources": {
+            "cpu": {
+              "seconds": 5.305,
+              "user_seconds": 2.794,
+              "system_seconds": 2.511,
+              "stalled_seconds": 0.011
+            },
+            "memory": {
+              "peak": 101531648,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 0
+            },
+            "io": {
+              "stalled_seconds": 0.0
+            },
+            "tasks": {
+              "peak": 27
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "merge_config.sh",
+          "version": "",
+          "build": "tree"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "scripts/kconfig/merge_config.sh -n -O build build/kfragments/core/64bit.config build/kfragments/core/modules.config build/kfragments/core/core.config build/kfragments/core/systemd.config build/kfragments/core/initrd.config build/kfragments/core/acpi-poweroff.config build/kfragments/arch/x86_64.config build/kfragments/test/kunit.config build/kfragments/builtin/test/kunit.config build/kfragments/rust/rust.config build/kfragments/storage/block-layer.config build/kfragments/storage/iosched.config build/kfragments/storage/partitions.config build/kfragments/storage/block-devices.config build/kfragments/storage/rnull.config build/kfragments/storage/block-test-devices.config build/kfragments/storage/zoned.config build/kfragments/storage/block-drivers.config build/kfragments/storage/ublk.config build/kfragments/storage/rnbd.config build/kfragments/storage/nvme.config build/kfragments/storage/nvme-fabrics.config build/kfragments/storage/nvme-tls.config build/kfragments/mem/zram.config build/kfragments/mem/zram-backends.config build/kfragments/virt/xen.config build/kfragments/debug/blktrace.config build/kfragments/debug/fault-injection.config build/kfragments/fs/btrfs.config build/kfragments/core/localversion.config build/kfragments/fs/ext4.config build/kfragments/fs/fat.config build/kfragments/fs/encryption.config build/kfragments/debug/tracing.config build/kfragments/virt/virtio-fs.config build/kfragments/virt/virtio-net.config build/kfragments/virt/vsock.config build/kfragments/virt/virtio-extras.config build/kfragments/builtin/virt/vsock.config build/kfragments/builtin/virt/virtio-fs.config",
+      "env": {},
+      "build": {
+        "configuration": [
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:99bd94f157030d85f60a20efbb254a86e523ccd8a4670210817b09b04401a174",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "34130f1"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-17T12:06:59Z",
+          "seconds": 5,
+          "resources": {
+            "cpu": {
+              "seconds": 5.266,
+              "user_seconds": 2.832,
+              "system_seconds": 2.434,
+              "stalled_seconds": 0.004
+            },
+            "memory": {
+              "peak": 179785728,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 86
+            },
+            "io": {
+              "stalled_seconds": 0.018
+            },
+            "tasks": {
+              "peak": 27
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "merge_config.sh",
+          "version": "",
+          "build": "tree"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "scripts/kconfig/merge_config.sh -n -O build build/kfragments/core/64bit.config build/kfragments/core/modules.config build/kfragments/core/core.config build/kfragments/core/systemd.config build/kfragments/core/initrd.config build/kfragments/core/acpi-poweroff.config build/kfragments/arch/x86_64.config build/kfragments/test/kunit.config build/kfragments/builtin/test/kunit.config build/kfragments/rust/rust.config build/kfragments/storage/block-layer.config build/kfragments/storage/iosched.config build/kfragments/storage/partitions.config build/kfragments/storage/block-devices.config build/kfragments/storage/rnull.config build/kfragments/storage/block-test-devices.config build/kfragments/storage/zoned.config build/kfragments/storage/block-drivers.config build/kfragments/storage/ublk.config build/kfragments/storage/rnbd.config build/kfragments/storage/nvme.config build/kfragments/storage/nvme-fabrics.config build/kfragments/storage/nvme-tls.config build/kfragments/mem/zram.config build/kfragments/mem/zram-backends.config build/kfragments/virt/xen.config build/kfragments/debug/blktrace.config build/kfragments/debug/fault-injection.config build/kfragments/fs/encryption.config build/kfragments/debug/tracing.config build/kfragments/virt/virtio-fs.config build/kfragments/virt/virtio-net.config build/kfragments/virt/vsock.config build/kfragments/builtin/virt/virtio-fs.config",
+      "env": {},
+      "build": {
+        "configuration": [
+          "block-layer",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:c2ac7d889cc347a5bfa904250364947261bf9d387e6516f20db03cd125d3e840",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "a1e5f13"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-16T14:07:04Z",
+          "seconds": 5,
+          "resources": {
+            "cpu": {
+              "seconds": 5.281,
+              "user_seconds": 2.918,
+              "system_seconds": 2.363,
+              "stalled_seconds": 0.009
+            },
+            "memory": {
+              "peak": 163889152,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 36
+            },
+            "io": {
+              "stalled_seconds": 0.007
+            },
+            "tasks": {
+              "peak": 27
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "963417f"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-16T14:48:18Z",
+          "seconds": 5,
+          "resources": {
+            "cpu": {
+              "seconds": 5.352,
+              "user_seconds": 2.981,
+              "system_seconds": 2.371,
+              "stalled_seconds": 0.006
+            },
+            "memory": {
+              "peak": 164876288,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 34
+            },
+            "io": {
+              "stalled_seconds": 0.018
+            },
+            "tasks": {
+              "peak": 27
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "963417f"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-16T14:48:43Z",
+          "seconds": 4,
+          "resources": {
+            "cpu": {
+              "seconds": 5.238,
+              "user_seconds": 2.875,
+              "system_seconds": 2.364,
+              "stalled_seconds": 0.006
+            },
+            "memory": {
+              "peak": 149139456,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 25
+            },
+            "io": {
+              "stalled_seconds": 0.002
+            },
+            "tasks": {
+              "peak": 27
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "26c68ac"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-17T08:31:04Z",
+          "seconds": 5,
+          "resources": {
+            "cpu": {
+              "seconds": 5.303,
+              "user_seconds": 2.818,
+              "system_seconds": 2.485,
+              "stalled_seconds": 0.006
+            },
+            "memory": {
+              "peak": 165728256,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 44
+            },
+            "io": {
+              "stalled_seconds": 0.027
+            },
+            "tasks": {
+              "peak": 27
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}
