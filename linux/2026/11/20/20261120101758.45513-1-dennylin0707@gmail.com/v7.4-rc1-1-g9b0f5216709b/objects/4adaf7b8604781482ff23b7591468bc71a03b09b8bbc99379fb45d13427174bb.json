@@ -1,0 +1,9 @@
+{
+  "schema": 2,
+  "commit": "9b0f5216709bdd990b3ea0b4da8f7c2317671863",
+  "config": "sha256:4adaf7b8604781482ff23b7591468bc71a03b09b8bbc99379fb45d13427174bb",
+  "objects": [
+    "block/blk-lib.o"
+  ],
+  "unbuilt": []
+}
