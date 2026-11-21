@@ -1,0 +1,9 @@
+{
+  "schema": 2,
+  "commit": "5ca578ec729996a0e852e17531410436a6924f45",
+  "config": "sha256:248740d46ee573ef512c3f0b421b3dda47eaa403a70d0f98c793bf348907a9fc",
+  "objects": [
+    "drivers/nvme/host/rdma.o"
+  ],
+  "unbuilt": []
+}
