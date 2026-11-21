@@ -76,6 +76,27 @@
             "nvme nvme#: queue #: TLS handshake complete, error -#",
             "nvme_tcp: queue #: failed to receive icresp, error -#"
           ]
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "d21d96d"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-21T22:58:21Z",
+          "seconds": 3,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538608128
+          },
+          "fingerprint": [
+            "nvme nvme#: queue #: TLS handshake complete, error -#",
+            "nvme_tcp: queue #: failed to receive icresp, error -#"
+          ],
+          "kmsg": "sha256:9af0bb728fe306e739f4ca0b5682a4120e9c981bd370f01ff017a3218e7f1551"
         }
       ]
     },
