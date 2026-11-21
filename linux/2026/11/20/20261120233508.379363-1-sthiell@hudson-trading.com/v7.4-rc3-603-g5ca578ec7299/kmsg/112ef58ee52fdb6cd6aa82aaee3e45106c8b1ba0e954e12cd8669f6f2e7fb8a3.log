@@ -1,0 +1,17 @@
+[  681.107165] run blktests nvme/010 at 2026-11-21 08:15:16.164793096
+[  681.338778] infiniband enp0s2_rxe: set active
+[  681.338786] infiniband enp0s2_rxe: added enp0s2
+[  681.439194] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[  681.461043] nvmet_rdma: enabling port 0 (10.0.2.15:4420)
+[  681.511800] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[  681.518672] nvme nvme3: creating 2 I/O queues.
+[  681.518848] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[  681.534602] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 10.0.2.15:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[  800.876863] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[  800.888767] block nvme3n1: no available path - failing I/O
+[  800.888795] block nvme3n1: no available path - failing I/O
+[  800.888799] Buffer I/O error on dev nvme3n1, logical block 0, async page read
+[  800.889004] block nvme3n1: no available path - failing I/O
+[  800.889011] Buffer I/O error on dev nvme3n1, logical block 0, async page read
+[  801.214223] rdma_rxe: unloaded
+[  804.008290] loop: module loaded

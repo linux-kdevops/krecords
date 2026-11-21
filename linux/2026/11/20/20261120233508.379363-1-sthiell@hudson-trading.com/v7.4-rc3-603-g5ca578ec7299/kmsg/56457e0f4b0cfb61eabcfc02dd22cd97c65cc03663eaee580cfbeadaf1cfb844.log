@@ -1,0 +1,23 @@
+[ 2356.703540] run blktests nvme/037 at 2026-11-21 08:43:11.772048750
+[ 2356.832830] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-0 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2356.833960] nvme nvme3: creating 2 I/O queues.
+[ 2356.834410] nvme nvme3: new ctrl: "blktests-subsystem-0"
+[ 2356.920807] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-0"
+[ 2357.178711] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2357.179815] nvme nvme3: creating 2 I/O queues.
+[ 2357.182318] nvme nvme3: new ctrl: "blktests-subsystem-1"
+[ 2357.277428] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 2357.523815] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-2 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2357.524835] nvme nvme3: creating 2 I/O queues.
+[ 2357.526181] nvme nvme3: new ctrl: "blktests-subsystem-2"
+[ 2357.618473] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-2"
+[ 2357.896860] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-3 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2357.898959] nvme nvme3: creating 2 I/O queues.
+[ 2357.903195] nvme nvme3: new ctrl: "blktests-subsystem-3"
+[ 2358.001379] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-3"
+[ 2358.236682] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-4 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2358.237660] nvme nvme3: creating 2 I/O queues.
+[ 2358.237997] nvme nvme3: new ctrl: "blktests-subsystem-4"
+[ 2363.361116] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-4"
+[ 2363.491538] nvme nvme3: long keepalive RTT (2067860 ms)
+[ 2363.491548] nvme nvme3: failed nvme_keep_alive_end_io error=4
