@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "subject": {
+    "project": "qemu",
+    "commit": "7a34f7b8794b29cd1bd4dfa45f7d8e8daba7cff5"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "configure",
+          "version": "",
+          "build": "tree"
+        }
+      ],
+      "command": "configure --target-list=x86_64-softmmu",
+      "env": {},
+      "status": "pass",
+      "exit": 0,
+      "output": "mkvenv: Creating non-isolated virtual environment at 'pyvenv'\nmkvenv: checking for meson>=1.5.0\nmkvenv: checking for pycotap>=1.1.0\nmkvenv: checking for qemu.qmp>=0.0.5\nmkvenv: checking for setuptools>=44.1.1\nmkvenv: checking for wheel>=0.34.2\nmkvenv: checking for pip>=20.3.4\nmkvenv: installing python\nmkvenv: checking for sphinx>=3.4.3\nmkvenv: checking for sphinx_rtd_theme>=0.5\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "566c66b"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-16T16:44:05Z",
+          "seconds": 12,
+          "resources": {
+            "cpu": {
+              "seconds": 11.602,
+              "user_seconds": 8.435,
+              "system_seconds": 3.167,
+              "stalled_seconds": 0.003
+            },
+            "memory": {
+              "peak": 385253376,
+              "swap_peak": 0,
+              "stalled_seconds": 0.003,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 273
+            },
+            "io": {
+              "stalled_seconds": 0.083
+            },
+            "tasks": {
+              "peak": 20
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}
