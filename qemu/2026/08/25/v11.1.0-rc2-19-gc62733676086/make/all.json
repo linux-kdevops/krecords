@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "subject": {
+    "project": "qemu",
+    "commit": "c627336760869a814e5f98e71ff6e79e46283fc2"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "make",
+          "version": "4.4.1",
+          "build": "debian:make 4.4.1-3"
+        }
+      ],
+      "command": "make",
+      "env": {},
+      "status": "pass",
+      "exit": 0,
+      "output": "/usr/bin/x86_64-linux-gnu-ld.bfd: warning: pvh.img has a LOAD segment with RWX permissions\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "566c66b"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-16T16:41:34Z",
+          "seconds": 111,
+          "resources": {
+            "cpu": {
+              "seconds": 883.498,
+              "user_seconds": 736.75,
+              "system_seconds": 146.748,
+              "stalled_seconds": 8.586
+            },
+            "memory": {
+              "peak": 2239684608,
+              "swap_peak": 0,
+              "stalled_seconds": 0.184,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 518
+            },
+            "io": {
+              "stalled_seconds": 0.156
+            },
+            "tasks": {
+              "peak": 66
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "commit": "c627336760869a814e5f98e71ff6e79e46283fc2",
+  "message_id": "",
+  "ref": "b4/nvme-mam",
+  "trees": [],
+  "base": "7a34f7b8794b29cd1bd4dfa45f7d8e8daba7cff5",
+  "base_name": "v11.1.0-rc2-13-g7a34f7b8794b",
+  "base_trees": [
+    {
+      "remote": "birkelund",
+      "url": "https://gitlab.com/birkelund/qemu.git"
+    },
+    {
+      "remote": "origin",
+      "url": "https://gitlab.com/qemu-project/qemu.git"
+    }
+  ],
+  "commits": [
+    {
+      "commit": "f5b9197d8bafe2da7a94de158fb5612bcffaa1cf",
+      "subject": "hw/nvme: fix endianness handling in the atomic write path",
+      "author": "Daniel Gomez <da.gomez@samsung.com>",
+      "link": ""
+    },
+    {
+      "commit": "08df5e2368f0ac9e4e310f3601f5a85712003924",
+      "subject": "hw/nvme: add missing atomic.* fields in usage",
+      "author": "Daniel Gomez <da.gomez@samsung.com>",
+      "link": ""
+    },
+    {
+      "commit": "93216fe35d8e1ed7c075d078c746ed9a2f1332f9",
+      "subject": "docs: add hw/nvme atomics section",
+      "author": "Daniel Gomez <da.gomez@samsung.com>",
+      "link": ""
+    },
+    {
+      "commit": "7ead43540be9ef20a68bf73adee1a8e4b6a86e43",
+      "subject": "hw/nvme: add multiple atomicity mode support",
+      "author": "Daniel Gomez <da.gomez@samsung.com>",
+      "link": ""
+    },
+    {
+      "commit": "c627336760869a814e5f98e71ff6e79e46283fc2",
+      "subject": "docs: update hw/nvme atomics with mam",
+      "author": "Daniel Gomez <da.gomez@samsung.com>",
+      "link": ""
+    }
+  ],
+  "cover": {
+    "subject": "Add Multiple Atomicity Mode (MAM) support",
+    "author": "Daniel Gomez <da.gomez@samsung.com>",
+    "date": "2026-08-24T14:31:39Z",
+    "change_id": "20260824-nvme-mam-3af8616d6e37",
+    "revision": 1,
+    "text": "Add Multiple Atomicity Mode (MAM) emulation support. MAM is a superset\nof Single Atomicity Mode (SAM): per the NVMe spec, a write command that\ncrosses a Namespace Atomic Boundary is divided into LBA subranges, each\nwritten atomically. The emulation reuses the atomic write support from\ncommit ebd1568fc732 (\"hw/nvme: add atomic write support\"): when MAM is\nenabled, the size and boundary limits that decide whether a write is\natomic no longer apply, so the whole command is serialized as one atomic\nwrite.\n\nA namespace enables it with atomic.map=on alongside\nthe existing per-namespace atomicity parameters. Example:\n\n    -device nvme,serial=foo,id=nvme0 \\\n    -drive file=nvme0.qcow2,if=none,format=qcow2,id=nvme0-ns0 \\\n    -device nvme-ns,drive=nvme0-ns0,bus=nvme0,atomic.nawun=7,\\\n      atomic.nawupf=7,atomic.nabsn=7,atomic.nabspf=7,atomic.mam=on\n\nQuering the result with nvme-cli:\nnvme id-ns -H /dev/nvme0n1 | head\nNVME Identify Namespace 1:\nnsze    : 0x500000      Total size in logical blocks\nncap    : 0x500000      Maximum size in logical blocks\nnuse    : 0x500000      Current size in logical blocks\nnsfeat  : 0x76\n  [7:7] : 0     NPRG, NPRA and NORS are Not Supported\n  [6:6] : 0x1   Multiple Atomicity Mode applies to write operations\n\nWhile at it, fix endianness issues on the atomic write command path\n(first patch) and update hw/nvme docs with atomic writes section.\n\nBaseline: nvme.next branch; tree: https://gitlab.com/birkelund/qemu\n\n\n\n\nTo: qemu-devel@nongnu.org\nCc: Keith Busch <kbusch@kernel.org>\nCc: Klaus Jensen <its@irrelevant.dk>\nCc: Klaus Jensen <k.jensen@samsung.com>\nCc: Jesper Devantier <foss@defmacro.it>\nCc: Daniel Gomez <da.gomez@kernel.org>\nCc: Daniel Gomez <da.gomez@samsung.com>\nCc: GOST <gost.dev@samsung.com>\nCc: qemu-block@nongnu.org\nSigned-off-by: Daniel Gomez <da.gomez@samsung.com>"
+  },
+  "sources": [
+    "hw/nvme/ctrl.c",
+    "hw/nvme/ns.c",
+    "hw/nvme/nvme.h"
+  ],
+  "docs": [],
+  "added": [],
+  "lists": []
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "subject": {
+    "project": "qemu",
+    "commit": "c627336760869a814e5f98e71ff6e79e46283fc2",
+    "range": "f1914ba81d895fc2adc16d773b619879fff568e6..c627336760869a814e5f98e71ff6e79e46283fc2"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "checkpatch.pl",
+          "version": "",
+          "build": "tree"
+        }
+      ],
+      "command": "scripts/checkpatch.pl --branch f1914ba81d895fc2adc16d773b619879fff568e6..c627336760869a814e5f98e71ff6e79e46283fc2",
+      "env": {},
+      "status": "pass",
+      "exit": 0,
+      "output": "1/5 Checking commit f5b9197d8baf (hw/nvme: fix endianness handling in the atomic write path)\ntotal: 0 errors, 0 warnings, 59 lines checked\nPatch 1/5 has no obvious style problems and is ready for submission.\n2/5 Checking commit 08df5e2368f0 (hw/nvme: add missing atomic.* fields in usage)\ntotal: 0 errors, 0 warnings, 23 lines checked\nPatch 2/5 has no obvious style problems and is ready for submission.\n3/5 Checking commit 93216fe35d8e (docs: add hw/nvme atomics section)\ntotal: 0 errors, 0 warnings, 50 lines checked\nPatch 3/5 has no obvious style problems and is ready for submission.\n4/5 Checking commit 7ead43540be9 (hw/nvme: add multiple atomicity mode support)\ntotal: 0 errors, 0 warnings, 83 lines checked\nPatch 4/5 has no obvious style problems and is ready for submission.\n5/5 Checking commit c62733676086 (docs: update hw/nvme atomics with mam)\ntotal: 0 errors, 0 warnings, 12 lines checked\nPatch 5/5 has no obvious style problems and is ready for submission.\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "566c66b"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-16T16:46:36Z",
+          "seconds": 0,
+          "resources": {
+            "cpu": {
+              "seconds": 0.179,
+              "user_seconds": 0.099,
+              "system_seconds": 0.079,
+              "stalled_seconds": 0.0
+            },
+            "memory": {
+              "peak": 76525568,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 39
+            },
+            "io": {
+              "stalled_seconds": 0.011
+            },
+            "tasks": {
+              "peak": 2
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}
