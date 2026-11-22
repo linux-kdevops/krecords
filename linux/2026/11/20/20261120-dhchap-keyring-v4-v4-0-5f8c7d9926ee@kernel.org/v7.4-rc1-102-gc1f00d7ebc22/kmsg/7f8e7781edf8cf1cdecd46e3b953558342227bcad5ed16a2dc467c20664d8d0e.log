@@ -1,0 +1,10 @@
+[10534.995672] run blktests nvme/036 at 2026-11-22 05:50:58.986799416
+[10535.153667] infiniband enp0s2_rxe: set active
+[10535.153674] infiniband enp0s2_rxe: added enp0s2
+[10535.247677] nvmet_rdma: enabling port 0 (10.0.2.15:4420)
+[10535.290523] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[10535.296248] nvme nvme3: creating 2 I/O queues.
+[10535.296359] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[10535.307643] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 10.0.2.15:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[10540.436243] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[10540.800925] rdma_rxe: unloaded
