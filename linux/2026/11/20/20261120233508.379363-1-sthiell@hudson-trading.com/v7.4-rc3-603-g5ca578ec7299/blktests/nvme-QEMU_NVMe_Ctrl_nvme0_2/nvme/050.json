@@ -76,6 +76,26 @@
             "I/O error, dev nvme#n#, sector # op #:(READ) flags # phys_seg # prio class #"
           ],
           "kmsg": "sha256:b44d7a020a7a6db96d78249c515644b1d7f339ebdda2c86926c3586108ecf848"
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "8a15dc2"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T10:26:31Z",
+          "seconds": 94,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538583552
+          },
+          "fingerprint": [
+            "I/O error, dev nvme#n#, sector # op #:(READ) flags # phys_seg # prio class #"
+          ],
+          "kmsg": "sha256:f642847abe3b62b2ae4e08816a7492c244748485bc068d3c72ae45c48dfe4f40"
         }
       ]
     }

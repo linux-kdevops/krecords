@@ -1,0 +1,5 @@
+[ 6669.244502] run blktests nvme/035 at 2026-11-22 10:29:03.272004457
+[ 6669.374309] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 6669.375314] nvme nvme3: creating 2 I/O queues.
+[ 6669.375691] nvme nvme3: new ctrl: "blktests-subsystem-1"
+[ 6674.477539] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
