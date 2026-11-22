@@ -1,0 +1,65 @@
+{
+  "schema": 2,
+  "subject": {
+    "project": "linux",
+    "commit": "8c2b53ebbbc8ec70b8b24d101baecfa32f531285",
+    "range": "4405c18c95d2d0f99f6c581ef0ee8591a1aa6ccd..8c2b53ebbbc8ec70b8b24d101baecfa32f531285"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "checkpatch.pl",
+          "version": "",
+          "build": "tree"
+        }
+      ],
+      "command": "scripts/checkpatch.pl --strict --git 4405c18c95d2d0f99f6c581ef0ee8591a1aa6ccd..8c2b53ebbbc8ec70b8b24d101baecfa32f531285",
+      "env": {},
+      "status": "pass",
+      "exit": 0,
+      "output": "----------------------------------------------------------------------------------------------\nCommit 444741fdbeac (\"nvme-multipath: keep a large delayed_removal_secs from wrapping around\")\n----------------------------------------------------------------------------------------------\ntotal: 0 errors, 0 warnings, 0 checks, 23 lines checked\n\nCommit 444741fdbeac (\"nvme-multipath: keep a large delayed_removal_secs from wrapping around\") has no obvious style problems and is ready for submission.\n-----------------------------------------------------------------------------------------------\nCommit dbbd5815cfec (\"nvme-multipath: apply delayed_removal_secs changes to a pending removal\")\n-----------------------------------------------------------------------------------------------\ntotal: 0 errors, 0 warnings, 0 checks, 40 lines checked\n\nCommit dbbd5815cfec (\"nvme-multipath: apply delayed_removal_secs changes to a pending removal\") has no obvious style problems and is ready for submission.\n----------------------------------------------------------------------------------------------\nCommit 8c2b53ebbbc8 (\"nvme-multipath: don't wait for a grace period in nvme_mpath_set_live()\")\n----------------------------------------------------------------------------------------------\ntotal: 0 errors, 0 warnings, 0 checks, 42 lines checked\n\nCommit 8c2b53ebbbc8 (\"nvme-multipath: don't wait for a grace period in nvme_mpath_set_live()\") has no obvious style problems and is ready for submission.\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "d21d96d"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T06:56:07Z",
+          "seconds": 1,
+          "resources": {
+            "cpu": {
+              "seconds": 0.864,
+              "user_seconds": 0.617,
+              "system_seconds": 0.246,
+              "stalled_seconds": 0.0
+            },
+            "memory": {
+              "peak": 54534144,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 22
+            },
+            "io": {
+              "stalled_seconds": 0.004
+            },
+            "tasks": {
+              "peak": 3
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}
