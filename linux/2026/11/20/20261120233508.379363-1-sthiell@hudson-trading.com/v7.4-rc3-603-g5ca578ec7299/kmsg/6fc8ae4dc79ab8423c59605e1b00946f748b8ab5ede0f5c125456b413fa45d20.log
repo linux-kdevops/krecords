@@ -1,0 +1,12 @@
+[10857.769757] run blktests nvme/035 at 2026-11-22 11:38:51.696617397
+[10857.880003] nvmet_tcp: enabling port 0 (127.0.0.1:4420)
+[10857.923381] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[10857.928440] nvmet_tcp: failed cmd 00000000297a4d31 id 4 opcode 130, data_len: 2048, status: c002
+[10857.929015] nvme nvme3: creating 2 I/O queues.
+[10857.929135] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[10857.933509] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[10857.933574] nvmet_tcp: failed cmd 000000000aab3128 id 4100 opcode 6, data_len: 4096, status: 8002
+[10857.938344] nvmet_tcp: failed cmd 00000000d8cd5734 id 8 opcode 6, data_len: 4096, status: 8002
+[10857.941760] nvmet_tcp: failed cmd 000000002ef5b50f id 12292 opcode 6, data_len: 4096, status: 8002
+[10863.058837] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[10863.679796] rdma_rxe: loaded
