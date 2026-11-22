@@ -1,0 +1,19 @@
+[ 4231.093769] run blktests nvme/036 at 2026-11-22 19:37:56.474671094
+[ 4231.228928] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 4231.233579] nvme nvme3: creating 2 I/O queues.
+[ 4231.234012] nvme nvme3: new ctrl: "blktests-subsystem-1"
+[ 4231.362329] nvme nvme3: resetting controller
+[ 4231.442585] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 4231.443107] nvme nvme3: creating 2 I/O queues.
+[ 4231.462803] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 4231.469298] nvme_ns_head_submit_bio: 11 callbacks suppressed
+[ 4231.469303] block nvme3n1: no available path - failing I/O
+[ 4231.469327] block nvme3n1: no available path - failing I/O
+[ 4231.469330] buffer_io_error: 11 callbacks suppressed
+[ 4231.469332] Buffer I/O error on dev nvme3n1, logical block 0, async page read
+[ 4231.469458] block nvme3n1: no available path - failing I/O
+[ 4231.469461] Buffer I/O error on dev nvme3n1, logical block 0, async page read
+[ 4231.481523] block nvme3n1: no available path - failing I/O
+[ 4231.481531] Buffer I/O error on dev nvme3n1, logical block 0, async page read
+[ 4231.481581] block nvme3n1: no available path - failing I/O
+[ 4231.481585] Buffer I/O error on dev nvme3n1, logical block 1, async page read
