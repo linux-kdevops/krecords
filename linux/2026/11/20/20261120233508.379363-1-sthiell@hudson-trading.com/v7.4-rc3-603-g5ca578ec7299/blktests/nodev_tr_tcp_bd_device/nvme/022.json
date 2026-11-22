@@ -51,6 +51,26 @@
             "memory": 3538583552
           },
           "fingerprint": []
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "8a15dc2"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T09:06:39Z",
+          "seconds": 1,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538583552
+          },
+          "fingerprint": [
+            "Buffer I/O error on dev nvme#n#, logical block #, async page read"
+          ],
+          "kmsg": "sha256:74094c124ffdb861a78dda7ab0746eccdd462af3ef813044a4f2238019b629a8"
         }
       ]
     }

@@ -57,6 +57,23 @@
             "nvme nvme#: failed nvme_keep_alive_end_io error=#"
           ],
           "kmsg": "sha256:2fcf9f4c31c7ebc10314f0de121f3001f31ace3c0cf7aee64f9a330a51b77e40"
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "8a15dc2"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T09:10:02Z",
+          "seconds": 5,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538583552
+          },
+          "fingerprint": []
         }
       ]
     }

@@ -1,0 +1,23 @@
+[ 3316.323092] run blktests nvme/057 at 2026-11-22 09:33:10.435754922
+[ 3316.402682] loop0: detected capacity change from 0 to 2097152
+[ 3316.413871] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3316.510788] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3316.511397] nvme nvme3: creating 2 I/O queues.
+[ 3316.514201] nvme nvme3: new ctrl: "blktests-subsystem-1"
+[ 3316.607431] nvmet: Created nvm controller 2 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3316.607846] nvme nvme4: creating 2 I/O queues.
+[ 3316.608177] nvme nvme4: new ctrl: "blktests-subsystem-1"
+[ 3316.683576] nvmet: Created nvm controller 3 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3316.683958] nvme nvme5: creating 2 I/O queues.
+[ 3316.686144] nvme nvme5: new ctrl: "blktests-subsystem-1"
+[ 3316.763196] nvmet: Created nvm controller 4 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3316.764407] nvme nvme6: creating 2 I/O queues.
+[ 3316.766537] nvme nvme6: new ctrl: "blktests-subsystem-1"
+[ 3321.823030] nvme_ns_head_submit_bio: 9 callbacks suppressed
+[ 3321.823041] block nvme3n1: no available path - failing I/O
+[ 3341.851543] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3341.959727] nvme nvme4: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3342.074143] nvme nvme5: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3342.206020] nvme nvme6: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3342.348695] nvme nvme6: long keepalive RTT (3046632 ms)
+[ 3342.348704] nvme nvme6: failed nvme_keep_alive_end_io error=4
