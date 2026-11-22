@@ -55,6 +55,27 @@
             "device offline error, dev sds, sector # op #:(READ) flags # phys_seg # prio class #"
           ],
           "kmsg": "sha256:4e83d4a73bc81809eb488070c7b5ddd2acf212b25bb9a56d4a5abd019940d499"
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "8a15dc2"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T10:14:32Z",
+          "seconds": 22,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538583552
+          },
+          "fingerprint": [
+            "device offline error, dev sdb, sector # op #:(READ) flags # phys_seg # prio class #",
+            "device offline error, dev sdm, sector # op #:(READ) flags # phys_seg # prio class #"
+          ],
+          "kmsg": "sha256:959b2fa91b24b720250d318842103efd01ccf527a4c26e762d3495fe389fc6e4"
         }
       ]
     }

@@ -58,6 +58,30 @@
             "device offline error, dev sdc, sector # op #:(READ) flags # phys_seg # prio class #",
             "device offline error, dev sde, sector # op #:(READ) flags # phys_seg # prio class #"
           ]
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "8a15dc2"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T08:38:13Z",
+          "seconds": 108,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538583552
+          },
+          "fingerprint": [
+            "Buffer I/O error on dev sdb, logical block #, async page read",
+            "Buffer I/O error on dev sdc, logical block #, async page read",
+            "Buffer I/O error on dev sde, logical block #, async page read",
+            "device offline error, dev sdb, sector # op #:(READ) flags # phys_seg # prio class #",
+            "device offline error, dev sdc, sector # op #:(READ) flags # phys_seg # prio class #",
+            "device offline error, dev sde, sector # op #:(READ) flags # phys_seg # prio class #"
+          ]
         }
       ]
     }

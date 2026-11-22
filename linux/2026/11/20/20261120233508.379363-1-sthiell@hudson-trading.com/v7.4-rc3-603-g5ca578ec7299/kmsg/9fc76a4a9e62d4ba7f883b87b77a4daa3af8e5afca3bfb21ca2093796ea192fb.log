@@ -1,0 +1,229 @@
+[  493.568401] run blktests block/038 at 2026-11-22 10:17:21.356575546
+[  493.642394] null_blk: disk nullb1 created
+[  493.671566] null_blk: disk nullb1 created
+[  493.699545] null_blk: disk nullb1 created
+[  493.727449] null_blk: disk nullb1 created
+[  493.728856] block device autoloading is deprecated and will be removed.
+[  493.759525] null_blk: disk nullb1 created
+[  493.767351] block device autoloading is deprecated and will be removed.
+[  493.784115] null_blk: disk nullb1 created
+[  493.813019] null_blk: disk nullb1 created
+[  493.816078] block device autoloading is deprecated and will be removed.
+[  493.850631] null_blk: disk nullb1 created
+[  493.875155] null_blk: disk nullb1 created
+[  493.887488] null_blk: disk nullb1 created
+[  493.918159] null_blk: disk nullb1 created
+[  493.954099] null_blk: disk nullb1 created
+[  493.978322]  nullb1: [POWERTEC] p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11
+[  493.978332] nullb1: p1 start 4294961664 is beyond EOD, truncated
+[  493.978336] nullb1: p2 size 4294961664 extends beyond EOD, truncated
+[  493.979211] nullb1: p3 start 4294961664 is beyond EOD, truncated
+[  493.979215] nullb1: p4 size 4294961664 extends beyond EOD, truncated
+[  493.979551] nullb1: p5 start 4294961664 is beyond EOD, truncated
+[  493.979564] nullb1: p6 size 4294961664 extends beyond EOD, truncated
+[  493.980436] nullb1: p7 start 4294961664 is beyond EOD, truncated
+[  493.980440] nullb1: p8 size 4294961664 extends beyond EOD, truncated
+[  493.982164] nullb1: p9 start 4294961664 is beyond EOD, truncated
+[  493.982168] nullb1: p10 size 4294961664 extends beyond EOD, truncated
+[  493.983574] nullb1: p11 start 4294961664 is beyond EOD, truncated
+[  493.986775] null_blk: disk nullb1 created
+[  493.989148] block device autoloading is deprecated and will be removed.
+[  494.021422] null_blk: disk nullb1 created
+[  494.052928] null_blk: disk nullb1 created
+[  494.059246] block device autoloading is deprecated and will be removed.
+[  494.097538] null_blk: disk nullb1 created
+[  494.125555] null_blk: disk nullb1 created
+[  494.149730] null_blk: disk nullb1 created
+[  494.183277] null_blk: disk nullb1 created
+[  494.209687] null_blk: disk nullb1 created
+[  494.210391] block device autoloading is deprecated and will be removed.
+[  494.247658] null_blk: disk nullb1 created
+[  494.269615] null_blk: disk nullb1 created
+[  494.314865] null_blk: disk nullb1 created
+[  494.315811] block device autoloading is deprecated and will be removed.
+[  494.343680] null_blk: disk nullb1 created
+[  494.378312] null_blk: disk nullb1 created
+[  494.430464] null_blk: disk nullb1 created
+[  494.450866] null_blk: disk nullb1 created
+[  494.469552] null_blk: disk nullb1 created
+[  494.477141] null_blk: disk nullb1 created
+[  494.493219] null_blk: disk nullb1 created
+[  494.497837] block device autoloading is deprecated and will be removed.
+[  494.537285] null_blk: disk nullb1 created
+[  494.586793] null_blk: disk nullb1 created
+[  494.605266] null_blk: disk nullb1 created
+[  494.637247] null_blk: disk nullb1 created
+[  494.686477] null_blk: disk nullb1 created
+[  494.736955] null_blk: disk nullb1 created
+[  494.766741] null_blk: disk nullb1 created
+[  494.787436] null_blk: disk nullb1 created
+[  494.796097] block device autoloading is deprecated and will be removed.
+[  494.824851] null_blk: disk nullb1 created
+[  494.828378] block device autoloading is deprecated and will be removed.
+[  494.849490] null_blk: disk nullb1 created
+[  494.885784] null_blk: disk nullb1 created
+[  494.912322] null_blk: disk nullb1 created
+[  494.936595] null_blk: disk nullb1 created
+[  494.944743] null_blk: disk nullb1 created
+[  494.971152] null_blk: disk nullb1 created
+[  494.990051] null_blk: disk nullb1 created
+[  495.035329] null_blk: disk nullb1 created
+[  495.053123] null_blk: disk nullb1 created
+[  495.078485] null_blk: disk nullb1 created
+[  495.112903] null_blk: disk nullb1 created
+[  495.135542] null_blk: disk nullb1 created
+[  495.156735] null_blk: disk nullb1 created
+[  495.202114] null_blk: disk nullb1 created
+[  495.233985] null_blk: disk nullb1 created
+[  495.252715] null_blk: disk nullb1 created
+[  495.276766] null_blk: disk nullb1 created
+[  495.326270] null_blk: disk nullb1 created
+[  495.365044] null_blk: disk nullb1 created
+[  495.418120] null_blk: disk nullb1 created
+[  495.467697] null_blk: disk nullb1 created
+[  495.498289] null_blk: disk nullb1 created
+[  495.527664] null_blk: disk nullb1 created
+[  495.540904] null_blk: disk nullb1 created
+[  495.583100] null_blk: disk nullb1 created
+[  495.624880] null_blk: disk nullb1 created
+[  495.655750] null_blk: disk nullb1 created
+[  495.697202] null_blk: disk nullb1 created
+[  495.741925] null_blk: disk nullb1 created
+[  495.785665] null_blk: disk nullb1 created
+[  495.829861] null_blk: disk nullb1 created
+[  495.878407] null_blk: disk nullb1 created
+[  495.922837] null_blk: disk nullb1 created
+[  495.963494] null_blk: disk nullb1 created
+[  496.004801] null_blk: disk nullb1 created
+[  496.037540] null_blk: disk nullb1 created
+[  496.061200] null_blk: disk nullb1 created
+[  496.110114] null_blk: disk nullb1 created
+[  496.140716] null_blk: disk nullb1 created
+[  496.184333] null_blk: disk nullb1 created
+[  496.223381] null_blk: disk nullb1 created
+[  496.249074] null_blk: disk nullb1 created
+[  496.274975] null_blk: disk nullb1 created
+[  496.316617] null_blk: disk nullb1 created
+[  496.365412] null_blk: disk nullb1 created
+[  496.398707] null_blk: disk nullb1 created
+[  496.435103] null_blk: disk nullb1 created
+[  496.477571] null_blk: disk nullb1 created
+[  496.524973] null_blk: disk nullb1 created
+[  496.540494] null_blk: disk nullb1 created
+[  496.563040] null_blk: disk nullb1 created
+[  496.590271] null_blk: disk nullb1 created
+[  496.632132] null_blk: disk nullb1 created
+[  496.654288] null_blk: disk nullb1 created
+[  496.671572] null_blk: disk nullb1 created
+[  496.699392] buffer_io_error: 39 callbacks suppressed
+[  496.699402] Buffer I/O error on dev nullb1, logical block 2, async page read
+[  496.716906] null_blk: disk nullb1 created
+[  496.759704] null_blk: disk nullb1 created
+[  496.794645] null_blk: disk nullb1 created
+[  496.830004] null_blk: disk nullb1 created
+[  496.849837] null_blk: disk nullb1 created
+[  496.886745] null_blk: disk nullb1 created
+[  496.933687] null_blk: disk nullb1 created
+[  496.966725] null_blk: disk nullb1 created
+[  496.998584] null_blk: disk nullb1 created
+[  497.037659] null_blk: disk nullb1 created
+[  497.074057] null_blk: disk nullb1 created
+[  497.102859] null_blk: disk nullb1 created
+[  497.137682] null_blk: disk nullb1 created
+[  497.170175] null_blk: disk nullb1 created
+[  497.211159] null_blk: disk nullb1 created
+[  497.253708] null_blk: disk nullb1 created
+[  497.281552] null_blk: disk nullb1 created
+[  497.326619] null_blk: disk nullb1 created
+[  497.368947] null_blk: disk nullb1 created
+[  497.408929] null_blk: disk nullb1 created
+[  497.439577] null_blk: disk nullb1 created
+[  497.490384] null_blk: disk nullb1 created
+[  497.533928] null_blk: disk nullb1 created
+[  497.563816] null_blk: disk nullb1 created
+[  497.587947] null_blk: disk nullb1 created
+[  497.638531] null_blk: disk nullb1 created
+[  497.687666] null_blk: disk nullb1 created
+[  497.716185] null_blk: disk nullb1 created
+[  497.741673] null_blk: disk nullb1 created
+[  497.764676] null_blk: disk nullb1 created
+[  497.822270] null_blk: disk nullb1 created
+[  497.832323] null_blk: disk nullb1 created
+[  497.859463] null_blk: disk nullb1 created
+[  497.872866] null_blk: disk nullb1 created
+[  497.892962] null_blk: disk nullb1 created
+[  497.933373] null_blk: disk nullb1 created
+[  497.961728] null_blk: disk nullb1 created
+[  497.986411] null_blk: disk nullb1 created
+[  498.015965] null_blk: disk nullb1 created
+[  498.052382] null_blk: disk nullb1 created
+[  498.083544] null_blk: disk nullb1 created
+[  498.113588] null_blk: disk nullb1 created
+[  498.133791] null_blk: disk nullb1 created
+[  498.167829] null_blk: disk nullb1 created
+[  498.194912] null_blk: disk nullb1 created
+[  498.229571] null_blk: disk nullb1 created
+[  498.264103] null_blk: disk nullb1 created
+[  498.298530] null_blk: disk nullb1 created
+[  498.321220] null_blk: disk nullb1 created
+[  498.337797] null_blk: disk nullb1 created
+[  498.359627] null_blk: disk nullb1 created
+[  498.386052] null_blk: disk nullb1 created
+[  498.409735] null_blk: disk nullb1 created
+[  498.431836] null_blk: disk nullb1 created
+[  498.456985] null_blk: disk nullb1 created
+[  498.473191] null_blk: disk nullb1 created
+[  498.502400] null_blk: disk nullb1 created
+[  498.529171] null_blk: disk nullb1 created
+[  498.550185] null_blk: disk nullb1 created
+[  498.569814] null_blk: disk nullb1 created
+[  498.595537] null_blk: disk nullb1 created
+[  498.604420] null_blk: disk nullb1 created
+[  498.626947] null_blk: disk nullb1 created
+[  498.651206] null_blk: disk nullb1 created
+[  498.673073] null_blk: disk nullb1 created
+[  498.705227] null_blk: disk nullb1 created
+[  498.737613] null_blk: disk nullb1 created
+[  498.764906] null_blk: disk nullb1 created
+[  498.792834] null_blk: disk nullb1 created
+[  498.816508] null_blk: disk nullb1 created
+[  498.839305] null_blk: disk nullb1 created
+[  498.865070] null_blk: disk nullb1 created
+[  498.876098] null_blk: disk nullb1 created
+[  498.903541] null_blk: disk nullb1 created
+[  498.932587] null_blk: disk nullb1 created
+[  498.962144] null_blk: disk nullb1 created
+[  498.985320] null_blk: disk nullb1 created
+[  498.991850] null_blk: disk nullb1 created
+[  499.024850] null_blk: disk nullb1 created
+[  499.057917] null_blk: disk nullb1 created
+[  499.080782] null_blk: disk nullb1 created
+[  499.105184] null_blk: disk nullb1 created
+[  499.128941] null_blk: disk nullb1 created
+[  499.149984] null_blk: disk nullb1 created
+[  499.169496] null_blk: disk nullb1 created
+[  499.191768] null_blk: disk nullb1 created
+[  499.215298] null_blk: disk nullb1 created
+[  499.237827] null_blk: disk nullb1 created
+[  499.237926] blkdev_get_no_open: 23 callbacks suppressed
+[  499.237928] block device autoloading is deprecated and will be removed.
+[  499.273621] null_blk: disk nullb1 created
+[  499.301814] null_blk: disk nullb1 created
+[  499.323429] null_blk: disk nullb1 created
+[  499.323959] clocksource: Watchdog remote CPU 1 read timed out
+[  499.337997] null_blk: disk nullb1 created
+[  499.358959] null_blk: disk nullb1 created
+[  499.383939] null_blk: disk nullb1 created
+[  499.401622] null_blk: disk nullb1 created
+[  499.423490] null_blk: disk nullb1 created
+[  499.436627] null_blk: disk nullb1 created
+[  499.462607] null_blk: disk nullb1 created
+[  499.491363] null_blk: disk nullb1 created
+[  499.513666] null_blk: disk nullb1 created
+[  499.513759] block device autoloading is deprecated and will be removed.
+[  499.545991] null_blk: disk nullb1 created
+[  499.565176] null_blk: disk nullb1 created
+[  499.589030] null_blk: disk nullb1 created
+[  499.617781] null_blk: disk nullb1 created
+[  499.627708] null_blk: disk nullb1 created
+[  499.649321] null_blk: disk nullb1 created
