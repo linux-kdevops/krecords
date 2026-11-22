@@ -1,0 +1,58 @@
+{
+  "schema": 2,
+  "subject": {
+    "project": "linux",
+    "commit": "8c2b53ebbbc8ec70b8b24d101baecfa32f531285",
+    "test": "nvme/047"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "blktests",
+          "version": "",
+          "build": "954e1b58bcd5"
+        },
+        {
+          "name": "qemu",
+          "version": "11.1.3",
+          "build": "debian:qemu-system-x86 1:11.1.3+ds-1"
+        }
+      ],
+      "command": "check nvme/047",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:248740d46ee573ef512c3f0b421b3dda47eaa403a70d0f98c793bf348907a9fc",
+      "status": "skip",
+      "exit": 0,
+      "output": "nvme_trtype=loop is not supported in this test\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "d21d96d"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T07:43:15Z",
+          "seconds": 0,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538591744
+          }
+        }
+      ]
+    }
+  ]
+}
