@@ -1,0 +1,11 @@
+{
+  "schema": 2,
+  "commit": "022e91e9e34534c8b433d4b175747bc3365af640",
+  "config": "sha256:ff58ae3f439a3241717f0fd34b1e8bf275af83b4e372cf68bbf025abbc4a0a76",
+  "objects": [
+    "block/blk-core.o",
+    "block/blk-mq-debugfs.o",
+    "block/blk-mq.o"
+  ],
+  "unbuilt": []
+}
