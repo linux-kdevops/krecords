@@ -1,0 +1,14 @@
+[ 2229.141653] run blktests nvme/034 at 2026-11-22 00:12:22.699366155
+[ 2229.252248] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2229.256963] nvme nvme3: creating 2 I/O queues.
+[ 2229.257858] nvme nvme3: new ctrl: "blktests-subsystem-1"
+[ 2243.083733] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 2243.089499] block nvme3n1: no available path - failing I/O
+[ 2243.089525] block nvme3n1: no available path - failing I/O
+[ 2243.089529] Buffer I/O error on dev nvme3n1, logical block 0, async page read
+[ 2243.089664] block nvme3n1: no available path - failing I/O
+[ 2243.089668] Buffer I/O error on dev nvme3n1, logical block 0, async page read
+[ 2243.100588] block nvme3n1: no available path - failing I/O
+[ 2243.100598] Buffer I/O error on dev nvme3n1, logical block 0, async page read
+[ 2243.100646] block nvme3n1: no available path - failing I/O
+[ 2243.100650] Buffer I/O error on dev nvme3n1, logical block 1, async page read
