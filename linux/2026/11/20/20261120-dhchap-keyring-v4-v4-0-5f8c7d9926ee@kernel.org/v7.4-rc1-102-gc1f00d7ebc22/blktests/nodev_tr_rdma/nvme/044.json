@@ -57,6 +57,29 @@
             "nvmet: ctrl # fatal error occurred!",
             "refresh dhchap psk '#-#-#-#-#' failed, error -#"
           ]
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "d21d96d"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T03:39:04Z",
+          "seconds": 370,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538685952
+          },
+          "fingerprint": [
+            "INFO: task nvme:# blocked for more than # seconds.",
+            "nvme nvme#: qid #: authentication failed, error -#",
+            "nvmet: ctrl # fatal error occurred!",
+            "refresh dhchap psk '#-#-#-#-#' failed, error -#"
+          ],
+          "kmsg": "sha256:a99bb1622c112af37e77c639aa2b19bc5dff78aa3e1dd0f2af58a85d9114e6cb"
         }
       ]
     }

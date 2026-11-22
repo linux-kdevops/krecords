@@ -1,0 +1,31 @@
+[ 3438.999284] run blktests nvme/057 at 2026-11-22 03:52:43.163209475
+[ 3439.087821] loop0: detected capacity change from 0 to 2097152
+[ 3439.104017] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3439.201493] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3439.207397] nvme nvme3: creating 2 I/O queues.
+[ 3439.207813] nvme nvme3: new ctrl: "blktests-subsystem-1"
+[ 3439.308755] nvmet: Created nvm controller 2 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3439.309193] nvme nvme4: creating 2 I/O queues.
+[ 3439.309641] nvme nvme4: new ctrl: "blktests-subsystem-1"
+[ 3439.388014] nvmet: Created nvm controller 3 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3439.392614] nvme nvme5: creating 2 I/O queues.
+[ 3439.393065] nvme nvme5: new ctrl: "blktests-subsystem-1"
+[ 3439.456843] nvmet: Created nvm controller 4 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3439.462014] nvme nvme6: creating 2 I/O queues.
+[ 3439.462895] nvme nvme6: new ctrl: "blktests-subsystem-1"
+[ 3444.529781] nvme_ns_head_submit_bio: 27 callbacks suppressed
+[ 3444.529789] block nvme3n1: no available path - failing I/O
+[ 3444.531997] block nvme3n1: no available path - failing I/O
+[ 3444.533341] block nvme3n1: no available path - failing I/O
+[ 3444.533356] block nvme3n1: no available path - failing I/O
+[ 3444.533373] block nvme3n1: no available path - failing I/O
+[ 3444.533385] block nvme3n1: no available path - failing I/O
+[ 3444.533396] block nvme3n1: no available path - failing I/O
+[ 3444.533407] block nvme3n1: no available path - failing I/O
+[ 3444.533419] block nvme3n1: no available path - failing I/O
+[ 3464.577119] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3464.688490] nvme nvme4: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3464.799357] nvme nvme5: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3464.907675] nvme nvme6: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3465.038255] nvme nvme6: long keepalive RTT (3169356 ms)
+[ 3465.038263] nvme nvme6: failed nvme_keep_alive_end_io error=4

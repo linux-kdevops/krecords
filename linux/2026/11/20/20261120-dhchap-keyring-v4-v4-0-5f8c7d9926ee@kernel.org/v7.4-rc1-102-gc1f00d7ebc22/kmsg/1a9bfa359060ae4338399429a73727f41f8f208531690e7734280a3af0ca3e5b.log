@@ -1,0 +1,17 @@
+[ 3833.054848] run blktests nvme/073 at 2026-11-22 03:59:17.210254746
+[ 3833.141267] null_blk: nullb1: using native zone append
+[ 3833.145933] null_blk: disk nullb1 created
+[ 3833.187750] nvmet_tcp: enabling port 0 (127.0.0.1:4420)
+[ 3833.199042] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3833.231908] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3833.234427] nvme nvme3: creating 2 I/O queues.
+[ 3833.234548] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 3833.240345] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 3833.461395] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3833.463998] block nvme3n1: no available path - failing I/O
+[ 3833.464022] block nvme3n1: no available path - failing I/O
+[ 3833.464026] buffer_io_error: 70 callbacks suppressed
+[ 3833.464027] Buffer I/O error on dev nvme3n1, logical block 128, async page read
+[ 3835.811640] rdma_rxe: loaded
+[ 3835.825420] null_blk: disk nullb0 created
+[ 3835.825461] null_blk: module loaded

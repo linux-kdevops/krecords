@@ -1,0 +1,103 @@
+[ 3524.440419] run blktests nvme/057 at 2026-11-22 03:54:08.603804515
+[ 3524.538516] loop0: detected capacity change from 0 to 2097152
+[ 3524.552239] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3524.730330] nvme nvme3: NVME-FC{0}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 3524.730448] nvmet_fc: {0:0}: Association created
+[ 3524.730651] nvmet: Created discovery controller 1 for subsystem nqn.2014-08.org.nvmexpress.discovery for NQN nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321.
+[ 3524.735302] nvme nvme3: NVME-FC{0}: controller connect complete
+[ 3524.740100] nvme nvme3: NVME-FC{0}: new ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery", hostnqn: nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321
+[ 3524.746564] nvme nvme3: Removing ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 3524.751559] nvmet_fc: {0:0}: Association deleted
+[ 3524.756472] nvmet_fc: {0:0}: Association freed
+[ 3524.756488] (NULL device *): Disconnect LS failed: No Association
+[ 3524.813636] nvme nvme3: NVME-FC{0}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000002: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 3524.813746] nvmet_fc: {1:0}: Association created
+[ 3524.813940] nvmet: Created discovery controller 1 for subsystem nqn.2014-08.org.nvmexpress.discovery for NQN nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321.
+[ 3524.815044] nvme nvme3: NVME-FC{0}: controller connect complete
+[ 3524.816210] nvme nvme3: NVME-FC{0}: new ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery", hostnqn: nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321
+[ 3524.820516] nvme nvme3: Removing ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 3524.821186] nvmet_fc: {1:0}: Association deleted
+[ 3524.831968] nvmet_fc: {1:0}: Association freed
+[ 3524.831996] (NULL device *): Disconnect LS failed: No Association
+[ 3524.906727] nvme nvme3: NVME-FC{0}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000003: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 3524.906832] nvmet_fc: {2:0}: Association created
+[ 3524.909722] nvmet: Created discovery controller 1 for subsystem nqn.2014-08.org.nvmexpress.discovery for NQN nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321.
+[ 3524.910224] nvme nvme3: NVME-FC{0}: controller connect complete
+[ 3524.910240] nvme nvme3: NVME-FC{0}: new ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery", hostnqn: nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321
+[ 3524.919639] nvme nvme3: Removing ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 3524.927190] nvmet_fc: {2:0}: Association deleted
+[ 3524.936959] nvmet_fc: {2:0}: Association freed
+[ 3524.937808] (NULL device *): Disconnect LS failed: No Association
+[ 3524.958852] nvme nvme3: NVME-FC{0}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "blktests-subsystem-1"
+[ 3524.958965] nvmet_fc: {0:0}: Association created
+[ 3524.961627] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3524.965253] nvme nvme3: NVME-FC{0}: controller connect complete
+[ 3524.966553] nvme nvme3: NVME-FC{0}: new ctrl: NQN "blktests-subsystem-1", hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 3524.998967] nvme nvme4: NVME-FC{1}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000004: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 3525.001077] nvmet_fc: {3:0}: Association created
+[ 3525.001272] nvmet: Created discovery controller 2 for subsystem nqn.2014-08.org.nvmexpress.discovery for NQN nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321.
+[ 3525.003179] nvme nvme4: NVME-FC{1}: controller connect complete
+[ 3525.006650] nvme nvme4: NVME-FC{1}: new ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery", hostnqn: nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321
+[ 3525.012138] nvme nvme4: Removing ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 3525.031169] nvmet_fc: {3:0}: Association deleted
+[ 3525.036429] nvmet_fc: {3:0}: Association freed
+[ 3525.036447] (NULL device *): Disconnect LS failed: No Association
+[ 3525.084287] nvme nvme4: NVME-FC{1}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000002: NQN "blktests-subsystem-1"
+[ 3525.084390] nvmet_fc: {1:0}: Association created
+[ 3525.084569] nvmet: Created nvm controller 2 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3525.086541] nvme nvme4: NVME-FC{1}: controller connect complete
+[ 3525.088725] nvme nvme4: NVME-FC{1}: new ctrl: NQN "blktests-subsystem-1", hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 3525.175514] nvme nvme5: NVME-FC{2}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000003: NQN "blktests-subsystem-1"
+[ 3525.175629] nvmet_fc: {2:0}: Association created
+[ 3525.175833] nvmet: Created nvm controller 3 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3525.176933] nvme nvme5: NVME-FC{2}: controller connect complete
+[ 3525.176985] nvme nvme5: NVME-FC{2}: new ctrl: NQN "blktests-subsystem-1", hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 3525.263791] nvme nvme6: NVME-FC{3}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000004: NQN "blktests-subsystem-1"
+[ 3525.263896] nvmet_fc: {3:0}: Association created
+[ 3525.264531] nvmet: Created nvm controller 4 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3525.265630] nvme nvme6: NVME-FC{3}: controller connect complete
+[ 3525.265726] nvme nvme6: NVME-FC{3}: new ctrl: NQN "blktests-subsystem-1", hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 3530.326308] nvme nvme3: NVME-FC{0}: io failed due to bad NVMe_ERSP: iu len 8, xfr len 4096 vs 0, status code 0, cmdid 49179 vs 49179
+[ 3530.326340] nvme nvme3: NVME-FC{0}: transport association event: transport detected io error
+[ 3530.326342] nvme nvme3: NVME-FC{0}: resetting controller
+[ 3530.326684] nvme_ns_head_submit_bio: 3 callbacks suppressed
+[ 3530.326687] block nvme3n1: no usable path - requeuing I/O
+[ 3530.326790] block nvme3n1: no usable path - requeuing I/O
+[ 3530.326825] block nvme3n1: no usable path - requeuing I/O
+[ 3530.326859] block nvme3n1: no usable path - requeuing I/O
+[ 3530.326860] block nvme3n1: no usable path - requeuing I/O
+[ 3530.326861] block nvme3n1: no usable path - requeuing I/O
+[ 3530.326915] block nvme3n1: no usable path - requeuing I/O
+[ 3530.326923] block nvme3n1: no usable path - requeuing I/O
+[ 3530.326956] block nvme3n1: no usable path - requeuing I/O
+[ 3530.326957] block nvme3n1: no usable path - requeuing I/O
+[ 3530.343430] nvme nvme3: NVME-FC{0}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "blktests-subsystem-1"
+[ 3530.343538] nvmet_fc: {0:1}: Association created
+[ 3530.343746] nvmet: Created nvm controller 5 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3530.344610] nvme nvme3: NVME-FC{0}: controller connect complete
+[ 3530.350378] nvmet_fc: {0:0}: Association deleted
+[ 3530.385822] nvmet_fc: {0:0}: Association freed
+[ 3530.385844] (NULL device *): Disconnect LS failed: No Association
+[ 3550.380645] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3550.421886] nvmet_fc: {0:1}: Association deleted
+[ 3550.422142] nvme nvme4: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3550.427010] block nvme3n1: no available path - failing I/O
+[ 3550.427033] block nvme3n1: no available path - failing I/O
+[ 3550.427037] Buffer I/O error on dev nvme3n1, logical block 128, async page read
+[ 3550.446419] nvmet_fc: {0:1}: Association freed
+[ 3550.446435] (NULL device *): Disconnect LS failed: No Association
+[ 3550.450093] nvme nvme5: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3550.455406] nvmet_fc: {1:0}: Association deleted
+[ 3550.508619] nvmet_fc: {1:0}: Association freed
+[ 3550.508645] (NULL device *): Disconnect LS failed: No Association
+[ 3550.512648] nvme nvme6: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3550.527424] nvmet_fc: {2:0}: Association deleted
+[ 3550.581207] nvmet_fc: {2:0}: Association freed
+[ 3550.581323] (NULL device *): Disconnect LS failed: No Association
+[ 3550.607408] nvmet_fc: {3:0}: Association deleted
+[ 3550.644000] nvmet_fc: {3:0}: Association freed
+[ 3550.644028] (NULL device *): Disconnect LS failed: No Association
+[ 3550.718649] nvme_fc: nvme_fc_create_ctrl: nn-0x10001100ab000001:pn-0x20001100ab000001 - nn-0x10001100aa000001:pn-0x20001100aa000001 combination not found
+[ 3550.755353] nvme_fc: nvme_fc_create_ctrl: nn-0x10001100ab000002:pn-0x20001100ab000002 - nn-0x10001100aa000001:pn-0x20001100aa000001 combination not found
+[ 3550.821107] nvme_fc: nvme_fc_create_ctrl: nn-0x10001100ab000003:pn-0x20001100ab000003 - nn-0x10001100aa000001:pn-0x20001100aa000001 combination not found
+[ 3550.871922] nvme_fc: nvme_fc_create_ctrl: nn-0x10001100ab000004:pn-0x20001100ab000004 - nn-0x10001100aa000001:pn-0x20001100aa000001 combination not found
