@@ -55,6 +55,22 @@
           },
           "fingerprint": [],
           "kmsg": "sha256:d9218da2260b0dea305a47c547f49701929e6ff38d6212f50b5f2dfdd5eb4ab5"
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "8a944a8"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T19:22:54Z",
+          "seconds": 5,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538616320
+          }
         }
       ]
     }
