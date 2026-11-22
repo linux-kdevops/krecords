@@ -78,6 +78,28 @@
             "refresh dhchap psk '#-#-#-#-#' failed, error -#"
           ],
           "kmsg": "sha256:409d904304203a6f259a9596b11b3df71ecf1a21dfee7cb0bab27f4e599e0ffc"
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "d21d96d"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T04:55:36Z",
+          "seconds": 1,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538685952
+          },
+          "fingerprint": [
+            "nvme nvme#: qid #: authentication failed, error -#",
+            "nvmet: ctrl # fatal error occurred!",
+            "refresh dhchap psk '#-#-#-#-#' failed, error -#"
+          ],
+          "kmsg": "sha256:3b11696b304932feabbf1c6dc8d014069d1c957d6a3540d8fac00477ff40ee12"
         }
       ]
     }

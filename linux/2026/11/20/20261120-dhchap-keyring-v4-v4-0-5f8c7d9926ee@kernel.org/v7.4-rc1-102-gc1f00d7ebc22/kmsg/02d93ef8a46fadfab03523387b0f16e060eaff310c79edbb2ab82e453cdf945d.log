@@ -1,0 +1,23 @@
+[ 6592.630845] run blktests nvme/034 at 2026-11-22 04:45:16.706086583
+[ 6592.843974] nvme nvme3: NVME-FC{0}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "blktests-subsystem-1"
+[ 6592.844137] nvmet_fc: {0:0}: Association created
+[ 6592.844417] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 6592.852654] nvme nvme3: NVME-FC{0}: controller connect complete
+[ 6592.852753] nvme nvme3: NVME-FC{0}: new ctrl: NQN "blktests-subsystem-1", hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 6592.934406] nvme nvme4: NVME-FC{1}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 6592.934527] nvmet_fc: {0:1}: Association created
+[ 6592.934738] nvmet: Created discovery controller 2 for subsystem nqn.2014-08.org.nvmexpress.discovery for NQN nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321.
+[ 6592.942243] nvme nvme4: NVME-FC{1}: controller connect complete
+[ 6592.942264] nvme nvme4: NVME-FC{1}: new ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery", hostnqn: nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321
+[ 6592.948191] nvme nvme4: Removing ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 6592.971262] nvmet_fc: {0:1}: Association deleted
+[ 6592.977523] nvmet_fc: {0:1}: Association freed
+[ 6592.977533] (NULL device *): Disconnect LS failed: No Association
+[ 6619.360720] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 6619.362993] block nvme3n1: no available path - failing I/O
+[ 6619.363016] block nvme3n1: no available path - failing I/O
+[ 6619.363020] Buffer I/O error on dev nvme3n1, logical block 128, async page read
+[ 6619.410811] nvmet_fc: {0:0}: Association deleted
+[ 6619.457151] nvmet_fc: {0:0}: Association freed
+[ 6619.457182] (NULL device *): Disconnect LS failed: No Association
+[ 6619.533971] nvme_fc: nvme_fc_create_ctrl: nn-0x10001100ab000001:pn-0x20001100ab000001 - nn-0x10001100aa000001:pn-0x20001100aa000001 combination not found

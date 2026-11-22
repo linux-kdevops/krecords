@@ -1,0 +1,30 @@
+[ 7227.401364] run blktests nvme/045 at 2026-11-22 04:55:51.463413208
+[ 7227.554894] infiniband enp0s2_rxe: set active
+[ 7227.554900] infiniband enp0s2_rxe: added enp0s2
+[ 7227.645808] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 7227.661730] nvmet_rdma: enabling port 0 (10.0.2.15:4420)
+[ 7227.707807] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349 with DH-HMAC-CHAP.
+[ 7227.715594] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[ 7227.715599] nvme nvme3: qid 0: controller authenticated
+[ 7227.715777] nvme nvme3: qid 0: authenticated
+[ 7227.717762] nvme nvme3: creating 2 I/O queues.
+[ 7227.717860] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 7227.729614] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 10.0.2.15:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 7227.922199] nvme nvme3: re-authenticating controller
+[ 7227.928704] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[ 7227.928708] nvme nvme3: qid 0: controller authenticated
+[ 7227.974197] nvme nvme3: re-authenticating controller
+[ 7227.981248] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[ 7227.981252] nvme nvme3: qid 0: controller authenticated
+[ 7228.006845] nvme nvme3: re-authenticating controller
+[ 7228.014044] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[ 7228.014050] nvme nvme3: qid 0: controller authenticated
+[ 7228.034193] nvme nvme3: re-authenticating controller
+[ 7228.176595] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe8192
+[ 7228.176601] nvme nvme3: qid 0: controller authenticated
+[ 7228.182185] nvme nvme3: re-authenticating controller
+[ 7228.297041] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe8192
+[ 7228.297048] nvme nvme3: qid 0: controller authenticated
+[ 7228.973010] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 7229.318411] rdma_rxe: unloaded
+[ 7230.745305] kmemleak: 2 new suspected memory leaks (see /sys/kernel/debug/kmemleak)

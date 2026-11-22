@@ -1,0 +1,25 @@
+[ 7218.492080] run blktests nvme/045 at 2026-11-22 04:55:42.555978299
+[ 7218.601466] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 7218.652926] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349 with DH-HMAC-CHAP.
+[ 7218.659738] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[ 7218.659742] nvme nvme3: qid 0: controller authenticated
+[ 7218.659783] nvme nvme3: qid 0: authenticated
+[ 7218.660398] nvme nvme3: creating 2 I/O queues.
+[ 7218.660774] nvme nvme3: new ctrl: "blktests-subsystem-1"
+[ 7218.829975] nvme nvme3: re-authenticating controller
+[ 7218.836860] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[ 7218.836864] nvme nvme3: qid 0: controller authenticated
+[ 7218.869964] nvme nvme3: re-authenticating controller
+[ 7218.876129] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[ 7218.876132] nvme nvme3: qid 0: controller authenticated
+[ 7218.902387] nvme nvme3: re-authenticating controller
+[ 7218.910774] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[ 7218.910778] nvme nvme3: qid 0: controller authenticated
+[ 7218.929961] nvme nvme3: re-authenticating controller
+[ 7219.070984] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe8192
+[ 7219.070991] nvme nvme3: qid 0: controller authenticated
+[ 7219.077989] nvme nvme3: re-authenticating controller
+[ 7219.192710] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe8192
+[ 7219.192718] nvme nvme3: qid 0: controller authenticated
+[ 7219.607766] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 7221.253710] kmemleak: 1 new suspected memory leaks (see /sys/kernel/debug/kmemleak)
