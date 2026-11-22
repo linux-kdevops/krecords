@@ -102,6 +102,28 @@
             "critical medium error, dev nvme#n#, sector # op #:(WRITE) flags # phys_seg # prio class #",
             "nvme#n#: Read(#) @ LBA #, # blocks, Unrecovered Read Error (sct # / sc #) DNR"
           ]
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "8a944a8"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T22:57:57Z",
+          "seconds": 5,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3537920000
+          },
+          "fingerprint": [
+            "I/O error, dev nvme#n#, sector # op #:(READ) flags # phys_seg # prio class #",
+            "critical medium error, dev nvme#n#, sector # op #:(READ) flags # phys_seg # prio class #",
+            "critical medium error, dev nvme#n#, sector # op #:(WRITE) flags # phys_seg # prio class #",
+            "nvme#n#: Read(#) @ LBA #, # blocks, Unrecovered Read Error (sct # / sc #) DNR"
+          ]
         }
       ]
     }
