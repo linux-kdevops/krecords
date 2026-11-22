@@ -55,6 +55,27 @@
             "I/O error, dev nvme#c#n#, sector # op #:(READ) flags # phys_seg # prio class #",
             "nvme#c#n#: Read(#) @ LBA #, # blocks, Internal Pathing Error (sct # / sc #) MORE"
           ]
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "d21d96d"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T01:28:44Z",
+          "seconds": 4,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538685952
+          },
+          "fingerprint": [
+            "Buffer I/O error on dev nvme#n#, logical block #, async page read",
+            "I/O error, dev nvme#c#n#, sector # op #:(READ) flags # phys_seg # prio class #",
+            "nvme#c#n#: Read(#) @ LBA #, # blocks, Internal Pathing Error (sct # / sc #) MORE"
+          ]
         }
       ]
     }
