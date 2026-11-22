@@ -1,0 +1,21 @@
+[11482.825121] run blktests nvme/044 at 2026-11-22 06:06:46.789800566
+[11482.921184] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[11482.981962] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349 with DH-HMAC-CHAP.
+[11482.990933] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[11482.990962] nvme nvme3: qid 0: authenticated
+[11482.993210] nvme nvme3: creating 2 I/O queues.
+[11482.993639] nvme nvme3: new ctrl: "blktests-subsystem-1"
+[11483.117391] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[11483.290234] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349 with DH-HMAC-CHAP.
+[11483.296744] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[11483.296749] nvme nvme3: qid 0: controller authentication failed
+[11483.296770] nvmet: ctrl 1 fatal error occurred!
+[11483.296805] nvme nvme3: qid 0: authentication failed, error -129
+[11483.365742] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349 with DH-HMAC-CHAP.
+[11483.373021] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[11483.373027] nvme nvme3: qid 0: controller authenticated
+[11483.373084] nvme nvme3: qid 0: authenticated
+[11483.373776] nvme nvme3: creating 2 I/O queues.
+[11483.374347] nvme nvme3: new ctrl: "blktests-subsystem-1"
+[11483.494053] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[11483.684986] refresh dhchap psk 'eae1de0b-be2c-44f0-95ec-f79ed47805f0' failed, error -129
