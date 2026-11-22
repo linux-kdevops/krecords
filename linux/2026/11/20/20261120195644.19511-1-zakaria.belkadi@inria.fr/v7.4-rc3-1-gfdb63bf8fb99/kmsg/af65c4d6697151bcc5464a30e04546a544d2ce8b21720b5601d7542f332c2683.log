@@ -1,0 +1,29 @@
+[ 3617.565838] run blktests nvme/060 at 2026-11-22 18:09:19.001775185
+[ 3617.656394] loop3: detected capacity change from 0 to 2097152
+[ 3617.690738] nvmet_tcp: enabling port 6 (127.0.0.1:4426)
+[ 3617.718461] nvmet: ctrl 6 fatal error occurred!
+[ 3617.718524] nvme nvme8: starting error recovery
+[ 3617.722749] nvme nvme8: Reconnecting in 10 seconds...
+[ 3617.728977] nvmet: ctrl 5 fatal error occurred!
+[ 3617.729042] nvme nvme7: starting error recovery
+[ 3617.731121] nvme nvme7: Reconnecting in 10 seconds...
+[ 3617.737283] nvmet: ctrl 4 fatal error occurred!
+[ 3617.737331] nvme nvme6: starting error recovery
+[ 3617.739104] nvme nvme6: Reconnecting in 10 seconds...
+[ 3617.743330] nvmet: ctrl 3 fatal error occurred!
+[ 3617.743368] nvme nvme5: starting error recovery
+[ 3617.747375] nvme nvme5: Reconnecting in 10 seconds...
+[ 3617.754158] nvmet: ctrl 2 fatal error occurred!
+[ 3617.754236] nvme nvme4: starting error recovery
+[ 3617.756066] nvme nvme4: Reconnecting in 10 seconds...
+[ 3621.906484] nvme nvme4: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3622.021315] nvme nvme4: Property Set error: 880, offset 0x14
+[ 3622.024169] nvme nvme5: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3622.105293] nvme nvme5: Property Set error: 880, offset 0x14
+[ 3622.122025] nvme nvme6: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3622.225166] nvme nvme6: Property Set error: 880, offset 0x14
+[ 3622.241289] nvme nvme7: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3622.317203] nvme nvme7: Property Set error: 880, offset 0x14
+[ 3622.332749] nvme nvme8: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3622.481898] nvme nvme8: Property Set error: 880, offset 0x14
+[ 3625.049827] rdma_rxe: loaded

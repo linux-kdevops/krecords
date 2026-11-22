@@ -1,0 +1,5 @@
+[ 3838.454366] run blktests nvme/072 at 2026-11-22 18:12:59.884576284
+[ 3838.537763] loop3: detected capacity change from 0 to 2097152
+[ 3838.555359] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3838.581836] nvmet_tcp: enabling port 0 (127.0.0.1:4420)
+[ 3843.630959] rdma_rxe: loaded

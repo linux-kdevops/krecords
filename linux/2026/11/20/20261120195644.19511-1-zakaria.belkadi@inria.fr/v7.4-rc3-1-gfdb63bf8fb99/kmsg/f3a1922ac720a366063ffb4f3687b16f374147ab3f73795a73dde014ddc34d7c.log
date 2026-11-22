@@ -1,0 +1,31 @@
+[ 3815.959867] run blktests nvme/069 at 2026-11-22 18:12:37.390989486
+[ 3816.051645] loop3: detected capacity change from 0 to 2097152
+[ 3816.060711] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3816.175461] nvme nvme4: NVME-FC{0}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "blktests-subsystem-1"
+[ 3816.175565] nvmet_fc: {0:0}: Association created
+[ 3816.175755] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3816.178310] nvme nvme4: NVME-FC{0}: controller connect complete
+[ 3816.180374] nvme nvme4: NVME-FC{0}: new ctrl: NQN "blktests-subsystem-1", hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 3816.225064] nvme nvme5: NVME-FC{1}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 3816.225160] nvmet_fc: {0:1}: Association created
+[ 3816.225359] nvmet: Created discovery controller 2 for subsystem nqn.2014-08.org.nvmexpress.discovery for NQN nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321.
+[ 3816.225794] nvme nvme5: NVME-FC{1}: controller connect complete
+[ 3816.225808] nvme nvme5: NVME-FC{1}: new ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery", hostnqn: nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321
+[ 3816.229775] nvme nvme5: Removing ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 3816.232978] nvmet_fc: {0:1}: Association deleted
+[ 3816.239341] nvmet_fc: {0:1}: Association freed
+[ 3816.239350] (NULL device *): Disconnect LS failed: No Association
+[ 3817.663190] nvmet_fc: {0:0}: Association deleted
+[ 3817.690923] nvme nvme4: NVME-FC{0}: io failed due to lldd error 6
+[ 3817.690942] nvme nvme4: NVME-FC{0}: transport association event: transport detected io error
+[ 3817.690944] nvme nvme4: NVME-FC{0}: resetting controller
+[ 3817.699236] nvmet_fc: {0:0}: Association freed
+[ 3817.708546] nvme nvme4: NVME-FC{0}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "blktests-subsystem-1"
+[ 3817.708579] (NULL device *): queue 0 connect admin queue failed (-111).
+[ 3817.708582] nvme nvme4: NVME-FC{0}: reset: Reconnect attempt failed (-111)
+[ 3817.708585] nvme nvme4: NVME-FC{0}: Reconnect attempt in 2 seconds
+[ 3817.719747] nvme nvme4: NVME-FC{0}: controller connectivity lost. Awaiting Reconnect
+[ 3817.742610] nvme_fc: nvme_fc_create_ctrl: nn-0x10001100ab000001:pn-0x20001100ab000001 - nn-0x10001100aa000001:pn-0x20001100aa000001 combination not found
+[ 3818.726773] nvme nvme4: long keepalive RTT (3523016 ms)
+[ 3818.726782] nvme nvme4: failed nvme_keep_alive_end_io error=4
+[ 3821.545728] nvme nvme4: Removing ctrl: NQN "blktests-subsystem-1"

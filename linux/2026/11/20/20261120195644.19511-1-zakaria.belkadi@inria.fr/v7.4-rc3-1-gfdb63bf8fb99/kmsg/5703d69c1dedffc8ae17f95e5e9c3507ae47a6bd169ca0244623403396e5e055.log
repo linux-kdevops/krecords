@@ -1,0 +1,7 @@
+[ 3821.978182] run blktests nvme/070 at 2026-11-22 18:12:43.411625672
+[ 3822.059828] loop3: detected capacity change from 0 to 2097152
+[ 3822.073453] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3822.129963] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3822.132988] nvme nvme4: creating 2 I/O queues.
+[ 3822.133392] nvme nvme4: new ctrl: "blktests-subsystem-1"
+[ 3822.313777] nvme nvme4: Removing ctrl: NQN "blktests-subsystem-1"

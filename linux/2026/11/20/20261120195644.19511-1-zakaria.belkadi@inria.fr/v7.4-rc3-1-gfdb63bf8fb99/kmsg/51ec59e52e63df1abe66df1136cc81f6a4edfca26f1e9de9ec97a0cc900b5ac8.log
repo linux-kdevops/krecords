@@ -1,0 +1,73 @@
+[ 3730.996129] run blktests nvme/065 at 2026-11-22 18:11:12.429505157
+[ 3731.154271] sd 1:0:0:0: [sdb] Synchronizing SCSI cache
+[ 3731.228398] scsi_debug:sdebug_driver_probe: scsi_debug: trim poll_queues to 0. poll_q/nr_hw = (0/1)
+[ 3731.228405] scsi host1: scsi_debug: version 0191 [20210520]
+[ 3731.228405]   dev_size_mb=8, opts=0x0, submit_queues=1, statistics=0
+[ 3731.251137] scsi 1:0:0:0: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[ 3731.252329] scsi 1:0:0:0: Power-on or device reset occurred
+[ 3731.255036] sd 1:0:0:0: [sdb] 16384 512-byte logical blocks: (8.39 MB/8.00 MiB)
+[ 3731.255073] sd 1:0:0:0: [sdb] Write Protect is off
+[ 3731.255082] sd 1:0:0:0: [sdb] Mode Sense: 73 00 10 08
+[ 3731.255132] sd 1:0:0:0: [sdb] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[ 3731.255214] sd 1:0:0:0: [sdb] permanent stream count = 5
+[ 3731.255295] sd 1:0:0:0: [sdb] Preferred minimum I/O size 512 bytes
+[ 3731.255306] sd 1:0:0:0: [sdb] Optimal transfer size 524288 bytes
+[ 3731.255725] sd 1:0:0:0: Attached scsi generic sg1 type 0
+[ 3731.284097] sd 1:0:0:0: [sdb] Attached SCSI disk
+[ 3731.403762] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3731.472565] nvme nvme4: NVME-FC{0}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "blktests-subsystem-1"
+[ 3731.472680] nvmet_fc: {0:0}: Association created
+[ 3731.472878] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3731.479058] nvme nvme4: NVME-FC{0}: controller connect complete
+[ 3731.481472] nvme nvme4: NVME-FC{0}: new ctrl: NQN "blktests-subsystem-1", hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 3731.519945] nvme nvme5: NVME-FC{1}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 3731.520047] nvmet_fc: {0:1}: Association created
+[ 3731.520245] nvmet: Created discovery controller 2 for subsystem nqn.2014-08.org.nvmexpress.discovery for NQN nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321.
+[ 3731.520697] nvme nvme5: NVME-FC{1}: controller connect complete
+[ 3731.520711] nvme nvme5: NVME-FC{1}: new ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery", hostnqn: nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321
+[ 3731.533111] nvme nvme5: Removing ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 3731.542468] nvmet_fc: {0:1}: Association deleted
+[ 3731.549567] nvmet_fc: {0:1}: Association freed
+[ 3731.549582] (NULL device *): Disconnect LS failed: No Association
+[ 3731.619434] nvme nvme4: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3731.679626] nvmet_fc: {0:0}: Association deleted
+[ 3731.706031] nvmet_fc: {0:0}: Association freed
+[ 3731.706056] (NULL device *): Disconnect LS failed: No Association
+[ 3732.833787] nvme_fc: nvme_fc_create_ctrl: nn-0x10001100ab000001:pn-0x20001100ab000001 - nn-0x10001100aa000001:pn-0x20001100aa000001 combination not found
+[ 3732.851276] sd 1:0:0:0: [sdb] Synchronizing SCSI cache
+[ 3732.943252] scsi_debug:sdebug_add_store: 16384 provisioning blocks
+[ 3732.946540] scsi_debug:sdebug_driver_probe: scsi_debug: trim poll_queues to 0. poll_q/nr_hw = (0/1)
+[ 3732.946546] scsi host1: scsi_debug: version 0191 [20210520]
+[ 3732.946546]   dev_size_mb=8, opts=0x0, submit_queues=1, statistics=0
+[ 3732.971426] scsi 1:0:0:0: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[ 3732.972164] scsi 1:0:0:0: Power-on or device reset occurred
+[ 3732.973665] sd 1:0:0:0: [sdb] 16384 512-byte logical blocks: (8.39 MB/8.00 MiB)
+[ 3732.973696] sd 1:0:0:0: [sdb] Write Protect is off
+[ 3732.973705] sd 1:0:0:0: [sdb] Mode Sense: 73 00 10 08
+[ 3732.973755] sd 1:0:0:0: [sdb] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[ 3732.973825] sd 1:0:0:0: [sdb] permanent stream count = 5
+[ 3732.975323] sd 1:0:0:0: [sdb] Preferred minimum I/O size 512 bytes
+[ 3732.975332] sd 1:0:0:0: [sdb] Optimal transfer size 524288 bytes
+[ 3732.975717] sd 1:0:0:0: Attached scsi generic sg1 type 0
+[ 3733.003876] sd 1:0:0:0: [sdb] Attached SCSI disk
+[ 3733.129633] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3733.208237] nvme nvme4: NVME-FC{0}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "blktests-subsystem-1"
+[ 3733.208345] nvmet_fc: {0:0}: Association created
+[ 3733.208551] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3733.215196] nvme nvme4: NVME-FC{0}: controller connect complete
+[ 3733.215255] nvme nvme4: NVME-FC{0}: new ctrl: NQN "blktests-subsystem-1", hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 3733.260696] nvme nvme5: NVME-FC{1}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 3733.260810] nvmet_fc: {0:1}: Association created
+[ 3733.261014] nvmet: Created discovery controller 2 for subsystem nqn.2014-08.org.nvmexpress.discovery for NQN nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321.
+[ 3733.266512] nvme nvme5: NVME-FC{1}: controller connect complete
+[ 3733.268827] nvme nvme5: NVME-FC{1}: new ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery", hostnqn: nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321
+[ 3733.274225] nvme nvme5: Removing ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 3733.290431] nvmet_fc: {0:1}: Association deleted
+[ 3733.295860] nvmet_fc: {0:1}: Association freed
+[ 3733.295939] (NULL device *): Disconnect LS failed: No Association
+[ 3733.396990] nvme nvme4: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3733.450894] nvmet_fc: {0:0}: Association deleted
+[ 3733.486036] nvmet_fc: {0:0}: Association freed
+[ 3733.486068] (NULL device *): Disconnect LS failed: No Association
+[ 3734.597644] nvme_fc: nvme_fc_create_ctrl: nn-0x10001100ab000001:pn-0x20001100ab000001 - nn-0x10001100aa000001:pn-0x20001100aa000001 combination not found
+[ 3734.634637] sd 1:0:0:0: [sdb] Synchronizing SCSI cache

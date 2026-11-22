@@ -1,0 +1,15 @@
+[ 3769.469803] run blktests nvme/068 at 2026-11-22 18:11:50.903129105
+[ 3769.629838] infiniband enp0s2_rxe: set active
+[ 3769.629845] infiniband enp0s2_rxe: added enp0s2
+[ 3769.703880] loop3: detected capacity change from 0 to 2097152
+[ 3769.716533] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3769.744558] nvmet_rdma: enabling port 0 (10.0.2.15:4420)
+[ 3769.788979] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3769.790771] nvme nvme4: creating 2 I/O queues.
+[ 3769.790864] nvme nvme4: mapped 2/0/0 default/read/poll queues.
+[ 3769.802447] nvme nvme4: new ctrl: NQN "blktests-subsystem-1", addr 10.0.2.15:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 3781.842232] nvme nvme4: starting error recovery
+[ 3781.870957] nvme nvme4: Reconnecting in 10 seconds...
+[ 3781.998605] nvme nvme4: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3782.078221] nvme nvme4: Property Set error: 880, offset 0x14
+[ 3782.222239] rdma_rxe: unloaded

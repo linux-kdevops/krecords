@@ -1,0 +1,37 @@
+[ 3891.950546] run blktests nvme/076 at 2026-11-22 18:13:53.381150348
+[ 3892.035180] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3892.101772] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3892.102144] nvme nvme4: creating 2 I/O queues.
+[ 3892.102475] nvme nvme4: new ctrl: "blktests-subsystem-1"
+[ 3892.260384] nvmet: Created nvm controller 2 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:1f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3892.261515] nvme nvme5: creating 2 I/O queues.
+[ 3892.261849] nvme nvme5: new ctrl: "blktests-subsystem-1"
+[ 3892.405684] nvmet: Created nvm controller 3 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:2f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3892.406075] nvme nvme6: creating 2 I/O queues.
+[ 3892.406419] nvme nvme6: new ctrl: "blktests-subsystem-1"
+[ 3892.597300] nvme nvme5: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3892.604982] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3892.810387] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3892.918766] nvme nvme5: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3892.926453] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3893.067376] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3893.167850] nvme nvme5: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3893.175878] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3893.330647] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3893.428981] nvme nvme5: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3893.436834] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3893.556498] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3893.660447] nvme nvme5: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3893.669539] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3893.813235] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3893.914675] nvme nvme5: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3893.924234] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3893.968997] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3894.042146] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3894.141410] nvme nvme5: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3894.151498] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3894.201316] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3894.270226] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3894.350458] nvme nvme4: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3894.477300] nvme nvme5: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3894.612952] nvme nvme6: Removing ctrl: NQN "blktests-subsystem-1"

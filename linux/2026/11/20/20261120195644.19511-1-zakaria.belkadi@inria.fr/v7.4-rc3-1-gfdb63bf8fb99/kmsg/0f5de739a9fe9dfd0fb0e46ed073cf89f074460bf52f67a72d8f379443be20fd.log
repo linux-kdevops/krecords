@@ -1,0 +1,8 @@
+[ 3861.057169] run blktests nvme/074 at 2026-11-22 18:13:22.485832113
+[ 3861.138592] null_blk: nullb1: using native zone append
+[ 3861.141829] null_blk: disk nullb1 created
+[ 3861.183567] nvmet_tcp: enabling port 0 (127.0.0.1:4420)
+[ 3861.195143] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3865.180650] rdma_rxe: loaded
+[ 3865.192031] null_blk: disk nullb0 created
+[ 3865.192071] null_blk: module loaded

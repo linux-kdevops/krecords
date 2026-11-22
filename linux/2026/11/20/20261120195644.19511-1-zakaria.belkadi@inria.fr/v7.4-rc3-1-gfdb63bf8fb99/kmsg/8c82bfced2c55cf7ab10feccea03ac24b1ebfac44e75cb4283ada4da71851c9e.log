@@ -1,0 +1,64 @@
+[ 3726.586052] run blktests nvme/065 at 2026-11-22 18:11:08.020151646
+[ 3726.730140] infiniband enp0s2_rxe: set active
+[ 3726.730146] infiniband enp0s2_rxe: added enp0s2
+[ 3726.843576] sd 1:0:0:0: [sdb] Synchronizing SCSI cache
+[ 3726.923911] scsi_debug:sdebug_driver_probe: scsi_debug: trim poll_queues to 0. poll_q/nr_hw = (0/1)
+[ 3726.923919] scsi host1: scsi_debug: version 0191 [20210520]
+[ 3726.923919]   dev_size_mb=8, opts=0x0, submit_queues=1, statistics=0
+[ 3726.949545] scsi 1:0:0:0: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[ 3726.950625] scsi 1:0:0:0: Power-on or device reset occurred
+[ 3726.953019] sd 1:0:0:0: Attached scsi generic sg1 type 0
+[ 3726.953311] sd 1:0:0:0: [sdb] 16384 512-byte logical blocks: (8.39 MB/8.00 MiB)
+[ 3726.953346] sd 1:0:0:0: [sdb] Write Protect is off
+[ 3726.957599] sd 1:0:0:0: [sdb] Mode Sense: 73 00 10 08
+[ 3726.957674] sd 1:0:0:0: [sdb] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[ 3726.957750] sd 1:0:0:0: [sdb] permanent stream count = 5
+[ 3726.959240] sd 1:0:0:0: [sdb] Preferred minimum I/O size 512 bytes
+[ 3726.959252] sd 1:0:0:0: [sdb] Optimal transfer size 524288 bytes
+[ 3726.978794] sd 1:0:0:0: [sdb] Attached SCSI disk
+[ 3727.079046] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3727.086787] nvmet_rdma: enabling port 0 (10.0.2.15:4420)
+[ 3727.129405] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3727.130944] nvme nvme4: creating 2 I/O queues.
+[ 3727.131047] nvme nvme4: mapped 2/0/0 default/read/poll queues.
+[ 3727.142523] nvme nvme4: new ctrl: NQN "blktests-subsystem-1", addr 10.0.2.15:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 3727.295140] nvme nvme4: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3728.567588] sd 1:0:0:0: [sdb] Synchronizing SCSI cache
+[ 3728.670058] scsi_debug:sdebug_add_store: 16384 provisioning blocks
+[ 3728.671676] scsi_debug:sdebug_driver_probe: scsi_debug: trim poll_queues to 0. poll_q/nr_hw = (0/1)
+[ 3728.671681] scsi host1: scsi_debug: version 0191 [20210520]
+[ 3728.671681]   dev_size_mb=8, opts=0x0, submit_queues=1, statistics=0
+[ 3728.701055] scsi 1:0:0:0: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[ 3728.702814] scsi 1:0:0:0: Power-on or device reset occurred
+[ 3728.704436] sd 1:0:0:0: [sdb] 16384 512-byte logical blocks: (8.39 MB/8.00 MiB)
+[ 3728.704469] sd 1:0:0:0: [sdb] Write Protect is off
+[ 3728.704479] sd 1:0:0:0: [sdb] Mode Sense: 73 00 10 08
+[ 3728.704530] sd 1:0:0:0: [sdb] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[ 3728.704604] sd 1:0:0:0: [sdb] permanent stream count = 5
+[ 3728.705817] sd 1:0:0:0: Attached scsi generic sg1 type 0
+[ 3728.706004] sd 1:0:0:0: [sdb] Preferred minimum I/O size 512 bytes
+[ 3728.706014] sd 1:0:0:0: [sdb] Optimal transfer size 524288 bytes
+[ 3728.720306] sd 1:0:0:0: [sdb] Attached SCSI disk
+[ 3728.824571] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3728.833513] nvmet_rdma: enabling port 0 (10.0.2.15:4420)
+[ 3728.871469] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3728.872835] nvme nvme4: creating 2 I/O queues.
+[ 3728.872926] nvme nvme4: mapped 2/0/0 default/read/poll queues.
+[ 3728.884923] nvme nvme4: new ctrl: NQN "blktests-subsystem-1", addr 10.0.2.15:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 3729.060809] nvme nvme4: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3730.326752] sd 1:0:0:0: [sdb] Synchronizing SCSI cache
+[ 3730.548738] rdma_rxe: unloaded
+[ 3730.773065] scsi_debug:sdebug_driver_probe: scsi_debug: trim poll_queues to 0. poll_q/nr_hw = (0/1)
+[ 3730.773074] scsi host1: scsi_debug: version 0191 [20210520]
+[ 3730.773074]   dev_size_mb=8, opts=0x0, submit_queues=1, statistics=0
+[ 3730.800359] scsi 1:0:0:0: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[ 3730.802722] scsi 1:0:0:0: Power-on or device reset occurred
+[ 3730.805110] sd 1:0:0:0: [sdb] 16384 512-byte logical blocks: (8.39 MB/8.00 MiB)
+[ 3730.805145] sd 1:0:0:0: [sdb] Write Protect is off
+[ 3730.805155] sd 1:0:0:0: [sdb] Mode Sense: 73 00 10 08
+[ 3730.805210] sd 1:0:0:0: [sdb] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[ 3730.805287] sd 1:0:0:0: [sdb] permanent stream count = 5
+[ 3730.805361] sd 1:0:0:0: [sdb] Preferred minimum I/O size 512 bytes
+[ 3730.805370] sd 1:0:0:0: [sdb] Optimal transfer size 524288 bytes
+[ 3730.809193] sd 1:0:0:0: Attached scsi generic sg1 type 0
+[ 3730.819504] sd 1:0:0:0: [sdb] Attached SCSI disk

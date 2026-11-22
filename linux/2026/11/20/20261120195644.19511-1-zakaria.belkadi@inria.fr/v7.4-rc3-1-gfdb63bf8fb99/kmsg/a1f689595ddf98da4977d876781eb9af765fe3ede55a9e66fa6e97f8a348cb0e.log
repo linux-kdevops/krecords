@@ -1,0 +1,11 @@
+[ 3874.848745] run blktests nvme/075 at 2026-11-22 18:13:36.277645776
+[ 3874.943733] loop3: detected capacity change from 0 to 2097152
+[ 3874.958809] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3874.977355] nvmet_tcp: enabling port 0 (127.0.0.1:4420)
+[ 3874.995594] nvmet_tcp: enabling port 1 (127.0.0.1:4421)
+[ 3877.607768] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3877.608757] nvme nvme4: creating 2 I/O queues.
+[ 3877.608865] nvme nvme4: mapped 2/0/0 default/read/poll queues.
+[ 3877.612121] nvme nvme4: new ctrl: NQN "blktests-subsystem-1", addr 127.0.0.1:4421, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 3878.841715] nvme nvme4: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3881.309398] rdma_rxe: loaded

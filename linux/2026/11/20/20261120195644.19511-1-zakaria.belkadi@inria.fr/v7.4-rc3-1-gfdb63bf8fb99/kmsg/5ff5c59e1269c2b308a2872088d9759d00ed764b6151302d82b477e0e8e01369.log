@@ -1,0 +1,10 @@
+[ 3848.064865] run blktests nvme/073 at 2026-11-22 18:13:09.497443169
+[ 3848.143429] null_blk: nullb1: using native zone append
+[ 3848.146465] null_blk: disk nullb1 created
+[ 3848.193433] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3848.224401] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3848.224824] nvme nvme4: creating 2 I/O queues.
+[ 3848.226010] nvme nvme4: new ctrl: "blktests-subsystem-1"
+[ 3848.426239] nvme nvme4: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3850.015689] null_blk: disk nullb0 created
+[ 3850.015737] null_blk: module loaded

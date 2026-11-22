@@ -1,0 +1,62 @@
+[ 3908.081955] run blktests nvme/076 at 2026-11-22 18:14:09.511141389
+[ 3908.162870] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3908.282289] nvme nvme4: NVME-FC{0}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 3908.282410] nvmet_fc: {0:0}: Association created
+[ 3908.282609] nvmet: Created discovery controller 1 for subsystem nqn.2014-08.org.nvmexpress.discovery for NQN nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321.
+[ 3908.283052] nvme nvme4: NVME-FC{0}: controller connect complete
+[ 3908.283066] nvme nvme4: NVME-FC{0}: new ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery", hostnqn: nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321
+[ 3908.293919] nvme nvme4: Removing ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 3908.298010] nvme nvme5: NVME-FC{1}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "blktests-subsystem-1"
+[ 3908.298113] nvmet_fc: {0:1}: Association created
+[ 3908.298335] nvmet: Created nvm controller 2 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3908.299957] nvme nvme5: NVME-FC{1}: controller connect complete
+[ 3908.301250] nvme nvme5: NVME-FC{1}: new ctrl: NQN "blktests-subsystem-1", hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 3908.310964] nvmet_fc: {0:0}: Association deleted
+[ 3908.312682] nvmet_fc: {0:0}: Association freed
+[ 3908.313196] (NULL device *): Disconnect LS failed: No Association
+[ 3908.469517] nvme nvme4: NVME-FC{0}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "blktests-subsystem-1"
+[ 3908.469614] nvmet_fc: {0:0}: Association created
+[ 3908.469833] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:1f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3908.471099] nvme nvme4: NVME-FC{0}: controller connect complete
+[ 3908.471145] nvme nvme4: NVME-FC{0}: new ctrl: NQN "blktests-subsystem-1", hostnqn: nqn.2014-08.org.nvmexpress:uuid:1f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 3908.609537] nvme nvme6: NVME-FC{2}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "blktests-subsystem-1"
+[ 3908.609695] nvmet_fc: {0:2}: Association created
+[ 3908.610013] nvmet: Created nvm controller 3 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:2f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3908.611642] nvme nvme6: NVME-FC{2}: controller connect complete
+[ 3908.611682] nvme nvme6: NVME-FC{2}: new ctrl: NQN "blktests-subsystem-1", hostnqn: nqn.2014-08.org.nvmexpress:uuid:2f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 3908.796196] nvme nvme4: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3908.805014] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3909.012790] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3909.120675] nvme nvme4: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3909.130020] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3909.269769] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3909.373407] nvme nvme4: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3909.382385] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3909.521839] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3909.632487] nvme nvme4: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3909.641100] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3909.760541] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3909.867637] nvme nvme4: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3909.875714] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3910.022976] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3910.128753] nvme nvme4: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3910.136265] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3910.183188] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3910.248873] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3910.348860] nvme nvme4: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3910.358181] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3910.405550] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3910.467581] nvme nvme6: using deprecated NVME_IOCTL_IO_CMD ioctl on the char device!
+[ 3910.541486] nvme nvme5: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3910.609200] nvme nvme4: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3910.620541] nvmet_fc: {0:1}: Association deleted
+[ 3910.664290] nvmet_fc: {0:1}: Association freed
+[ 3910.664319] (NULL device *): Disconnect LS failed: No Association
+[ 3910.678475] nvme nvme6: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3910.692059] nvmet_fc: {0:0}: Association deleted
+[ 3910.744329] nvmet_fc: {0:0}: Association freed
+[ 3910.744366] (NULL device *): Disconnect LS failed: No Association
+[ 3910.760056] nvmet_fc: {0:2}: Association deleted
+[ 3910.800793] nvmet_fc: {0:2}: Association freed
+[ 3910.800821] (NULL device *): Disconnect LS failed: No Association
+[ 3911.904226] nvme_fc: nvme_fc_create_ctrl: nn-0x10001100ab000001:pn-0x20001100ab000001 - nn-0x10001100aa000001:pn-0x20001100aa000001 combination not found

@@ -1,0 +1,23 @@
+[ 3867.716793] run blktests nvme/074 at 2026-11-22 18:13:29.145785788
+[ 3867.810324] null_blk: nullb1: using native zone append
+[ 3867.813772] null_blk: disk nullb1 created
+[ 3867.890529] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3867.947255] nvme nvme4: NVME-FC{0}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "blktests-subsystem-1"
+[ 3867.947364] nvmet_fc: {0:0}: Association created
+[ 3867.947586] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3867.958394] nvme nvme4: NVME-FC{0}: controller connect complete
+[ 3867.958481] nvme nvme4: NVME-FC{0}: new ctrl: NQN "blktests-subsystem-1", hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 3867.986443] nvme nvme5: NVME-FC{1}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 3867.986553] nvmet_fc: {0:1}: Association created
+[ 3867.986756] nvmet: Created discovery controller 2 for subsystem nqn.2014-08.org.nvmexpress.discovery for NQN nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321.
+[ 3867.987201] nvme nvme5: NVME-FC{1}: controller connect complete
+[ 3867.987215] nvme nvme5: NVME-FC{1}: new ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery", hostnqn: nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321
+[ 3867.998710] nvme nvme5: Removing ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 3868.003924] nvmet_fc: {0:1}: Association deleted
+[ 3868.020697] nvmet_fc: {0:1}: Association freed
+[ 3868.020717] (NULL device *): Disconnect LS failed: No Association
+[ 3868.146624] nvme nvme4: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3868.271437] nvmet_fc: {0:0}: Association deleted
+[ 3868.320252] nvmet_fc: {0:0}: Association freed
+[ 3868.320282] (NULL device *): Disconnect LS failed: No Association
+[ 3869.401947] nvme_fc: nvme_fc_create_ctrl: nn-0x10001100ab000001:pn-0x20001100ab000001 - nn-0x10001100aa000001:pn-0x20001100aa000001 combination not found

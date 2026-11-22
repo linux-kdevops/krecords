@@ -1,0 +1,8 @@
+[ 3674.541924] run blktests nvme/062 at 2026-11-22 18:10:15.977917505
+[ 3674.658382] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3674.669727] nvmet: Allow non-TLS connections while TLS1.3 is enabled
+[ 3674.673032] nvmet_tcp: enabling port 0 (127.0.0.1:4420)
+[ 3682.009702] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3682.024038] nvmet_tcp: enabling port 0 (127.0.0.1:4420)
+[ 3688.113386] rdma_rxe: loaded
+[ 3691.913184] rdma_rxe: unloaded

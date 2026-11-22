@@ -1,0 +1,57 @@
+[ 3718.088921] run blktests nvme/065 at 2026-11-22 18:10:59.521869815
+[ 3718.230066] sd 1:0:0:0: [sdb] Synchronizing SCSI cache
+[ 3718.312695] scsi_debug:sdebug_driver_probe: scsi_debug: trim poll_queues to 0. poll_q/nr_hw = (0/1)
+[ 3718.312702] scsi host1: scsi_debug: version 0191 [20210520]
+[ 3718.312702]   dev_size_mb=8, opts=0x0, submit_queues=1, statistics=0
+[ 3718.337189] scsi 1:0:0:0: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[ 3718.337947] scsi 1:0:0:0: Power-on or device reset occurred
+[ 3718.339541] sd 1:0:0:0: Attached scsi generic sg1 type 0
+[ 3718.339726] sd 1:0:0:0: [sdb] 16384 512-byte logical blocks: (8.39 MB/8.00 MiB)
+[ 3718.339761] sd 1:0:0:0: [sdb] Write Protect is off
+[ 3718.339770] sd 1:0:0:0: [sdb] Mode Sense: 73 00 10 08
+[ 3718.339822] sd 1:0:0:0: [sdb] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[ 3718.339895] sd 1:0:0:0: [sdb] permanent stream count = 5
+[ 3718.339964] sd 1:0:0:0: [sdb] Preferred minimum I/O size 512 bytes
+[ 3718.339972] sd 1:0:0:0: [sdb] Optimal transfer size 524288 bytes
+[ 3718.358279] sd 1:0:0:0: [sdb] Attached SCSI disk
+[ 3718.451777] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3718.492914] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3718.493709] nvme nvme4: creating 2 I/O queues.
+[ 3718.495368] nvme nvme4: new ctrl: "blktests-subsystem-1"
+[ 3718.639357] nvme nvme4: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3719.954527] sd 1:0:0:0: [sdb] Synchronizing SCSI cache
+[ 3720.051879] scsi_debug:sdebug_add_store: 16384 provisioning blocks
+[ 3720.053164] scsi_debug:sdebug_driver_probe: scsi_debug: trim poll_queues to 0. poll_q/nr_hw = (0/1)
+[ 3720.053170] scsi host1: scsi_debug: version 0191 [20210520]
+[ 3720.053170]   dev_size_mb=8, opts=0x0, submit_queues=1, statistics=0
+[ 3720.075133] scsi 1:0:0:0: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[ 3720.075880] scsi 1:0:0:0: Power-on or device reset occurred
+[ 3720.078644] sd 1:0:0:0: Attached scsi generic sg1 type 0
+[ 3720.078869] sd 1:0:0:0: [sdb] 16384 512-byte logical blocks: (8.39 MB/8.00 MiB)
+[ 3720.078902] sd 1:0:0:0: [sdb] Write Protect is off
+[ 3720.078917] sd 1:0:0:0: [sdb] Mode Sense: 73 00 10 08
+[ 3720.078967] sd 1:0:0:0: [sdb] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[ 3720.079048] sd 1:0:0:0: [sdb] permanent stream count = 5
+[ 3720.079123] sd 1:0:0:0: [sdb] Preferred minimum I/O size 512 bytes
+[ 3720.079131] sd 1:0:0:0: [sdb] Optimal transfer size 524288 bytes
+[ 3720.108078] sd 1:0:0:0: [sdb] Attached SCSI disk
+[ 3720.207509] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3720.245360] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3720.246265] nvme nvme4: creating 2 I/O queues.
+[ 3720.246787] nvme nvme4: new ctrl: "blktests-subsystem-1"
+[ 3720.385023] nvme nvme4: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3721.686479] sd 1:0:0:0: [sdb] Synchronizing SCSI cache
+[ 3721.923458] scsi_debug:sdebug_driver_probe: scsi_debug: trim poll_queues to 0. poll_q/nr_hw = (0/1)
+[ 3721.923465] scsi host1: scsi_debug: version 0191 [20210520]
+[ 3721.923465]   dev_size_mb=8, opts=0x0, submit_queues=1, statistics=0
+[ 3721.946064] scsi 1:0:0:0: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[ 3721.946833] scsi 1:0:0:0: Power-on or device reset occurred
+[ 3721.948384] sd 1:0:0:0: [sdb] 16384 512-byte logical blocks: (8.39 MB/8.00 MiB)
+[ 3721.948421] sd 1:0:0:0: [sdb] Write Protect is off
+[ 3721.948432] sd 1:0:0:0: [sdb] Mode Sense: 73 00 10 08
+[ 3721.948479] sd 1:0:0:0: [sdb] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[ 3721.948553] sd 1:0:0:0: [sdb] permanent stream count = 5
+[ 3721.948626] sd 1:0:0:0: [sdb] Preferred minimum I/O size 512 bytes
+[ 3721.948634] sd 1:0:0:0: [sdb] Optimal transfer size 524288 bytes
+[ 3721.949025] sd 1:0:0:0: Attached scsi generic sg1 type 0
+[ 3721.982076] sd 1:0:0:0: [sdb] Attached SCSI disk

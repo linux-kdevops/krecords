@@ -1,0 +1,25 @@
+[ 3856.745455] run blktests nvme/073 at 2026-11-22 18:13:18.176256742
+[ 3856.838310] null_blk: nullb1: using native zone append
+[ 3856.841647] null_blk: disk nullb1 created
+[ 3856.928222] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3856.984060] nvme nvme4: NVME-FC{0}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "blktests-subsystem-1"
+[ 3856.984172] nvmet_fc: {0:0}: Association created
+[ 3856.984367] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3856.985516] nvme nvme4: NVME-FC{0}: controller connect complete
+[ 3856.986993] nvme nvme4: NVME-FC{0}: new ctrl: NQN "blktests-subsystem-1", hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 3857.022928] nvme nvme5: NVME-FC{1}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 3857.023052] nvmet_fc: {0:1}: Association created
+[ 3857.023272] nvmet: Created discovery controller 2 for subsystem nqn.2014-08.org.nvmexpress.discovery for NQN nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321.
+[ 3857.023751] nvme nvme5: NVME-FC{1}: controller connect complete
+[ 3857.024453] nvme nvme5: NVME-FC{1}: new ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery", hostnqn: nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321
+[ 3857.026240] nvme nvme5: Removing ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 3857.043915] nvmet_fc: {0:1}: Association deleted
+[ 3857.059454] nvmet_fc: {0:1}: Association freed
+[ 3857.059469] (NULL device *): Disconnect LS failed: No Association
+[ 3857.194366] nvme nvme4: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3857.315281] nvmet_fc: {0:0}: Association deleted
+[ 3857.335407] nvmet_fc: {0:0}: Association freed
+[ 3857.335429] (NULL device *): Disconnect LS failed: No Association
+[ 3858.453151] nvme_fc: nvme_fc_create_ctrl: nn-0x10001100ab000001:pn-0x20001100ab000001 - nn-0x10001100aa000001:pn-0x20001100aa000001 combination not found
+[ 3859.013154] null_blk: disk nullb0 created
+[ 3859.013190] null_blk: module loaded

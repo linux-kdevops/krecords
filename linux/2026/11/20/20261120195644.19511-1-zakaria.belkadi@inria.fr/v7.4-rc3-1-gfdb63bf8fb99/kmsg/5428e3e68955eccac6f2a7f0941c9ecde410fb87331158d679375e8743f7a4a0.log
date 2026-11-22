@@ -1,0 +1,43 @@
+[ 3650.383049] run blktests nvme/061 at 2026-11-22 18:09:51.817973860
+[ 3650.543833] infiniband enp0s2_rxe: set active
+[ 3650.543839] infiniband enp0s2_rxe: added enp0s2
+[ 3650.617558] loop3: detected capacity change from 0 to 2097152
+[ 3650.627355] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3650.646028] nvmet_rdma: enabling port 0 (10.0.2.15:4420)
+[ 3650.687094] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3650.691087] nvme nvme4: creating 2 I/O queues.
+[ 3650.691188] nvme nvme4: mapped 2/0/0 default/read/poll queues.
+[ 3650.703683] nvme nvme4: new ctrl: NQN "blktests-subsystem-1", addr 10.0.2.15:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 3651.897579] nvme nvme4: starting error recovery
+[ 3651.914143] block nvme3n1: no usable path - requeuing I/O
+[ 3651.914149] block nvme3n1: no usable path - requeuing I/O
+[ 3651.924965] nvme nvme4: Reconnecting in 1 seconds...
+[ 3652.938043] nvme nvme4: Connect rejected: status 8 (invalid service ID).
+[ 3652.938091] nvme nvme4: rdma connection establishment failed (-104)
+[ 3652.939736] nvme nvme4: Failed reconnect attempt 1/600
+[ 3652.939739] nvme nvme4: Reconnecting in 1 seconds...
+[ 3653.957896] nvme nvme4: Connect rejected: status 8 (invalid service ID).
+[ 3653.957934] nvme nvme4: rdma connection establishment failed (-104)
+[ 3653.958275] nvme nvme4: Failed reconnect attempt 2/600
+[ 3653.958277] nvme nvme4: Reconnecting in 1 seconds...
+[ 3654.981859] nvme nvme4: Connect rejected: status 8 (invalid service ID).
+[ 3654.981898] nvme nvme4: rdma connection establishment failed (-104)
+[ 3654.983224] nvme nvme4: Failed reconnect attempt 3/600
+[ 3654.983227] nvme nvme4: Reconnecting in 1 seconds...
+[ 3656.006071] nvme nvme4: Connect rejected: status 8 (invalid service ID).
+[ 3656.006128] nvme nvme4: rdma connection establishment failed (-104)
+[ 3656.007334] nvme nvme4: Failed reconnect attempt 4/600
+[ 3656.007337] nvme nvme4: Reconnecting in 1 seconds...
+[ 3657.029953] nvme nvme4: Connect rejected: status 8 (invalid service ID).
+[ 3657.029991] nvme nvme4: rdma connection establishment failed (-104)
+[ 3657.030280] nvme nvme4: Failed reconnect attempt 5/600
+[ 3657.030282] nvme nvme4: Reconnecting in 1 seconds...
+[ 3658.057461] nvme nvme4: Connect rejected: status 8 (invalid service ID).
+[ 3658.057473] nvme nvme4: rdma connection establishment failed (-104)
+[ 3658.057799] nvme nvme4: Failed reconnect attempt 6/600
+[ 3658.057802] nvme nvme4: Reconnecting in 1 seconds...
+[ 3658.146307] nvme nvme4: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3658.146354] block nvme3n1: no available path - failing I/O
+[ 3658.146358] block nvme3n1: no available path - failing I/O
+[ 3658.200446] nvme nvme4: Property Set error: 880, offset 0x14
+[ 3658.316399] rdma_rxe: unloaded
