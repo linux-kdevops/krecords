@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "subject": {
     "project": "linux",
     "commit": "4405c18c95d2d0f99f6c581ef0ee8591a1aa6ccd"
@@ -61,6 +61,45 @@
             },
             "io": {
               "stalled_seconds": 0.039
+            },
+            "tasks": {
+              "peak": 27
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "d21d96d"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T06:56:02Z",
+          "seconds": 4,
+          "resources": {
+            "cpu": {
+              "seconds": 3.636,
+              "user_seconds": 1.961,
+              "system_seconds": 1.675,
+              "stalled_seconds": 0.007
+            },
+            "memory": {
+              "peak": 580984832,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 414
+            },
+            "io": {
+              "stalled_seconds": 0.09
             },
             "tasks": {
               "peak": 27
