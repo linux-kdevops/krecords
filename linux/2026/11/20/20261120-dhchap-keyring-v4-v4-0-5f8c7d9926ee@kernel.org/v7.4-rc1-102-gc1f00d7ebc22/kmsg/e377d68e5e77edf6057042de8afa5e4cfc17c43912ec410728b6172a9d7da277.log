@@ -1,0 +1,132 @@
+[ 9150.948262] run blktests nvme/044 at 2026-11-22 05:27:54.967273129
+[ 9151.098322] infiniband enp0s2_rxe: set active
+[ 9151.098327] infiniband enp0s2_rxe: added enp0s2
+[ 9151.196229] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 9151.212289] nvmet_rdma: enabling port 0 (10.0.2.15:4420)
+[ 9151.266675] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349 with DH-HMAC-CHAP.
+[ 9151.276592] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[ 9151.276679] nvme nvme3: qid 0: authenticated
+[ 9151.280157] nvme nvme3: creating 2 I/O queues.
+[ 9151.280275] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 9151.291381] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 10.0.2.15:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 9151.426610] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 9151.573372] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349 with DH-HMAC-CHAP.
+[ 9151.580445] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[ 9151.580450] nvme nvme3: qid 0: controller authentication failed
+[ 9151.580541] nvmet: ctrl 1 fatal error occurred!
+[ 9211.682916] nvme nvme3: I/O tag 14 (100e) opcode 0x7f (Authentication Send) QID 0 timeout
+[ 9273.124284] nvme nvme3: I/O tag 14 (100e) opcode 0x7f (Authentication Send) QID 0 timeout
+[ 9305.885066] INFO: task nvme:126866 blocked for more than 120 seconds.
+[ 9305.885075]       Not tainted 7.4.0-rc1-00102-gc1f00d7ebc22 #1
+[ 9305.885077] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[ 9305.885079] task:nvme            state:D stack:0     pid:126866 tgid:126866 ppid:126865 task_flags:0x400000 flags:0x00080000
+[ 9305.885085] Call Trace:
+[ 9305.885087]  <TASK>
+[ 9305.885090]  __schedule+0xf33/0x32a0
+[ 9305.885099]  ? io_schedule_timeout+0x140/0x140
+[ 9305.885103]  schedule+0x7b/0x200
+[ 9305.885106]  ? wakeup_preempt+0x1c8/0x360
+[ 9305.885111]  schedule_timeout+0x191/0x270
+[ 9305.885113]  ? hrtimer_nanosleep_restart+0x140/0x140
+[ 9305.885116]  ? _raw_spin_unlock_irqrestore+0x47/0x80
+[ 9305.885118]  ? try_to_wake_up+0x14c/0x1200
+[ 9305.885120]  wait_for_completion+0x16a/0x3b0
+[ 9305.885124]  ? wait_for_completion_io_timeout+0x3c0/0x3c0
+[ 9305.885126]  ? insert_work+0xd0/0x250
+[ 9305.885130]  ? _raw_spin_unlock_irq+0x3f/0x70
+[ 9305.885132]  __flush_work+0x5ac/0x9f0
+[ 9305.885135]  ? assign_work+0x5a0/0x5a0
+[ 9305.885138]  ? workqueue_congested+0x130/0x130
+[ 9305.885140]  ? __trace_set_need_resched+0xe0/0xe0
+[ 9305.885145]  nvme_auth_wait+0x45/0xa0 [nvme_core]
+[ 9305.885154]  nvmf_connect_admin_queue+0x283/0x370 [nvme_fabrics]
+[ 9305.885159]  ? nvmf_unregister_transport+0x1b0/0x1b0 [nvme_fabrics]
+[ 9305.885163]  nvme_rdma_start_queue+0x7b/0x120 [nvme_rdma]
+[ 9305.885166]  nvme_rdma_configure_admin_queue+0x263/0x7d0 [nvme_rdma]
+[ 9305.885169]  nvme_rdma_create_ctrl+0x8bc/0xb80 [nvme_rdma]
+[ 9305.885173]  nvmf_dev_write+0x3b6/0x7c0 [nvme_fabrics]
+[ 9305.885176]  vfs_write+0x1b8/0xd70
+[ 9305.885180]  ? kmem_cache_free+0xf3/0x430
+[ 9305.885184]  ? kernel_write+0x490/0x490
+[ 9305.885186]  ? do_sys_openat2+0xc9/0x150
+[ 9305.885188]  ? build_open_flags+0x6e0/0x6e0
+[ 9305.885190]  ? kmem_cache_free+0x117/0x430
+[ 9305.885192]  ? fdget_pos+0x53/0x780
+[ 9305.885195]  ksys_write+0xfd/0x200
+[ 9305.885197]  ? __x64_sys_read+0xc0/0xc0
+[ 9305.885200]  do_syscall_64+0x5c/0x300
+[ 9305.885202]  entry_SYSCALL_64_after_hwframe+0x4b/0x53
+[ 9305.885205] RIP: 0033:0x7fc655b7fa02
+[ 9305.885208] RSP: 002b:00007ffd6bfdb750 EFLAGS: 00000202 ORIG_RAX: 0000000000000001
+[ 9305.885211] RAX: ffffffffffffffda RBX: 000055ab80a0b710 RCX: 00007fc655b7fa02
+[ 9305.885213] RDX: 0000000000000169 RSI: 000055ab80a0b710 RDI: 0000000000000003
+[ 9305.885214] RBP: 0000000000000169 R08: 0000000000000000 R09: 0000000000000000
+[ 9305.885216] R10: 0000000000000000 R11: 0000000000000202 R12: 0000000000000003
+[ 9305.885217] R13: 000055ab80a09d50 R14: 00007fc655d3a848 R15: 0000000000000000
+[ 9305.885219]  </TASK>
+[ 9334.565670] nvme nvme3: I/O tag 14 (100e) opcode 0x7f (Authentication Send) QID 0 timeout
+[ 9396.015045] nvme nvme3: I/O tag 14 (100e) opcode 0x7f (Authentication Send) QID 0 timeout
+[ 9426.719797] INFO: task nvme:126866 blocked for more than 241 seconds.
+[ 9426.719806]       Not tainted 7.4.0-rc1-00102-gc1f00d7ebc22 #1
+[ 9426.719808] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[ 9426.719810] task:nvme            state:D stack:0     pid:126866 tgid:126866 ppid:126865 task_flags:0x400000 flags:0x00080000
+[ 9426.719815] Call Trace:
+[ 9426.719817]  <TASK>
+[ 9426.719819]  __schedule+0xf33/0x32a0
+[ 9426.719828]  ? io_schedule_timeout+0x140/0x140
+[ 9426.719831]  schedule+0x7b/0x200
+[ 9426.719834]  ? wakeup_preempt+0x1c8/0x360
+[ 9426.719839]  schedule_timeout+0x191/0x270
+[ 9426.719842]  ? hrtimer_nanosleep_restart+0x140/0x140
+[ 9426.719844]  ? _raw_spin_unlock_irqrestore+0x47/0x80
+[ 9426.719847]  ? try_to_wake_up+0x14c/0x1200
+[ 9426.719849]  wait_for_completion+0x16a/0x3b0
+[ 9426.719853]  ? wait_for_completion_io_timeout+0x3c0/0x3c0
+[ 9426.719856]  ? insert_work+0xd0/0x250
+[ 9426.719859]  ? _raw_spin_unlock_irq+0x3f/0x70
+[ 9426.719861]  __flush_work+0x5ac/0x9f0
+[ 9426.719864]  ? assign_work+0x5a0/0x5a0
+[ 9426.719867]  ? workqueue_congested+0x130/0x130
+[ 9426.719869]  ? __trace_set_need_resched+0xe0/0xe0
+[ 9426.719874]  nvme_auth_wait+0x45/0xa0 [nvme_core]
+[ 9426.719883]  nvmf_connect_admin_queue+0x283/0x370 [nvme_fabrics]
+[ 9426.719888]  ? nvmf_unregister_transport+0x1b0/0x1b0 [nvme_fabrics]
+[ 9426.719891]  nvme_rdma_start_queue+0x7b/0x120 [nvme_rdma]
+[ 9426.719895]  nvme_rdma_configure_admin_queue+0x263/0x7d0 [nvme_rdma]
+[ 9426.719898]  nvme_rdma_create_ctrl+0x8bc/0xb80 [nvme_rdma]
+[ 9426.719901]  nvmf_dev_write+0x3b6/0x7c0 [nvme_fabrics]
+[ 9426.719904]  vfs_write+0x1b8/0xd70
+[ 9426.719908]  ? kmem_cache_free+0xf3/0x430
+[ 9426.719913]  ? kernel_write+0x490/0x490
+[ 9426.719915]  ? do_sys_openat2+0xc9/0x150
+[ 9426.719917]  ? build_open_flags+0x6e0/0x6e0
+[ 9426.719919]  ? kmem_cache_free+0x117/0x430
+[ 9426.719922]  ? fdget_pos+0x53/0x780
+[ 9426.719924]  ksys_write+0xfd/0x200
+[ 9426.719927]  ? __x64_sys_read+0xc0/0xc0
+[ 9426.719930]  do_syscall_64+0x5c/0x300
+[ 9426.719933]  entry_SYSCALL_64_after_hwframe+0x4b/0x53
+[ 9426.719936] RIP: 0033:0x7fc655b7fa02
+[ 9426.719939] RSP: 002b:00007ffd6bfdb750 EFLAGS: 00000202 ORIG_RAX: 0000000000000001
+[ 9426.719942] RAX: ffffffffffffffda RBX: 000055ab80a0b710 RCX: 00007fc655b7fa02
+[ 9426.719944] RDX: 0000000000000169 RSI: 000055ab80a0b710 RDI: 0000000000000003
+[ 9426.719945] RBP: 0000000000000169 R08: 0000000000000000 R09: 0000000000000000
+[ 9426.719947] R10: 0000000000000000 R11: 0000000000000202 R12: 0000000000000003
+[ 9426.719948] R13: 000055ab80a09d50 R14: 00007fc655d3a848 R15: 0000000000000000
+[ 9426.719950]  </TASK>
+[ 9457.448409] nvme nvme3: I/O tag 14 (100e) opcode 0x7f (Authentication Send) QID 0 timeout
+[ 9518.889747] nvme nvme3: I/O tag 14 (100e) opcode 0x7f (Authentication Send) QID 0 timeout
+[ 9518.889805] nvme nvme3: qid 0 auth_send failed with status 881
+[ 9518.889874] nvme nvme3: qid 0: authentication failed, error -129
+[ 9518.890169] nvme nvme3: failed to connect queue: 0 ret=-129
+[ 9518.955231] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349 with DH-HMAC-CHAP.
+[ 9518.961112] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[ 9518.961117] nvme nvme3: qid 0: controller authenticated
+[ 9518.961287] nvme nvme3: qid 0: authenticated
+[ 9518.964210] nvme nvme3: creating 2 I/O queues.
+[ 9518.964304] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 9518.974734] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 10.0.2.15:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 9519.102746] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 9519.223543] refresh dhchap psk '74152576-ca5c-46a9-a735-030ed7841cd2' failed, error -129
+[ 9519.477194] rdma_rxe: unloaded
+[ 9520.876615] kmemleak: 2 new suspected memory leaks (see /sys/kernel/debug/kmemleak)
