@@ -1,0 +1,22 @@
+[ 9031.874629] run blktests nvme/034 at 2026-11-22 02:05:45.266235814
+[ 9032.067956] nvme nvme3: NVME-FC{0}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "blktests-subsystem-1"
+[ 9032.068075] nvmet_fc: {0:0}: Association created
+[ 9032.068300] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 9032.070196] nvme nvme3: NVME-FC{0}: controller connect complete
+[ 9032.070252] nvme nvme3: NVME-FC{0}: new ctrl: NQN "blktests-subsystem-1", hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 9032.137712] nvme nvme4: NVME-FC{1}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 9032.137826] nvmet_fc: {0:1}: Association created
+[ 9032.138033] nvmet: Created discovery controller 2 for subsystem nqn.2014-08.org.nvmexpress.discovery for NQN nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321.
+[ 9032.138508] nvme nvme4: NVME-FC{1}: controller connect complete
+[ 9032.141437] nvme nvme4: NVME-FC{1}: new ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery", hostnqn: nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321
+[ 9032.150995] nvme nvme4: Removing ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 9032.171332] nvmet_fc: {0:1}: Association deleted
+[ 9032.179225] nvmet_fc: {0:1}: Association freed
+[ 9032.179240] (NULL device *): Disconnect LS failed: No Association
+[ 9037.229819] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 9037.359463] nvme nvme3: long keepalive RTT (8741512 ms)
+[ 9037.359472] nvme nvme3: failed nvme_keep_alive_end_io error=4
+[ 9037.391429] nvmet_fc: {0:0}: Association deleted
+[ 9037.429117] nvmet_fc: {0:0}: Association freed
+[ 9037.429146] (NULL device *): Disconnect LS failed: No Association
+[ 9037.493021] nvme_fc: nvme_fc_create_ctrl: nn-0x10001100ab000001:pn-0x20001100ab000001 - nn-0x10001100aa000001:pn-0x20001100aa000001 combination not found
