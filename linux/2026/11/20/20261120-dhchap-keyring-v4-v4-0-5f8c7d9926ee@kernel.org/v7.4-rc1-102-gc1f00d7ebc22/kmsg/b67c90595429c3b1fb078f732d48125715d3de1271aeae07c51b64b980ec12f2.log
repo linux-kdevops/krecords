@@ -1,0 +1,28 @@
+[13613.765967] run blktests nvme/045 at 2026-11-22 06:42:17.681492377
+[13613.881120] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[13613.897877] nvmet_tcp: enabling port 0 (127.0.0.1:4420)
+[13613.942129] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349 with DH-HMAC-CHAP.
+[13613.951176] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[13613.951181] nvme nvme3: qid 0: controller authenticated
+[13613.951326] nvme nvme3: qid 0: authenticated
+[13613.955172] nvme nvme3: creating 2 I/O queues.
+[13613.955289] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[13613.956890] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[13614.103933] nvme nvme3: re-authenticating controller
+[13614.109472] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[13614.109476] nvme nvme3: qid 0: controller authenticated
+[13614.152010] nvme nvme3: re-authenticating controller
+[13614.158226] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[13614.158229] nvme nvme3: qid 0: controller authenticated
+[13614.184345] nvme nvme3: re-authenticating controller
+[13614.190015] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[13614.190018] nvme nvme3: qid 0: controller authenticated
+[13614.211957] nvme nvme3: re-authenticating controller
+[13614.352866] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe8192
+[13614.352872] nvme nvme3: qid 0: controller authenticated
+[13614.359943] nvme nvme3: re-authenticating controller
+[13614.481004] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe8192
+[13614.481011] nvme nvme3: qid 0: controller authenticated
+[13614.897557] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[13616.739340] kmemleak: 1 new suspected memory leaks (see /sys/kernel/debug/kmemleak)
+[13618.135788] rdma_rxe: loaded
