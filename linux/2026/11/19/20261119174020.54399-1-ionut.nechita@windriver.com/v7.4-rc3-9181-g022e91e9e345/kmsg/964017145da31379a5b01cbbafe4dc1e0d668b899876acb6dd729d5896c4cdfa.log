@@ -1,0 +1,25 @@
+[ 1801.218294] run blktests nvme/036 at 2026-11-22 22:26:29.227911773
+[ 1801.333787] nvmet_tcp: enabling port 0 (127.0.0.1:4420)
+[ 1801.379273] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 1801.381145] nvmet_tcp: failed cmd 00000000dca24fbe id 4110 opcode 130, data_len: 2048, status: c002
+[ 1801.381737] nvme nvme3: creating 2 I/O queues.
+[ 1801.381871] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 1801.387195] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 1801.387650] nvmet_tcp: failed cmd 00000000c3f5f4b8 id 23 opcode 6, data_len: 4096, status: 8002
+[ 1801.392885] nvmet_tcp: failed cmd 00000000c0442326 id 4121 opcode 6, data_len: 4096, status: 8002
+[ 1801.394423] nvmet_tcp: failed cmd 00000000e117ee9a id 12310 opcode 6, data_len: 4096, status: 8002
+[ 1801.521896] nvme nvme3: resetting controller
+[ 1801.524874] nvmet: Created nvm controller 2 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 1801.525884] nvmet_tcp: failed cmd 000000003947dd66 id 16406 opcode 130, data_len: 2048, status: c002
+[ 1801.525985] nvme nvme3: creating 2 I/O queues.
+[ 1801.547803] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 1801.551052] nvmet_tcp: failed cmd 000000002c538799 id 24600 opcode 6, data_len: 4096, status: 8002
+[ 1801.551166] nvmet_tcp: failed cmd 000000002bd1f82b id 28694 opcode 6, data_len: 4096, status: 8002
+[ 1801.566107] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 1801.576768] block nvme3n1: no available path - failing I/O
+[ 1801.576790] block nvme3n1: no available path - failing I/O
+[ 1801.576794] Buffer I/O error on dev nvme3n1, logical block 262128, async page read
+[ 1801.585730] block nvme3n1: no available path - failing I/O
+[ 1801.585739] Buffer I/O error on dev nvme3n1, logical block 262128, async page read
+[ 1803.888646] rdma_rxe: loaded
+[ 1804.011138] rdma_rxe: unloaded

@@ -1,0 +1,19 @@
+[ 3019.886779] run blktests nvme/063 at 2026-11-22 22:46:47.874344247
+[ 3019.999384] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3020.010631] nvmet: Allow non-TLS connections while TLS1.3 is enabled
+[ 3020.015234] nvmet_tcp: enabling port 0 (127.0.0.1:4420)
+[ 3020.068428] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349 with DH-HMAC-CHAP.
+[ 3020.068642] nvmet: ctrl 1 qid 0 failure1 (3)
+[ 3020.068696] nvmet: ctrl 1 fatal error occurred!
+[ 3081.985799] nvme nvme3: I/O tag 7 (0007) type 4 opcode 0x7f (Authentication Receive) QID 0 timeout
+[ 3081.985843] nvme nvme3: failed to send request -32
+[ 3081.985857] nvme nvme3: failed to send request -32
+[ 3081.985865] nvme nvme3: failed to send request -32
+[ 3081.985872] nvme nvme3: failed to send request -32
+[ 3081.985880] nvme nvme3: failed to send request -32
+[ 3081.985904] nvme nvme3: qid 0 auth_receive failed with status 880
+[ 3081.985907] nvme nvme3: qid 0 failed to receive challenge, nvme status 880
+[ 3081.985943] nvme nvme3: qid 0: authentication failed, error 880
+[ 3081.985959] nvme nvme3: failed to connect queue: 0 ret=880
+[ 3084.976825] rdma_rxe: loaded
+[ 3088.902788] rdma_rxe: unloaded
