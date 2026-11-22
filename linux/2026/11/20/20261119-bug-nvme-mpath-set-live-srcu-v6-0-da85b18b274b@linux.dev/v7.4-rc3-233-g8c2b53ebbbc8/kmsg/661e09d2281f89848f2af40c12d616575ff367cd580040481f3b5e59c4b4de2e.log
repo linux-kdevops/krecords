@@ -1,0 +1,100 @@
+[ 2922.091075] run blktests nvme/060 at 2026-11-22 21:04:12.400427345
+[ 2922.246710] infiniband enp0s2_rxe: set active
+[ 2922.246716] infiniband enp0s2_rxe: added enp0s2
+[ 2922.325037] loop0: detected capacity change from 0 to 2097152
+[ 2922.336766] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 2922.355617] nvmet_rdma: enabling port 0 (10.0.2.15:4420)
+[ 2922.418117] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2922.419975] nvme nvme3: creating 2 I/O queues.
+[ 2922.420080] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 2922.432753] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 10.0.2.15:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 2924.401060] nvmet: ctrl 1 fatal error occurred!
+[ 2924.401483] nvme nvme3: starting error recovery
+[ 2924.427856] nvme nvme3: Reconnecting in 1 seconds...
+[ 2925.460620] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2925.461664] nvme nvme3: creating 2 I/O queues.
+[ 2925.490202] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 2925.492819] nvme nvme3: Successfully reconnected (1 attempts)
+[ 2925.543642] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 2925.546963] nvme_ns_head_submit_bio: 51 callbacks suppressed
+[ 2925.546968] block nvme3n1: no available path - failing I/O
+[ 2925.546997] block nvme3n1: no available path - failing I/O
+[ 2925.547017] block nvme3n1: no available path - failing I/O
+[ 2925.547020] buffer_io_error: 39 callbacks suppressed
+[ 2925.547022] Buffer I/O error on dev nvme3n1, logical block 262084, async page read
+[ 2925.555080] block nvme3n1: no available path - failing I/O
+[ 2925.555103] block nvme3n1: no available path - failing I/O
+[ 2925.555106] Buffer I/O error on dev nvme3n1, logical block 128, async page read
+[ 2925.679824] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2925.684043] nvme nvme3: creating 2 I/O queues.
+[ 2925.684189] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 2925.699367] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 10.0.2.15:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 2926.414780] nvmet: ctrl 1 fatal error occurred!
+[ 2926.415787] nvme nvme3: starting error recovery
+[ 2926.439854] nvme nvme3: Reconnecting in 1 seconds...
+[ 2927.444121] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2927.445228] nvme nvme3: creating 2 I/O queues.
+[ 2927.470284] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 2927.471480] nvme nvme3: Successfully reconnected (1 attempts)
+[ 2928.432147] nvmet: ctrl 1 fatal error occurred!
+[ 2928.432554] nvme nvme3: starting error recovery
+[ 2928.460110] nvme nvme3: Reconnecting in 1 seconds...
+[ 2928.789969] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 2928.851589] nvme nvme3: Property Set error: 880, offset 0x14
+[ 2928.903616] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2928.905625] nvme nvme3: creating 2 I/O queues.
+[ 2928.905723] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 2928.915547] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 10.0.2.15:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 2930.447030] nvmet: ctrl 1 fatal error occurred!
+[ 2930.447484] nvme nvme3: starting error recovery
+[ 2930.466569] nvme nvme3: Reconnecting in 1 seconds...
+[ 2931.476396] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2931.477917] nvme nvme3: creating 2 I/O queues.
+[ 2931.502280] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 2931.504188] nvme nvme3: Successfully reconnected (1 attempts)
+[ 2932.023378] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 2932.148622] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2932.154988] nvme nvme3: creating 2 I/O queues.
+[ 2932.155136] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 2932.169354] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 10.0.2.15:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 2932.462821] nvmet: ctrl 1 fatal error occurred!
+[ 2932.463226] nvme nvme3: starting error recovery
+[ 2932.491717] nvme nvme3: Reconnecting in 1 seconds...
+[ 2933.524820] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2933.525944] nvme nvme3: creating 2 I/O queues.
+[ 2933.554230] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 2933.555798] nvme nvme3: Successfully reconnected (1 attempts)
+[ 2934.477629] nvmet: ctrl 1 fatal error occurred!
+[ 2934.478844] nvme nvme3: starting error recovery
+[ 2934.504081] nvme nvme3: Reconnecting in 1 seconds...
+[ 2935.279968] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 2935.347866] nvme nvme3: Property Set error: 880, offset 0x14
+[ 2935.403135] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2935.404927] nvme nvme3: creating 2 I/O queues.
+[ 2935.405026] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 2935.416293] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 10.0.2.15:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 2936.491055] nvmet: ctrl 1 fatal error occurred!
+[ 2936.491439] nvme nvme3: starting error recovery
+[ 2936.509857] nvme nvme3: Reconnecting in 1 seconds...
+[ 2937.529345] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2937.533137] nvme nvme3: creating 2 I/O queues.
+[ 2937.558320] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 2937.559812] nvme nvme3: Successfully reconnected (1 attempts)
+[ 2938.504105] nvmet: ctrl 1 fatal error occurred!
+[ 2938.505106] nvme nvme3: starting error recovery
+[ 2938.516843] nvme nvme3: Reconnecting in 1 seconds...
+[ 2938.523349] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 2938.579470] nvme nvme3: Property Set error: 880, offset 0x14
+[ 2938.628224] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2938.630656] nvme nvme3: creating 2 I/O queues.
+[ 2938.630760] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 2938.641645] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 10.0.2.15:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 2940.525279] nvmet: ctrl 1 fatal error occurred!
+[ 2940.526431] nvme nvme3: starting error recovery
+[ 2940.535347] nvme nvme3: Reconnecting in 1 seconds...
+[ 2941.556600] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2941.557648] nvme nvme3: creating 2 I/O queues.
+[ 2941.578436] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 2941.579563] nvme nvme3: Successfully reconnected (1 attempts)
+[ 2941.745072] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 2942.086008] rdma_rxe: unloaded
