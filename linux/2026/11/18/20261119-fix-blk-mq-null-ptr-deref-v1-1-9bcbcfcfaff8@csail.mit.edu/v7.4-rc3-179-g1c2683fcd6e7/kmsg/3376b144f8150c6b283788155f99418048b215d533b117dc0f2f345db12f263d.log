@@ -1,0 +1,134 @@
+[   18.744316] run blktests block/014 at 2026-11-22 15:19:34.219862367
+[   24.886172] null_blk: rq 00000000525567da timed out
+[   24.886181] timeout error, dev faultb0, sector 0 op 0x0:(READ) flags 0x800000 phys_seg 1 prio class 2
+[   24.886204] Buffer I/O error on dev faultb0, logical block 0, async page read
+[   31.030155] null_blk: rq 00000000c4b5c56a timed out
+[   31.030164] timeout error, dev faultb0, sector 24 op 0x0:(READ) flags 0x800000 phys_seg 1 prio class 2
+[   31.030193] Buffer I/O error on dev faultb0, logical block 3, async page read
+[   31.030222]  faultb0: unable to read partition table
+[   31.030845] null_blk: disk faultb0 created
+[   37.174172] null_blk: rq 00000000f6109c48 timed out
+[   37.174183] timeout error, dev faultb0, sector 524287872 op 0x0:(READ) flags 0x880700 phys_seg 1 prio class 2
+[   43.279731] null_blk: rq 00000000c23349c9 timed out
+[   43.279740] timeout error, dev faultb0, sector 524287984 op 0x0:(READ) flags 0x880700 phys_seg 1 prio class 2
+[   49.342987] null_blk: rq 0000000044297a59 timed out
+[   49.342997] timeout error, dev faultb0, sector 8 op 0x0:(READ) flags 0x880700 phys_seg 1 prio class 2
+[   55.450923] null_blk: rq 00000000ad564fb7 timed out
+[   55.450932] timeout error, dev faultb0, sector 524287736 op 0x0:(READ) flags 0x880700 phys_seg 1 prio class 2
+[   61.578943] null_blk: rq 000000006519552d timed out
+[   61.578953] timeout error, dev faultb0, sector 524287736 op 0x0:(READ) flags 0x800000 phys_seg 1 prio class 2
+[   61.578982] Buffer I/O error on dev faultb0, logical block 65535967, async page read
+[   67.715877] null_blk: rq 00000000525567da timed out
+[   67.715887] null_blk: rq 000000007eae020a timed out
+[   67.715888] null_blk: rq 0000000086d2ab41 timed out
+[   67.715890] null_blk: rq 00000000c4b5c56a timed out
+[   67.715891] null_blk: rq 0000000081a311e5 timed out
+[   67.715892] null_blk: rq 00000000f6109c48 timed out
+[   67.715892] null_blk: rq 000000008b0e2898 timed out
+[   67.715893] null_blk: rq 00000000c23349c9 timed out
+[   67.715894] null_blk: rq 0000000082e7de61 timed out
+[   67.715895] null_blk: rq 0000000044297a59 timed out
+[   67.715897] null_blk: rq 00000000f947a2ad timed out
+[   67.715898] null_blk: rq 0000000070645964 timed out
+[   67.715899] null_blk: rq 00000000ad564fb7 timed out
+[   67.715899] null_blk: rq 000000006519552d timed out
+[   67.715900] null_blk: rq 00000000352a2e85 timed out
+[   67.715901] null_blk: rq 0000000094b90da8 timed out
+[   67.715902] null_blk: rq 000000009143fae6 timed out
+[   67.715902] null_blk: rq 00000000190ce198 timed out
+[   67.715901] timeout error, dev faultb0, sector 16 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[   67.715904] timeout error, dev faultb0, sector 16 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[   67.715916] timeout error, dev faultb0, sector 0 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[   67.715917] null_blk: rq 000000008df192a6 timed out
+[   67.715918] timeout error, dev faultb0, sector 8 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[   67.715921] timeout error, dev faultb0, sector 16 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[   67.715923] null_blk: rq 0000000086fa4e77 timed out
+[   67.715925] timeout error, dev faultb0, sector 0 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[   67.715926] timeout error, dev faultb0, sector 24 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[   67.715929] null_blk: rq 00000000ee21e474 timed out
+[   67.715930] null_blk: rq 00000000c04a79f1 timed out
+[   67.715930] timeout error, dev faultb0, sector 0 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[   67.715931] timeout error, dev faultb0, sector 8 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[   67.715935] null_blk: rq 00000000b895aa3f timed out
+[   67.715936] null_blk: rq 000000007c3408ec timed out
+[   67.715937] timeout error, dev faultb0, sector 24 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[   67.715948] null_blk: rq 00000000dbff8256 timed out
+[   67.715949] null_blk: rq 00000000793c6665 timed out
+[   67.715950] null_blk: rq 00000000666a85ed timed out
+[   67.715951] null_blk: rq 0000000045c54d57 timed out
+[   67.715954] null_blk: rq 00000000fd6b9d93 timed out
+[   67.715971] null_blk: rq 0000000009d2c1a9 timed out
+[   67.715972] null_blk: rq 00000000c678cf71 timed out
+[   67.715975] null_blk: rq 00000000951202f7 timed out
+[   67.715978] null_blk: rq 000000007784ef92 timed out
+[   67.715981] null_blk: rq 000000006b9fe958 timed out
+[   67.715984] null_blk: rq 00000000998e3f01 timed out
+[   67.715995] null_blk: rq 000000002c9b4025 timed out
+[   67.716004] null_blk: rq 000000006a3ee7db timed out
+[   67.716007] null_blk: rq 0000000005c09aeb timed out
+[   67.716010] null_blk: rq 0000000028bf3f50 timed out
+[   67.716019] null_blk: rq 000000000eb1210d timed out
+[   67.716022] null_blk: rq 00000000afc3ea78 timed out
+[   67.716026] null_blk: rq 0000000020cf9222 timed out
+[   67.716029] null_blk: rq 0000000073bf7183 timed out
+[   67.716032] null_blk: rq 000000007a71674e timed out
+[   67.716035] null_blk: rq 000000004f5df4dc timed out
+[   67.716038] null_blk: rq 00000000e22fd172 timed out
+[   67.716041] null_blk: rq 0000000033a4ea9f timed out
+[   67.716045] null_blk: rq 000000003a20050b timed out
+[   67.716048] null_blk: rq 0000000058664fde timed out
+[   67.716051] null_blk: rq 0000000028d24210 timed out
+[   67.716054] null_blk: rq 0000000053d9266b timed out
+[   67.716057] null_blk: rq 000000001be67a24 timed out
+[   67.716060] null_blk: rq 00000000682cfc9e timed out
+[   67.716063] null_blk: rq 00000000d260d4cf timed out
+[   67.716066] null_blk: rq 000000007d36af86 timed out
+[   67.716069] null_blk: rq 00000000e60a43ca timed out
+[   67.716072] null_blk: rq 00000000ecc4b68d timed out
+[   67.716075] null_blk: rq 00000000bcd24524 timed out
+[   67.716078] null_blk: rq 00000000b23dcedb timed out
+[   67.716082] null_blk: rq 0000000054e3953e timed out
+[   67.716084] null_blk: rq 000000002adcc547 timed out
+[   67.716087] null_blk: rq 0000000005aa81e7 timed out
+[   67.716091] null_blk: rq 00000000df25fab8 timed out
+[   67.716094] null_blk: rq 00000000698eed47 timed out
+[   73.860847] null_blk: rq 00000000525567da timed out
+[   73.860857] blk_print_req_error: 54 callbacks suppressed
+[   73.860860] timeout error, dev faultb0, sector 0 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[   73.860879] null_blk: rq 0000000086d2ab41 timed out
+[   73.860881] timeout error, dev faultb0, sector 8 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[   73.860886] null_blk: rq 0000000081a311e5 timed out
+[   73.860888] timeout error, dev faultb0, sector 16 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[   73.860893] null_blk: rq 000000009143fae6 timed out
+[   73.860897] null_blk: rq 00000000190ce198 timed out
+[   73.860898] null_blk: rq 000000008df192a6 timed out
+[   73.860899] null_blk: rq 0000000086fa4e77 timed out
+[   73.860900] null_blk: rq 00000000ee21e474 timed out
+[   73.860901] null_blk: rq 00000000c04a79f1 timed out
+[   73.860904] null_blk: rq 00000000b895aa3f timed out
+[   73.860905] null_blk: rq 00000000dbff8256 timed out
+[   73.860906] null_blk: rq 0000000058664fde timed out
+[   73.860907] timeout error, dev faultb0, sector 8 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[   73.860906] timeout error, dev faultb0, sector 24 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[   73.860911] null_blk: rq 0000000028d24210 timed out
+[   73.860912] timeout error, dev faultb0, sector 8 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[   73.860916] timeout error, dev faultb0, sector 0 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[   73.860922] timeout error, dev faultb0, sector 0 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[   73.860927] timeout error, dev faultb0, sector 0 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[   73.860931] null_blk: rq 0000000053d9266b timed out
+[   73.860933] timeout error, dev faultb0, sector 0 op 0x0:(READ) flags 0x800 phys_seg 1 prio class 2
+[   73.860942] null_blk: rq 000000001be67a24 timed out
+[   73.860945] null_blk: rq 00000000682cfc9e timed out
+[   73.860955] null_blk: rq 00000000d260d4cf timed out
+[   73.860958] null_blk: rq 000000007d36af86 timed out
+[   73.860962] null_blk: rq 00000000e60a43ca timed out
+[   73.860965] null_blk: rq 00000000ecc4b68d timed out
+[   73.860968] null_blk: rq 00000000bcd24524 timed out
+[   73.860971] null_blk: rq 00000000b23dcedb timed out
+[   73.860974] null_blk: rq 0000000054e3953e timed out
+[   73.860977] null_blk: rq 000000002adcc547 timed out
+[   73.860981] null_blk: rq 0000000005aa81e7 timed out
+[   73.860984] null_blk: rq 00000000df25fab8 timed out
+[   73.860988] null_blk: rq 00000000698eed47 timed out
+[   75.661841] null_blk: disk nullb0 created
+[   75.661932] null_blk: module loaded
