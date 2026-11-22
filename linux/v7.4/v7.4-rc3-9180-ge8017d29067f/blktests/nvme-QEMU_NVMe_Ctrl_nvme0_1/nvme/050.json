@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "subject": {
+    "project": "linux",
+    "commit": "e8017d29067fd1310a65c3494ce1a1b492adbac6",
+    "test": "nvme/050"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "blktests",
+          "version": "",
+          "build": "233d11776bb9"
+        },
+        {
+          "name": "qemu",
+          "version": "11.1.3",
+          "build": "debian:qemu-system-x86 1:11.1.3+ds-1"
+        }
+      ],
+      "command": "check nvme/050",
+      "env": {
+        "TEST_DEVS": "/dev/disk/by-id/nvme-QEMU_NVMe_Ctrl_nvme0_1"
+      },
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:ff58ae3f439a3241717f0fd34b1e8bf275af83b4e372cf68bbf025abbc4a0a76",
+      "status": "fail",
+      "exit": 1,
+      "output": "Running nvme/050\nTest failed\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "8a944a8"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T22:36:17Z",
+          "seconds": 61,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3537915904
+          },
+          "fingerprint": []
+        }
+      ]
+    }
+  ]
+}
