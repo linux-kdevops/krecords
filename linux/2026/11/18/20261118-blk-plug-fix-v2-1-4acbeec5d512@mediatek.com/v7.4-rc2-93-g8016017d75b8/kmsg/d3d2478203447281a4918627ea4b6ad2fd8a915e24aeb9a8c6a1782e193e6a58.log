@@ -1,0 +1,32 @@
+[ 2845.969965] run blktests nvme/057 at 2026-11-22 13:34:50.199757120
+[ 2846.072991] loop0: detected capacity change from 0 to 2097152
+[ 2846.086225] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 2846.108399] nvmet_tcp: enabling port 0 (127.0.0.1:4420)
+[ 2846.122818] nvmet_tcp: enabling port 1 (127.0.0.1:4421)
+[ 2846.134802] nvmet_tcp: enabling port 2 (127.0.0.1:4422)
+[ 2846.147241] nvmet_tcp: enabling port 3 (127.0.0.1:4423)
+[ 2846.189696] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2846.192339] nvme nvme3: creating 2 I/O queues.
+[ 2846.192552] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 2846.197243] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 2846.315926] nvmet: Created nvm controller 2 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2846.317007] nvme nvme4: creating 2 I/O queues.
+[ 2846.317127] nvme nvme4: mapped 2/0/0 default/read/poll queues.
+[ 2846.322094] nvme nvme4: new ctrl: NQN "blktests-subsystem-1", addr 127.0.0.1:4421, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 2846.404027] nvmet: Created nvm controller 3 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2846.405029] nvme nvme5: creating 2 I/O queues.
+[ 2846.405142] nvme nvme5: mapped 2/0/0 default/read/poll queues.
+[ 2846.408342] nvme nvme5: new ctrl: NQN "blktests-subsystem-1", addr 127.0.0.1:4422, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 2846.469690] nvmet: Created nvm controller 4 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 2846.474364] nvme nvme6: creating 2 I/O queues.
+[ 2846.474501] nvme nvme6: mapped 2/0/0 default/read/poll queues.
+[ 2846.477278] nvme nvme6: new ctrl: NQN "blktests-subsystem-1", addr 127.0.0.1:4423, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 2871.568608] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 2871.719612] nvme nvme4: Removing ctrl: NQN "blktests-subsystem-1"
+[ 2871.721249] block nvme3n1: no available path - failing I/O
+[ 2871.721269] block nvme3n1: no available path - failing I/O
+[ 2871.721274] buffer_io_error: 13 callbacks suppressed
+[ 2871.721275] Buffer I/O error on dev nvme3n1, logical block 262112, async page read
+[ 2871.753540] nvme nvme5: Removing ctrl: NQN "blktests-subsystem-1"
+[ 2871.785434] nvme nvme6: Removing ctrl: NQN "blktests-subsystem-1"
+[ 2874.102399] rdma_rxe: loaded
