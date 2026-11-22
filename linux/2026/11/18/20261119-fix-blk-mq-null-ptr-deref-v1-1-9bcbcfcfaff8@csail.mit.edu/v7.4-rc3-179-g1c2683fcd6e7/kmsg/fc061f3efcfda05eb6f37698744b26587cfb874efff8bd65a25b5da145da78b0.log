@@ -1,0 +1,22 @@
+[ 3105.697534] run blktests nvme/079 at 2026-11-22 15:49:37.032909111
+[ 3105.854837] infiniband enp0s2_rxe: set active
+[ 3105.854842] infiniband enp0s2_rxe: added enp0s2
+[ 3105.926785] loop0: detected capacity change from 0 to 2097152
+[ 3105.942701] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 3105.962853] nvmet_rdma: enabling port 0 (10.0.2.15:4420)
+[ 3106.007651] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3106.009833] nvme nvme3: creating 6 I/O queues.
+[ 3106.010023] nvme nvme3: mapped 2/2/2 default/read/poll queues.
+[ 3106.038379] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 10.0.2.15:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 3106.262102] nvme nvme3: starting error recovery
+[ 3106.706498] nvme nvme3: Reconnecting in 2 seconds...
+[ 3108.734227] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 3108.737950] nvme nvme3: creating 4 I/O queues.
+[ 3108.772135] nvme nvme3: mapped 2/2/0 default/read/poll queues.
+[ 3108.775469] nvme nvme3: Successfully reconnected (1 attempts)
+[ 3112.730219] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 3112.731072] block nvme3n1: no available path - failing I/O
+[ 3112.731094] block nvme3n1: no available path - failing I/O
+[ 3112.731098] buffer_io_error: 41 callbacks suppressed
+[ 3112.731099] Buffer I/O error on dev nvme3n1, logical block 1024, async page read
+[ 3113.055509] rdma_rxe: unloaded
