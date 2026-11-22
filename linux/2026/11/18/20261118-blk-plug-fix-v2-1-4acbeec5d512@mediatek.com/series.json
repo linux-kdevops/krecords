@@ -1,0 +1,11 @@
+{
+  "schema": 2,
+  "message_id": "20261118-blk-plug-fix-v2-1-4acbeec5d512@mediatek.com",
+  "subject": "[PATCH v2] block: fix PF_BLOCK_TS/current->plug ordering in blk_finish_plug()",
+  "author": "Zi-Hao Huang <zi-hao.huang@mediatek.com>",
+  "date": "2026-11-18T02:31:42Z",
+  "change_id": "20261112-blk-plug-fix-f068b0223b80",
+  "revision": 2,
+  "text": "",
+  "patches": 1
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 2,
+  "commit": "8016017d75b81d797191fddaa02d1caf87c94195",
+  "message_id": "20261118-blk-plug-fix-v2-1-4acbeec5d512@mediatek.com",
+  "ref": "b4/20261118-blk-plug-fix-v2-1-4acbeec5d512",
+  "trees": [],
+  "base": "067c5c24cef23d913b67eaaf71ae67e7169a6620",
+  "base_name": "v7.4-rc2-92-g067c5c24cef2",
+  "base_trees": [
+    {
+      "remote": "linux-kdevops",
+      "url": "https://github.com/linux-kdevops/linux.git"
+    },
+    {
+      "remote": "origin",
+      "url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git"
+    }
+  ],
+  "commits": [
+    {
+      "commit": "8016017d75b81d797191fddaa02d1caf87c94195",
+      "subject": "block: fix PF_BLOCK_TS/current->plug ordering in blk_finish_plug()",
+      "author": "Zi-Hao Huang <zi-hao.huang@mediatek.com>",
+      "link": "https://patch.msgid.link/20261118-blk-plug-fix-v2-1-4acbeec5d512@mediatek.com"
+    }
+  ],
+  "sources": [
+    "block/blk-core.c"
+  ],
+  "docs": [],
+  "added": [],
+  "lists": [
+    "linux-block@vger.kernel.org",
+    "linux-kernel@vger.kernel.org",
+    "stable@vger.kernel.org"
+  ]
+}

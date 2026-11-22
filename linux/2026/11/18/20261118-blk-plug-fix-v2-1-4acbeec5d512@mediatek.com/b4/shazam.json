@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "subject": {
+    "project": "linux",
+    "message_id": "20261118-blk-plug-fix-v2-1-4acbeec5d512@mediatek.com"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "b4",
+          "version": "0.16.0",
+          "build": "debian:b4 0.16.0-2"
+        }
+      ],
+      "command": "b4 shazam",
+      "env": {},
+      "status": "pass",
+      "exit": 0,
+      "output": "Looking up 20261118-blk-plug-fix-v2-1-4acbeec5d512@mediatek.com\nChecking for newer revisions\nGrabbing search results from lore.kernel.org\nAnalyzing 2 messages in the thread\nLooking for additional code-review trailers on lore.kernel.org\nAnalyzing 2 code-review messages\nChecking attestation on all messages, may take a moment...\n---\n  \u001b[31m✗\u001b[0m [PATCH v2] block: fix PF_BLOCK_TS/current->plug ordering in blk_finish_plug()\n    + Reviewed-by: Chao Yu <chao@kernel.org> (\u001b[32m✓\u001b[0m DKIM/kernel.org)\n    + Link: https://patch.msgid.link/20261118-blk-plug-fix-v2-1-4acbeec5d512@mediatek.com\n  ---\n  \u001b[31m✗\u001b[0m No key: ed25519/zi-hao.huang@mediatek.com\n---\nTotal patches: 1\n---\n Base: 067c5c24cef23d913b67eaaf71ae67e7169a6620 (use --merge-base to override)\nMagic: Preparing a sparse worktree\n---\nApplying: block: fix PF_BLOCK_TS/current->plug ordering in blk_finish_plug()\n---\nFetching into FETCH_HEAD\nYou can now merge or checkout FETCH_HEAD\n  e.g.: git merge --no-ff -F .git/b4-cover --no-edit FETCH_HEAD --signoff\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "8a944a8"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T12:37:16Z",
+          "seconds": 4,
+          "resources": {
+            "cpu": {
+              "seconds": 1.956,
+              "user_seconds": 1.202,
+              "system_seconds": 0.754,
+              "stalled_seconds": 0.002
+            },
+            "memory": {
+              "peak": 749875200,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 571
+            },
+            "io": {
+              "stalled_seconds": 0.202
+            },
+            "tasks": {
+              "peak": 8
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}
