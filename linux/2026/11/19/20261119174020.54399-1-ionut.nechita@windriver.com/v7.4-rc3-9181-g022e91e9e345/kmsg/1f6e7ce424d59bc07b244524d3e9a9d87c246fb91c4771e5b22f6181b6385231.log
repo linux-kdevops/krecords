@@ -1,0 +1,247 @@
+[  369.893280] run blktests block/027 at 2026-11-22 22:24:26.125952897
+[  370.072335] sd 1:0:0:0: [sdb] Synchronizing SCSI cache
+[  370.155947] scsi_debug:sdebug_driver_probe: scsi_debug: trim poll_queues to 0. poll_q/nr_hw = (0/2)
+[  370.155956] scsi host1: scsi_debug: version 0191 [20210520]
+[  370.155956]   dev_size_mb=8, opts=0x0, submit_queues=2, statistics=0
+[  370.164108] scsi 1:0:0:0: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[  370.165005] scsi 1:0:0:0: Power-on or device reset occurred
+[  370.170405] sd 1:0:0:0: [sdb] 268435456 512-byte logical blocks: (137 GB/128 GiB)
+[  370.170450] sd 1:0:0:0: [sdb] Write Protect is off
+[  370.170512] sd 1:0:0:0: [sdb] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[  370.170665] sd 1:0:0:0: Attached scsi generic sg1 type 0
+[  370.176946] sd 1:0:0:0: [sdb] permanent stream count = 5
+[  370.177001] scsi 1:0:0:1: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[  370.177045] sd 1:0:0:0: [sdb] Preferred minimum I/O size 512 bytes
+[  370.177056] sd 1:0:0:0: [sdb] Optimal transfer size 524288 bytes
+[  370.178243] scsi 1:0:0:1: Power-on or device reset occurred
+[  370.183429] sd 1:0:0:1: [sdc] 268435456 512-byte logical blocks: (137 GB/128 GiB)
+[  370.183499] sd 1:0:0:1: [sdc] Write Protect is off
+[  370.183597] sd 1:0:0:1: [sdc] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[  370.183900] sd 1:0:0:1: Attached scsi generic sg2 type 0
+[  370.184402] sd 1:0:0:1: [sdc] permanent stream count = 5
+[  370.184521] sd 1:0:0:1: [sdc] Preferred minimum I/O size 512 bytes
+[  370.184537] sd 1:0:0:1: [sdc] Optimal transfer size 524288 bytes
+[  370.189751] scsi 1:0:0:2: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[  370.192307] scsi 1:0:0:2: Power-on or device reset occurred
+[  370.195950] sd 1:0:0:2: [sdd] 268435456 512-byte logical blocks: (137 GB/128 GiB)
+[  370.195992] sd 1:0:0:2: [sdd] Write Protect is off
+[  370.196058] sd 1:0:0:2: [sdd] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[  370.196212] sd 1:0:0:2: Attached scsi generic sg3 type 0
+[  370.196686] sd 1:0:0:2: [sdd] permanent stream count = 5
+[  370.196830] sd 1:0:0:2: [sdd] Preferred minimum I/O size 512 bytes
+[  370.196840] sd 1:0:0:2: [sdd] Optimal transfer size 524288 bytes
+[  370.200089] scsi 1:0:0:3: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[  370.202747] scsi 1:0:0:3: Power-on or device reset occurred
+[  370.209648] sd 1:0:0:3: [sde] 268435456 512-byte logical blocks: (137 GB/128 GiB)
+[  370.209684] sd 1:0:0:3: [sde] Write Protect is off
+[  370.210048] sd 1:0:0:3: [sde] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[  370.210230] sd 1:0:0:1: [sdc] Attached SCSI disk
+[  370.211858] sd 1:0:0:3: Attached scsi generic sg4 type 0
+[  370.212313] sd 1:0:0:3: [sde] permanent stream count = 5
+[  370.212433] sd 1:0:0:3: [sde] Preferred minimum I/O size 512 bytes
+[  370.212448] sd 1:0:0:3: [sde] Optimal transfer size 524288 bytes
+[  370.216851] scsi 1:0:0:4: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[  370.217609] scsi 1:0:0:4: Power-on or device reset occurred
+[  370.221657] sd 1:0:0:4: [sdf] 268435456 512-byte logical blocks: (137 GB/128 GiB)
+[  370.221699] sd 1:0:0:4: [sdf] Write Protect is off
+[  370.221771] sd 1:0:0:4: [sdf] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[  370.221925] sd 1:0:0:4: Attached scsi generic sg5 type 0
+[  370.222355] sd 1:0:0:4: [sdf] permanent stream count = 5
+[  370.222434] sd 1:0:0:4: [sdf] Preferred minimum I/O size 512 bytes
+[  370.222443] sd 1:0:0:4: [sdf] Optimal transfer size 524288 bytes
+[  370.228323] scsi 1:0:0:5: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[  370.229236] scsi 1:0:0:5: Power-on or device reset occurred
+[  370.229448] sd 1:0:0:2: [sdd] Attached SCSI disk
+[  370.229578] sd 1:0:0:3: [sde] Attached SCSI disk
+[  370.233206] sd 1:0:0:5: [sdg] 268435456 512-byte logical blocks: (137 GB/128 GiB)
+[  370.233245] sd 1:0:0:5: [sdg] Write Protect is off
+[  370.233307] sd 1:0:0:5: [sdg] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[  370.233479] sd 1:0:0:5: Attached scsi generic sg6 type 0
+[  370.233911] sd 1:0:0:5: [sdg] permanent stream count = 5
+[  370.233990] sd 1:0:0:5: [sdg] Preferred minimum I/O size 512 bytes
+[  370.234003] sd 1:0:0:5: [sdg] Optimal transfer size 524288 bytes
+[  370.237864] sd 1:0:0:4: [sdf] Attached SCSI disk
+[  370.239863] scsi 1:0:0:6: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[  370.240756] scsi 1:0:0:6: Power-on or device reset occurred
+[  370.244377] sd 1:0:0:6: [sdh] 268435456 512-byte logical blocks: (137 GB/128 GiB)
+[  370.244427] sd 1:0:0:6: [sdh] Write Protect is off
+[  370.244502] sd 1:0:0:6: [sdh] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[  370.244663] sd 1:0:0:0: [sdb] Attached SCSI disk
+[  370.244847] sd 1:0:0:6: Attached scsi generic sg7 type 0
+[  370.247061] scsi 1:0:0:7: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[  370.248022] sd 1:0:0:6: [sdh] permanent stream count = 5
+[  370.248101] sd 1:0:0:6: [sdh] Preferred minimum I/O size 512 bytes
+[  370.248112] sd 1:0:0:6: [sdh] Optimal transfer size 524288 bytes
+[  370.252084] scsi 1:0:0:7: Power-on or device reset occurred
+[  370.254057] sd 1:0:0:7: [sdi] 268435456 512-byte logical blocks: (137 GB/128 GiB)
+[  370.254093] sd 1:0:0:7: [sdi] Write Protect is off
+[  370.254155] sd 1:0:0:7: [sdi] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[  370.254336] sd 1:0:0:7: [sdi] permanent stream count = 5
+[  370.254421] sd 1:0:0:7: [sdi] Preferred minimum I/O size 512 bytes
+[  370.254431] sd 1:0:0:7: [sdi] Optimal transfer size 524288 bytes
+[  370.257805] sd 1:0:0:5: [sdg] Attached SCSI disk
+[  370.259402] sd 1:0:0:7: Attached scsi generic sg8 type 0
+[  370.260106] scsi 1:0:0:8: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[  370.261408] scsi 1:0:0:8: Power-on or device reset occurred
+[  370.265139] sd 1:0:0:8: [sdj] 268435456 512-byte logical blocks: (137 GB/128 GiB)
+[  370.265187] sd 1:0:0:8: [sdj] Write Protect is off
+[  370.265265] sd 1:0:0:8: [sdj] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[  370.265512] sd 1:0:0:8: [sdj] permanent stream count = 5
+[  370.265605] sd 1:0:0:8: [sdj] Preferred minimum I/O size 512 bytes
+[  370.265614] sd 1:0:0:8: [sdj] Optimal transfer size 524288 bytes
+[  370.269751] sd 1:0:0:8: Attached scsi generic sg9 type 0
+[  370.270582] scsi 1:0:0:9: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[  370.272298] sd 1:0:0:6: [sdh] Attached SCSI disk
+[  370.273917] scsi 1:0:0:9: Power-on or device reset occurred
+[  370.277386] sd 1:0:0:9: [sdk] 268435456 512-byte logical blocks: (137 GB/128 GiB)
+[  370.277446] sd 1:0:0:9: [sdk] Write Protect is off
+[  370.277531] sd 1:0:0:9: [sdk] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[  370.277759] sd 1:0:0:9: Attached scsi generic sg10 type 0
+[  370.278476] scsi 1:0:0:10: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[  370.279260] sd 1:0:0:9: [sdk] permanent stream count = 5
+[  370.279664] sd 1:0:0:9: [sdk] Preferred minimum I/O size 512 bytes
+[  370.279674] sd 1:0:0:9: [sdk] Optimal transfer size 524288 bytes
+[  370.282360] sd 1:0:0:7: [sdi] Attached SCSI disk
+[  370.284305] scsi 1:0:0:10: Power-on or device reset occurred
+[  370.286423] sd 1:0:0:10: [sdl] 268435456 512-byte logical blocks: (137 GB/128 GiB)
+[  370.286469] sd 1:0:0:10: [sdl] Write Protect is off
+[  370.286534] sd 1:0:0:10: [sdl] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[  370.286751] sd 1:0:0:10: [sdl] permanent stream count = 5
+[  370.286828] sd 1:0:0:10: [sdl] Preferred minimum I/O size 512 bytes
+[  370.286838] sd 1:0:0:10: [sdl] Optimal transfer size 524288 bytes
+[  370.291202] sd 1:0:0:8: [sdj] Attached SCSI disk
+[  370.291290] sd 1:0:0:10: Attached scsi generic sg11 type 0
+[  370.291966] scsi 1:0:0:11: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[  370.292765] scsi 1:0:0:11: Power-on or device reset occurred
+[  370.296638] sd 1:0:0:11: [sdm] 268435456 512-byte logical blocks: (137 GB/128 GiB)
+[  370.296680] sd 1:0:0:11: [sdm] Write Protect is off
+[  370.296754] sd 1:0:0:11: [sdm] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[  370.297301] sd 1:0:0:11: [sdm] permanent stream count = 5
+[  370.297373] sd 1:0:0:11: [sdm] Preferred minimum I/O size 512 bytes
+[  370.297383] sd 1:0:0:11: [sdm] Optimal transfer size 524288 bytes
+[  370.300421] sd 1:0:0:11: Attached scsi generic sg12 type 0
+[  370.304828] sd 1:0:0:9: [sdk] Attached SCSI disk
+[  370.306509] scsi 1:0:0:12: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[  370.310619] scsi 1:0:0:12: Power-on or device reset occurred
+[  370.317662] sd 1:0:0:12: [sdn] 268435456 512-byte logical blocks: (137 GB/128 GiB)
+[  370.317728] sd 1:0:0:12: [sdn] Write Protect is off
+[  370.317827] sd 1:0:0:12: [sdn] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[  370.318018] sd 1:0:0:10: [sdl] Attached SCSI disk
+[  370.319784] sd 1:0:0:12: Attached scsi generic sg13 type 0
+[  370.320242] sd 1:0:0:12: [sdn] permanent stream count = 5
+[  370.320363] sd 1:0:0:12: [sdn] Preferred minimum I/O size 512 bytes
+[  370.320379] sd 1:0:0:12: [sdn] Optimal transfer size 524288 bytes
+[  370.322870] scsi 1:0:0:13: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[  370.325400] sd 1:0:0:11: [sdm] Attached SCSI disk
+[  370.327190] scsi 1:0:0:13: Power-on or device reset occurred
+[  370.330936] sd 1:0:0:13: Attached scsi generic sg14 type 0
+[  370.331164] sd 1:0:0:13: [sdo] 268435456 512-byte logical blocks: (137 GB/128 GiB)
+[  370.331204] sd 1:0:0:13: [sdo] Write Protect is off
+[  370.331268] sd 1:0:0:13: [sdo] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[  370.332342] scsi 1:0:0:14: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[  370.334467] scsi 1:0:0:14: Power-on or device reset occurred
+[  370.335389] sd 1:0:0:13: [sdo] permanent stream count = 5
+[  370.335514] sd 1:0:0:13: [sdo] Preferred minimum I/O size 512 bytes
+[  370.335529] sd 1:0:0:13: [sdo] Optimal transfer size 524288 bytes
+[  370.342087] sd 1:0:0:12: [sdn] Attached SCSI disk
+[  370.344424] sd 1:0:0:14: [sdp] 268435456 512-byte logical blocks: (137 GB/128 GiB)
+[  370.344480] sd 1:0:0:14: [sdp] Write Protect is off
+[  370.344591] sd 1:0:0:14: [sdp] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[  370.346267] sd 1:0:0:14: Attached scsi generic sg15 type 0
+[  370.346970] sd 1:0:0:14: [sdp] permanent stream count = 5
+[  370.347089] sd 1:0:0:14: [sdp] Preferred minimum I/O size 512 bytes
+[  370.347105] sd 1:0:0:14: [sdp] Optimal transfer size 524288 bytes
+[  370.349160] scsi 1:0:0:15: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[  370.354131] scsi 1:0:0:15: Power-on or device reset occurred
+[  370.357146] sd 1:0:0:15: [sdq] 268435456 512-byte logical blocks: (137 GB/128 GiB)
+[  370.357209] sd 1:0:0:15: [sdq] Write Protect is off
+[  370.357304] sd 1:0:0:15: [sdq] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[  370.357503] sd 1:0:0:13: [sdo] Attached SCSI disk
+[  370.357996] sd 1:0:0:15: [sdq] permanent stream count = 5
+[  370.358118] sd 1:0:0:15: [sdq] Preferred minimum I/O size 512 bytes
+[  370.358133] sd 1:0:0:15: [sdq] Optimal transfer size 524288 bytes
+[  370.365991] sd 1:0:0:15: Attached scsi generic sg16 type 0
+[  370.366710] scsi 1:0:0:16: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[  370.367529] scsi 1:0:0:16: Power-on or device reset occurred
+[  370.371026] sd 1:0:0:16: [sdr] 268435456 512-byte logical blocks: (137 GB/128 GiB)
+[  370.371067] sd 1:0:0:16: [sdr] Write Protect is off
+[  370.371128] sd 1:0:0:16: [sdr] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[  370.371999] sd 1:0:0:16: [sdr] permanent stream count = 5
+[  370.372069] sd 1:0:0:16: [sdr] Preferred minimum I/O size 512 bytes
+[  370.372079] sd 1:0:0:16: [sdr] Optimal transfer size 524288 bytes
+[  370.375316] sd 1:0:0:16: Attached scsi generic sg17 type 0
+[  370.376241] scsi 1:0:0:17: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[  370.377043] scsi 1:0:0:17: Power-on or device reset occurred
+[  370.382228] sd 1:0:0:14: [sdp] Attached SCSI disk
+[  370.382441] sd 1:0:0:15: [sdq] Attached SCSI disk
+[  370.385694] sd 1:0:0:17: [sds] 268435456 512-byte logical blocks: (137 GB/128 GiB)
+[  370.385750] sd 1:0:0:17: [sds] Write Protect is off
+[  370.385853] sd 1:0:0:17: [sds] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[  370.386158] sd 1:0:0:17: Attached scsi generic sg18 type 0
+[  370.386487] sd 1:0:0:17: [sds] permanent stream count = 5
+[  370.386572] sd 1:0:0:17: [sds] Preferred minimum I/O size 512 bytes
+[  370.386582] sd 1:0:0:17: [sds] Optimal transfer size 524288 bytes
+[  370.391257] sd 1:0:0:16: [sdr] Attached SCSI disk
+[  370.391858] scsi 1:0:0:18: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[  370.392841] scsi 1:0:0:18: Power-on or device reset occurred
+[  370.396380] sd 1:0:0:18: [sdt] 268435456 512-byte logical blocks: (137 GB/128 GiB)
+[  370.396417] sd 1:0:0:18: [sdt] Write Protect is off
+[  370.396484] sd 1:0:0:18: [sdt] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[  370.397145] sd 1:0:0:18: [sdt] permanent stream count = 5
+[  370.397223] sd 1:0:0:18: [sdt] Preferred minimum I/O size 512 bytes
+[  370.397234] sd 1:0:0:18: [sdt] Optimal transfer size 524288 bytes
+[  370.400422] sd 1:0:0:18: Attached scsi generic sg19 type 0
+[  370.402534] scsi 1:0:0:19: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[  370.403342] scsi 1:0:0:19: Power-on or device reset occurred
+[  370.406791] sd 1:0:0:19: [sdu] 268435456 512-byte logical blocks: (137 GB/128 GiB)
+[  370.406838] sd 1:0:0:19: [sdu] Write Protect is off
+[  370.406905] sd 1:0:0:19: [sdu] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[  370.407129] sd 1:0:0:19: [sdu] permanent stream count = 5
+[  370.407210] sd 1:0:0:19: [sdu] Preferred minimum I/O size 512 bytes
+[  370.407220] sd 1:0:0:19: [sdu] Optimal transfer size 524288 bytes
+[  370.410549] sd 1:0:0:19: Attached scsi generic sg20 type 0
+[  370.412786] scsi 1:0:0:20: Direct-Access     Linux    scsi_debug       0191 PQ: 0 ANSI: 7
+[  370.416288] sd 1:0:0:17: [sds] Attached SCSI disk
+[  370.416572] scsi 1:0:0:20: Power-on or device reset occurred
+[  370.418732] sd 1:0:0:18: [sdt] Attached SCSI disk
+[  370.420267] sd 1:0:0:20: [sdv] 268435456 512-byte logical blocks: (137 GB/128 GiB)
+[  370.420332] sd 1:0:0:20: [sdv] Write Protect is off
+[  370.420425] sd 1:0:0:20: [sdv] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[  370.422146] sd 1:0:0:20: Attached scsi generic sg21 type 0
+[  370.422889] sd 1:0:0:20: [sdv] permanent stream count = 5
+[  370.422985] sd 1:0:0:20: [sdv] Preferred minimum I/O size 512 bytes
+[  370.422997] sd 1:0:0:20: [sdv] Optimal transfer size 524288 bytes
+[  370.439670] sd 1:0:0:19: [sdu] Attached SCSI disk
+[  370.439812] sd 1:0:0:20: [sdv] Attached SCSI disk
+[  379.618382] sd 1:0:0:0: [sdb] Synchronizing SCSI cache
+[  379.649680] sd 1:0:0:1: [sdc] Synchronizing SCSI cache
+[  379.680259] sd 1:0:0:10: [sdl] Synchronizing SCSI cache
+[  379.700862] sd 1:0:0:11: [sdm] Synchronizing SCSI cache
+[  379.720705] sd 1:0:0:12: [sdn] Synchronizing SCSI cache
+[  379.742909] sd 1:0:0:13: [sdo] Synchronizing SCSI cache
+[  379.766770] sd 1:0:0:14: [sdp] Synchronizing SCSI cache
+[  379.771063] blk_print_req_error: 18 callbacks suppressed
+[  379.771068] device offline error, dev sdq, sector 48846952 op 0x0:(READ) flags 0x800000 phys_seg 1 prio class 2
+[  379.794407] sd 1:0:0:15: [sdq] Synchronizing SCSI cache
+[  379.812770] sd 1:0:0:16: [sdr] Synchronizing SCSI cache
+[  379.828843] sd 1:0:0:17: [sds] Synchronizing SCSI cache
+[  379.850044] sd 1:0:0:18: [sdt] Synchronizing SCSI cache
+[  379.854262] device offline error, dev sdu, sector 82084968 op 0x0:(READ) flags 0x800000 phys_seg 1 prio class 2
+[  379.869098] sd 1:0:0:19: [sdu] Synchronizing SCSI cache
+[  379.896440] sd 1:0:0:2: [sdd] Synchronizing SCSI cache
+[  379.917859] sd 1:0:0:20: [sdv] Synchronizing SCSI cache
+[  379.940500] sd 1:0:0:3: [sde] Synchronizing SCSI cache
+[  379.965034] sd 1:0:0:4: [sdf] Synchronizing SCSI cache
+[  379.989119] sd 1:0:0:5: [sdg] Synchronizing SCSI cache
+[  380.004393] sd 1:0:0:6: [sdh] Synchronizing SCSI cache
+[  380.022013] sd 1:0:0:7: [sdi] Synchronizing SCSI cache
+[  380.026149] device offline error, dev sdj, sector 161702152 op 0x0:(READ) flags 0x800000 phys_seg 1 prio class 2
+[  380.026177] device offline error, dev sdj, sector 183464120 op 0x0:(READ) flags 0x800000 phys_seg 1 prio class 2
+[  380.026190] device offline error, dev sdj, sector 251055304 op 0x0:(READ) flags 0x800000 phys_seg 1 prio class 2
+[  380.026202] device offline error, dev sdj, sector 173945128 op 0x0:(READ) flags 0x800000 phys_seg 1 prio class 2
+[  380.026217] device offline error, dev sdj, sector 265058296 op 0x0:(READ) flags 0x800000 phys_seg 1 prio class 2
+[  380.026236] device offline error, dev sdj, sector 111656824 op 0x0:(READ) flags 0x800000 phys_seg 1 prio class 2
+[  380.026254] device offline error, dev sdj, sector 238493752 op 0x0:(READ) flags 0x800000 phys_seg 1 prio class 2
+[  380.026266] device offline error, dev sdj, sector 163608104 op 0x0:(READ) flags 0x800000 phys_seg 1 prio class 2
+[  380.051606] sd 1:0:0:8: [sdj] Synchronizing SCSI cache
+[  380.076434] sd 1:0:0:9: [sdk] Synchronizing SCSI cache
