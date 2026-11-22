@@ -1,0 +1,33 @@
+{
+  "schema": 2,
+  "commit": "fdb63bf8fb99639423696b762b4c34bc3ed589b5",
+  "message_id": "20261120195644.19511-1-zakaria.belkadi@inria.fr",
+  "ref": "b4/20261120195644.19511-1-zakaria.belkadi",
+  "trees": [],
+  "base": "aebb7274476403040d582c61478df8f4a7bf9cd3",
+  "base_name": "v7.4-rc3",
+  "base_trees": [
+    {
+      "remote": "origin",
+      "url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git"
+    }
+  ],
+  "commits": [
+    {
+      "commit": "fdb63bf8fb99639423696b762b4c34bc3ed589b5",
+      "subject": "block: bounce user PI when writes may remap reference tags",
+      "author": "Zakaria Belkadi <zakaria.belkadi@inria.fr>",
+      "link": "https://patch.msgid.link/20261120195644.19511-1-zakaria.belkadi@inria.fr"
+    }
+  ],
+  "sources": [
+    "block/bio-integrity.c"
+  ],
+  "docs": [],
+  "added": [],
+  "lists": [
+    "linux-block@vger.kernel.org",
+    "linux-kernel@vger.kernel.org",
+    "stable@vger.kernel.org"
+  ]
+}

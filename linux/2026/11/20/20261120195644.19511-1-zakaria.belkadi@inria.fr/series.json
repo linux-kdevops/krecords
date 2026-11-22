@@ -1,0 +1,11 @@
+{
+  "schema": 2,
+  "message_id": "20261120195644.19511-1-zakaria.belkadi@inria.fr",
+  "subject": "[PATCH v2] block: bounce user PI when writes may remap reference tags",
+  "author": "Zakaria Belkadi <zakaria.belkadi@inria.fr>",
+  "date": "2026-11-20T19:56:44Z",
+  "change_id": "",
+  "revision": 2,
+  "text": "",
+  "patches": 1
+}
