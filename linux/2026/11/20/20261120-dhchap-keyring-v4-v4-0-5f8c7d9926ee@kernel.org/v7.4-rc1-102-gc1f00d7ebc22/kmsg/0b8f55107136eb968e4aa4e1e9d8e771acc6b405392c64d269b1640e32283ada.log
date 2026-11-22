@@ -1,0 +1,26 @@
+[12192.738235] run blktests nvme/044 at 2026-11-22 06:18:36.687477599
+[12192.841700] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[12192.860662] nvmet_tcp: enabling port 0 (127.0.0.1:4420)
+[12192.912695] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349 with DH-HMAC-CHAP.
+[12192.919525] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[12192.919571] nvme nvme3: qid 0: authenticated
+[12192.920967] nvme nvme3: creating 2 I/O queues.
+[12192.921093] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[12192.922753] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[12193.069008] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[12193.173737] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349 with DH-HMAC-CHAP.
+[12193.179457] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[12193.179461] nvme nvme3: qid 0: controller authentication failed
+[12193.179547] nvmet: ctrl 1 fatal error occurred!
+[12193.179620] nvme nvme3: qid 0: authentication failed, error -129
+[12193.179737] nvme nvme3: failed to connect queue: 0 ret=-129
+[12193.249786] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349 with DH-HMAC-CHAP.
+[12193.257052] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[12193.257058] nvme nvme3: qid 0: controller authenticated
+[12193.257185] nvme nvme3: qid 0: authenticated
+[12193.261053] nvme nvme3: creating 2 I/O queues.
+[12193.261181] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[12193.263844] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[12193.387362] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[12193.479844] refresh dhchap psk 'db28bbc0-23ec-44c3-b641-b092ce6d58b0' failed, error -129
+[12195.787876] rdma_rxe: loaded
