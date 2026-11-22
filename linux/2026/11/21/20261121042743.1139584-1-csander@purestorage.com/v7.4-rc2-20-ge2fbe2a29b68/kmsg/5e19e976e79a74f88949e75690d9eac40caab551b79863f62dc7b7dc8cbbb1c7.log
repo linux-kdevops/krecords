@@ -1,0 +1,17 @@
+[ 6225.538986] run blktests nvme/034 at 2026-11-22 20:11:10.867893685
+[ 6225.640029] nvmet_tcp: enabling port 0 (127.0.0.1:4420)
+[ 6225.678326] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 6225.685684] nvmet_tcp: failed cmd 00000000f25ae98b id 4122 opcode 130, data_len: 2048, status: c002
+[ 6225.686313] nvme nvme3: creating 2 I/O queues.
+[ 6225.686444] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 6225.690175] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 6225.690385] nvmet_tcp: failed cmd 000000007fedddfe id 4125 opcode 6, data_len: 4096, status: 8002
+[ 6225.692016] nvmet_tcp: failed cmd 000000009b64796f id 16410 opcode 6, data_len: 4096, status: 8002
+[ 6225.692229] nvmet_tcp: failed cmd 00000000fbc42150 id 16411 opcode 6, data_len: 4096, status: 8002
+[ 6283.907598] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 6283.912905] nvme_ns_head_submit_bio: 10 callbacks suppressed
+[ 6283.912913] block nvme3n1: no available path - failing I/O
+[ 6283.912942] block nvme3n1: no available path - failing I/O
+[ 6283.912947] buffer_io_error: 10 callbacks suppressed
+[ 6283.912948] Buffer I/O error on dev nvme3n1, logical block 128, async page read
+[ 6286.251497] rdma_rxe: loaded

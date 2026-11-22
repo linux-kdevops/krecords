@@ -1,0 +1,53 @@
+[ 6425.965938] run blktests nvme/052 at 2026-11-22 20:14:31.288424617
+[ 6426.079796] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 6426.080402] nvme nvme3: creating 2 I/O queues.
+[ 6426.084701] nvme nvme3: new ctrl: "blktests-subsystem-1"
+[ 6426.117687] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 6426.123969] nvme nvme3: rescanning namespaces.
+[ 6426.148704] nvme_log_error: 10 callbacks suppressed
+[ 6426.148709] nvme3c3n1: Read(0x2) @ LBA 261758, 1 blocks, Internal Pathing Error (sct 0x3 / sc 0x0) MORE
+[ 6426.148712] blk_print_req_error: 10 callbacks suppressed
+[ 6426.148713] I/O error, dev nvme3c3n1, sector 2094064 op 0x0:(READ) flags 0x2880700 phys_seg 1 prio class 2
+[ 6426.161163] nvme nvme3: rescanning namespaces.
+[ 6426.204854] nvme_ns_head_submit_bio: 10 callbacks suppressed
+[ 6426.204861] block nvme3n1: no usable path - requeuing I/O
+[ 6426.246475] block nvme3n1: no available path - failing I/O
+[ 6426.246487] Buffer I/O error on dev nvme3n1, logical block 261758, async page read
+[ 6426.346425] nvmet: adding nsid 2 to subsystem blktests-subsystem-1
+[ 6426.355500] nvme nvme3: rescanning namespaces.
+[ 6426.380379] nvme3c3n1: Read(0x2) @ LBA 262142, 1 blocks, Internal Pathing Error (sct 0x3 / sc 0x0) MORE
+[ 6426.380387] I/O error, dev nvme3c3n1, sector 2097136 op 0x0:(READ) flags 0x2880700 phys_seg 1 prio class 2
+[ 6426.389783] nvme nvme3: rescanning namespaces.
+[ 6426.390605] block nvme3n1: no usable path - requeuing I/O
+[ 6426.410802] block nvme3n1: no available path - failing I/O
+[ 6426.410811] Buffer I/O error on dev nvme3n1, logical block 262142, async page read
+[ 6426.529410] nvmet: adding nsid 3 to subsystem blktests-subsystem-1
+[ 6426.536611] nvme nvme3: rescanning namespaces.
+[ 6426.559047] nvme3c3n1: Read(0x2) @ LBA 262128, 1 blocks, Internal Pathing Error (sct 0x3 / sc 0x0) MORE
+[ 6426.559056] I/O error, dev nvme3c3n1, sector 2097024 op 0x0:(READ) flags 0x2880700 phys_seg 1 prio class 2
+[ 6426.573531] nvme nvme3: rescanning namespaces.
+[ 6426.574307] block nvme3n1: no usable path - requeuing I/O
+[ 6426.582293] block nvme3n1: no available path - failing I/O
+[ 6426.582304] Buffer I/O error on dev nvme3n1, logical block 262128, async page read
+[ 6426.615380] nvmet: adding nsid 4 to subsystem blktests-subsystem-1
+[ 6426.622112] nvme nvme3: rescanning namespaces.
+[ 6426.644728] nvme3c3n1: Read(0x2) @ LBA 262142, 1 blocks, Internal Pathing Error (sct 0x3 / sc 0x0) MORE
+[ 6426.644737] I/O error, dev nvme3c3n1, sector 2097136 op 0x0:(READ) flags 0x2880700 phys_seg 1 prio class 2
+[ 6426.676362] nvme nvme3: rescanning namespaces.
+[ 6426.677799] block nvme3n1: no usable path - requeuing I/O
+[ 6426.702229] block nvme3n1: no available path - failing I/O
+[ 6426.702245] Buffer I/O error on dev nvme3n1, logical block 262142, async page read
+[ 6426.816880] nvmet: adding nsid 5 to subsystem blktests-subsystem-1
+[ 6426.824235] nvme nvme3: rescanning namespaces.
+[ 6426.846710] nvme3c3n1: Read(0x2) @ LBA 262128, 1 blocks, Internal Pathing Error (sct 0x3 / sc 0x0) MORE
+[ 6426.846720] I/O error, dev nvme3c3n1, sector 2097024 op 0x0:(READ) flags 0x2880700 phys_seg 1 prio class 2
+[ 6426.852353] nvme nvme3: rescanning namespaces.
+[ 6426.853255] block nvme3n1: no usable path - requeuing I/O
+[ 6426.878367] block nvme3n1: no available path - failing I/O
+[ 6426.878379] Buffer I/O error on dev nvme3n1, logical block 262128, async page read
+[ 6426.994213] nvmet: adding nsid 6 to subsystem blktests-subsystem-1
+[ 6427.001628] nvme nvme3: rescanning namespaces.
+[ 6427.001696] nvme nvme3: Identify Descriptors failed (nsid=6, status=0x2300)
+[ 6432.740761] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 6433.536616] rdma_rxe: loaded
+[ 6433.609252] rdma_rxe: unloaded
