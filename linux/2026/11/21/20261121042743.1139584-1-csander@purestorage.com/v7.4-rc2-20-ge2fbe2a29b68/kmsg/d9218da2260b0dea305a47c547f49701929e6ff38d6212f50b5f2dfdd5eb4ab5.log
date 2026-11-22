@@ -1,0 +1,6 @@
+[ 1599.154501] run blktests nvme/033 at 2026-11-22 18:54:04.589677292
+[ 1599.296450] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 1599.301422] nvme nvme3: creating 2 I/O queues.
+[ 1599.302763] nvme nvme3: new ctrl: "blktests-subsystem-1"
+[ 1599.307087] nvme nvme3: invalid LBA data size 0, skipping namespace
+[ 1604.421807] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"

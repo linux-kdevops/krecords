@@ -1,0 +1,28 @@
+[ 1824.786500] run blktests nvme/036 at 2026-11-22 18:57:50.217184119
+[ 1824.900914] nvmet_tcp: enabling port 0 (127.0.0.1:4420)
+[ 1824.943455] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 1824.947852] nvmet_tcp: failed cmd 000000001d08f524 id 4114 opcode 130, data_len: 2048, status: c002
+[ 1824.948866] nvme nvme3: creating 2 I/O queues.
+[ 1824.951383] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 1824.953729] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 1824.955192] nvmet_tcp: failed cmd 0000000065f83a9d id 8210 opcode 6, data_len: 4096, status: 8002
+[ 1824.958448] nvmet_tcp: failed cmd 00000000b5f6464f id 16403 opcode 6, data_len: 4096, status: 8002
+[ 1824.959639] nvmet_tcp: failed cmd 0000000036e6e860 id 12309 opcode 6, data_len: 4096, status: 8002
+[ 1825.095006] nvme nvme3: resetting controller
+[ 1825.097136] nvmet: Created nvm controller 2 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 1825.098116] nvmet_tcp: failed cmd 000000006360492f id 16405 opcode 130, data_len: 2048, status: c002
+[ 1825.098214] nvme nvme3: creating 2 I/O queues.
+[ 1825.110641] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 1825.114810] nvmet_tcp: failed cmd 00000000778b154e id 8215 opcode 6, data_len: 4096, status: 8002
+[ 1825.116283] nvmet_tcp: failed cmd 00000000be87be4f id 4121 opcode 6, data_len: 4096, status: 8002
+[ 1825.131806] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 1825.142706] block nvme3n1: no available path - failing I/O
+[ 1825.142740] block nvme3n1: no available path - failing I/O
+[ 1825.142744] Buffer I/O error on dev nvme3n1, logical block 0, async page read
+[ 1825.142873] block nvme3n1: no available path - failing I/O
+[ 1825.142876] Buffer I/O error on dev nvme3n1, logical block 0, async page read
+[ 1825.149965] block nvme3n1: no available path - failing I/O
+[ 1825.149976] Buffer I/O error on dev nvme3n1, logical block 0, async page read
+[ 1825.150022] block nvme3n1: no available path - failing I/O
+[ 1825.150025] Buffer I/O error on dev nvme3n1, logical block 1, async page read
+[ 1827.502029] rdma_rxe: loaded
