@@ -162,6 +162,26 @@
             "Buffer I/O error on dev nvme#n#, logical block #, async page read"
           ],
           "kmsg": "sha256:13e53c7f984dbf313a9a431f5f1aa36f6c376313878be4f7608ba125bfd66013"
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "8a944a8"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T11:04:31Z",
+          "seconds": 78,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538583552
+          },
+          "fingerprint": [
+            "Buffer I/O error on dev nvme#n#, logical block #, async page read"
+          ],
+          "kmsg": "sha256:c606634af91088b8c2d4b5a61ca637032c93d53c00a8810170cb4fc1358b727f"
         }
       ]
     }
