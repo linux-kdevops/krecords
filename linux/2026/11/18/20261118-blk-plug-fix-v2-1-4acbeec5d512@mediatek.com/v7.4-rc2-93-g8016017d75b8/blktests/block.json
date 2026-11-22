@@ -1,0 +1,60 @@
+{
+  "schema": 2,
+  "subject": {
+    "project": "linux",
+    "commit": "8016017d75b81d797191fddaa02d1caf87c94195",
+    "test": "block"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "blktests",
+          "version": "",
+          "build": "233d11776bb9"
+        },
+        {
+          "name": "qemu",
+          "version": "11.1.3",
+          "build": "debian:qemu-system-x86 1:11.1.3+ds-1"
+        }
+      ],
+      "command": "check block",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:bebb9f06809666a598b9ec8f7076e6c276257de9a0ccb3b9c6d9250164d7d33c",
+      "shape": "sha256:4a2cc0be05dffc21c0088aeb60f3c2efe2c23847e668b249ec4bcd877034a812",
+      "status": "fail",
+      "exit": 1,
+      "output": "nodev/block/038\nnodev/block/044\n",
+      "tests": 52,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "8a944a8"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T13:09:04Z",
+          "seconds": 869,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538612224
+          }
+        }
+      ]
+    }
+  ]
+}

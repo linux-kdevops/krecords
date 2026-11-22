@@ -1,0 +1,182 @@
+[  665.534870] run blktests block/011 at 2026-11-22 12:58:29.678517549
+[ 1265.723750] blktests block/011 timed out after 600 s
+[ 1265.723975] sysrq: Show Blocked State
+[ 1265.724061] task:jbd2/vda1-8     state:D stack:0     pid:325   tgid:325   ppid:2      task_flags:0x240040 flags:0x00080000
+[ 1265.724068] Call Trace:
+[ 1265.724070]  <TASK>
+[ 1265.724072]  __schedule+0xf23/0x3290
+[ 1265.724083]  ? io_schedule_timeout+0x140/0x140
+[ 1265.724087]  schedule+0x7b/0x200
+[ 1265.724090]  ? prepare_to_wait+0xc0/0x3d0
+[ 1265.724098]  io_schedule+0x9a/0x110
+[ 1265.724101]  bit_wait_io+0x15/0x170
+[ 1265.724104]  __wait_on_bit+0xc2/0x160
+[ 1265.724106]  ? bit_wait+0x170/0x170
+[ 1265.724108]  out_of_line_wait_on_bit+0xc5/0xe0
+[ 1265.724110]  ? __wait_on_bit+0x160/0x160
+[ 1265.724112]  ? psi_group_change+0x840/0x840
+[ 1265.724115]  ? __wait_on_buffer+0x27/0x50
+[ 1265.724119]  jbd2_journal_commit_transaction+0x3b00/0x5830 [jbd2]
+[ 1265.724128]  ? jbd2_journal_finish_inode_data_buffers+0x130/0x130 [jbd2]
+[ 1265.724131]  ? __sched_text_end+0xa/0xa
+[ 1265.724133]  ? _raw_spin_unlock+0x39/0x70
+[ 1265.724134]  ? finish_task_switch.isra.0+0x211/0xab0
+[ 1265.724138]  ? __switch_to+0x3ae/0xa30
+[ 1265.724142]  ? _raw_spin_lock_irqsave+0x87/0xd0
+[ 1265.724143]  ? timer_delete_sync+0x13b/0x1d0
+[ 1265.724147]  kjournald2+0x1e9/0x620 [jbd2]
+[ 1265.724151]  ? __bpf_trace_jbd2_checkpoint_stats+0x10/0x10 [jbd2]
+[ 1265.724154]  ? __bpf_trace_jbd2_checkpoint_stats+0x10/0x10 [jbd2]
+[ 1265.724156]  ? _raw_spin_lock_irqsave+0x87/0xd0
+[ 1265.724158]  ? io_schedule_timeout+0x140/0x140
+[ 1265.724160]  ? prepare_to_swait_exclusive+0x2b0/0x2b0
+[ 1265.724162]  ? __kthread_parkme+0xbd/0x210
+[ 1265.724165]  ? schedule+0x85/0x200
+[ 1265.724166]  ? __bpf_trace_jbd2_checkpoint_stats+0x10/0x10 [jbd2]
+[ 1265.724169]  kthread+0x360/0x460
+[ 1265.724170]  ? recalc_sigpending+0x15a/0x200
+[ 1265.724173]  ? kthread_affine_node+0x2d0/0x2d0
+[ 1265.724174]  ret_from_fork+0x2bc/0x450
+[ 1265.724177]  ? exit_thread+0x50/0x50
+[ 1265.724179]  ? __switch_to+0x3ae/0xa30
+[ 1265.724181]  ? kthread_affine_node+0x2d0/0x2d0
+[ 1265.724182]  ? kthread_affine_node+0x2d0/0x2d0
+[ 1265.724184]  ret_from_fork_asm+0x11/0x20
+[ 1265.724187]  </TASK>
+[ 1265.724189] task:systemd-journal state:D stack:0     pid:433   tgid:433   ppid:1      task_flags:0x400100 flags:0x00080000
+[ 1265.724192] Call Trace:
+[ 1265.724193]  <TASK>
+[ 1265.724194]  __schedule+0xf23/0x3290
+[ 1265.724196]  ? io_schedule_timeout+0x140/0x140
+[ 1265.724198]  ? prepare_to_wait_event+0x89/0x7f0
+[ 1265.724200]  schedule+0x7b/0x200
+[ 1265.724202]  jbd2_log_wait_commit+0x186/0x2c0 [jbd2]
+[ 1265.724206]  ? jbd2_journal_start_commit+0x1a0/0x1a0 [jbd2]
+[ 1265.724208]  ? _raw_spin_unlock_irqrestore+0x47/0x80
+[ 1265.724210]  ? prepare_to_swait_exclusive+0x2b0/0x2b0
+[ 1265.724212]  ? __jbd2_log_start_commit+0x163/0x250 [jbd2]
+[ 1265.724214]  ? _raw_write_unlock+0x39/0x70
+[ 1265.724216]  ext4_sync_file+0x3f3/0xa50 [ext4]
+[ 1265.724254]  do_fsync+0xa1/0x220
+[ 1265.724257]  __x64_sys_fsync+0x31/0x50
+[ 1265.724259]  do_syscall_64+0x60/0x320
+[ 1265.724261]  entry_SYSCALL_64_after_hwframe+0x4b/0x53
+[ 1265.724263] RIP: 0033:0x7f964cea6efe
+[ 1265.724265] RSP: 002b:00007ffc6af9f878 EFLAGS: 00000246 ORIG_RAX: 000000000000004a
+[ 1265.724268] RAX: ffffffffffffffda RBX: 000055bcbf66ca70 RCX: 00007f964cea6efe
+[ 1265.724269] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 000000000000001b
+[ 1265.724270] RBP: 0000000000000001 R08: 0000000000000000 R09: 0000000000000000
+[ 1265.724271] R10: 0000000000000000 R11: 0000000000000246 R12: 000055bcbf66ca70
+[ 1265.724272] R13: 000055bcbf66e193 R14: 00007ffc6af9fa20 R15: 00007ffc6af9fa28
+[ 1265.724273]  </TASK>
+[ 1265.724290] task:fio             state:D stack:0     pid:36693 tgid:36693 ppid:36691  task_flags:0x400140 flags:0x00080802
+[ 1265.724292] Call Trace:
+[ 1265.724295]  <TASK>
+[ 1265.724296]  __schedule+0xf23/0x3290
+[ 1265.724298]  ? io_schedule_timeout+0x140/0x140
+[ 1265.724300]  ? add_timer_on+0x4a0/0x4a0
+[ 1265.724302]  ? _raw_spin_unlock_irqrestore+0x47/0x80
+[ 1265.724304]  schedule+0x7b/0x200
+[ 1265.724306]  schedule_timeout+0x11e/0x270
+[ 1265.724308]  ? hrtimer_nanosleep_restart+0x140/0x140
+[ 1265.724310]  ? hrtimers_cpu_dying+0x4c0/0x4c0
+[ 1265.724311]  ? _raw_spin_lock_irq+0x7c/0xc0
+[ 1265.724313]  io_schedule_timeout+0xa8/0x140
+[ 1265.724315]  ? _raw_spin_unlock_irq+0x3f/0x70
+[ 1265.724317]  wait_for_completion_io_timeout+0x167/0x3c0
+[ 1265.724319]  ? wait_for_completion_timeout+0x3c0/0x3c0
+[ 1265.724321]  bio_await+0x129/0x1d0
+[ 1265.724326]  ? bio_wait_end_io+0x50/0x50
+[ 1265.724328]  ? bio_init+0x3f2/0x6a0
+[ 1265.724329]  submit_bio_wait+0x12/0x50
+[ 1265.724331]  __blkdev_direct_IO_simple+0x410/0x630
+[ 1265.724334]  ? blkdev_dio_fua+0x310/0x310
+[ 1265.724336]  ? _raw_spin_unlock_irqrestore+0x47/0x80
+[ 1265.724337]  ? _raw_spin_unlock+0x39/0x70
+[ 1265.724339]  ? bvec_try_merge_page+0x2c0/0x2c0
+[ 1265.724341]  ? sbitmap_queue_wake_up+0xac/0x480
+[ 1265.724344]  ? update_io_ticks+0xc3/0x1d0
+[ 1265.724346]  ? sbitmap_weight+0x30/0x30
+[ 1265.724348]  blkdev_direct_IO+0x8ad/0x18e0
+[ 1265.724350]  ? sbitmap_queue_clear+0xae/0x1e0
+[ 1265.724352]  ? __blk_mq_free_request+0x1d3/0x4a0
+[ 1265.724354]  ? __blkdev_direct_IO_simple+0x630/0x630
+[ 1265.724356]  ? scsi_io_completion+0x95/0x12a0
+[ 1265.724365]  ? sd_completed_bytes+0x410/0x410 [sd_mod]
+[ 1265.724370]  blkdev_read_iter+0x277/0x660
+[ 1265.724372]  ? virtqueue_enable_cb+0x1d/0x30
+[ 1265.724375]  vfs_read+0x642/0x9f0
+[ 1265.724378]  ? virtscsi_mq_poll+0x100/0x100 [virtio_scsi]
+[ 1265.724381]  ? kernel_read+0x50/0x50
+[ 1265.724382]  ? virtqueue_get_buf+0x10/0x10
+[ 1265.724384]  ? rcu_do_enqueue.constprop.0+0x1e4/0x840
+[ 1265.724387]  ? __sched_text_end+0xa/0xa
+[ 1265.724389]  ? fdget+0x53/0x680
+[ 1265.724392]  ksys_pread64+0xd8/0x1f0
+[ 1265.724394]  ? __x64_sys_write+0xc0/0xc0
+[ 1265.724395]  ? irq_work_run_list+0x74/0xb0
+[ 1265.724399]  ? irq_work_run+0x4e/0xb0
+[ 1265.724401]  do_syscall_64+0x60/0x320
+[ 1265.724402]  ? sysvec_irq_work+0x3d/0xb0
+[ 1265.724404]  entry_SYSCALL_64_after_hwframe+0x4b/0x53
+[ 1265.724405] RIP: 0033:0x7fdcf6e4eefe
+[ 1265.724406] RSP: 002b:00007fff9b80b558 EFLAGS: 00000246 ORIG_RAX: 0000000000000011
+[ 1265.724410] RAX: ffffffffffffffda RBX: 000055594b50c600 RCX: 00007fdcf6e4eefe
+[ 1265.724411] RDX: 0000000000001000 RSI: 000055594b55d000 RDI: 0000000000000007
+[ 1265.724412] RBP: 00007fdcebe18000 R08: 0000000000000000 R09: 0000000000000000
+[ 1265.724413] R10: 0000000001b0c000 R11: 0000000000000246 R12: 0000000000000000
+[ 1265.724414] R13: 0000000000001000 R14: 0000000000000000 R15: 00007fdcebe18000
+[ 1265.724415]  </TASK>
+[ 1265.724436] task:fio             state:D stack:0     pid:36694 tgid:36694 ppid:36691  task_flags:0x400140 flags:0x00080802
+[ 1265.724438] Call Trace:
+[ 1265.724439]  <TASK>
+[ 1265.724440]  __schedule+0xf23/0x3290
+[ 1265.724442]  ? io_schedule_timeout+0x140/0x140
+[ 1265.724444]  ? add_timer_on+0x4a0/0x4a0
+[ 1265.724446]  ? _raw_spin_unlock_irqrestore+0x47/0x80
+[ 1265.724448]  schedule+0x7b/0x200
+[ 1265.724450]  schedule_timeout+0x11e/0x270
+[ 1265.724451]  ? hrtimer_nanosleep_restart+0x140/0x140
+[ 1265.724453]  ? hrtimers_cpu_dying+0x4c0/0x4c0
+[ 1265.724454]  ? _raw_spin_lock_irq+0x7c/0xc0
+[ 1265.724456]  io_schedule_timeout+0xa8/0x140
+[ 1265.724458]  ? _raw_spin_unlock_irq+0x3f/0x70
+[ 1265.724460]  wait_for_completion_io_timeout+0x167/0x3c0
+[ 1265.724462]  ? wait_for_completion_timeout+0x3c0/0x3c0
+[ 1265.724464]  bio_await+0x129/0x1d0
+[ 1265.724466]  ? gup_put_folio+0xf0/0x180
+[ 1265.724468]  ? bio_wait_end_io+0x50/0x50
+[ 1265.724470]  ? bio_init+0x3f2/0x6a0
+[ 1265.724472]  submit_bio_wait+0x12/0x50
+[ 1265.724474]  __blkdev_direct_IO_simple+0x410/0x630
+[ 1265.724476]  ? blkdev_dio_fua+0x310/0x310
+[ 1265.724478]  ? _raw_spin_unlock_irqrestore+0x47/0x80
+[ 1265.724479]  ? _raw_spin_unlock+0x39/0x70
+[ 1265.724481]  ? bvec_try_merge_page+0x2c0/0x2c0
+[ 1265.724484]  ? sbitmap_queue_wake_up+0xac/0x480
+[ 1265.724486]  ? update_io_ticks+0xc3/0x1d0
+[ 1265.724489]  ? sbitmap_weight+0x30/0x30
+[ 1265.724491]  blkdev_direct_IO+0x8ad/0x18e0
+[ 1265.724494]  ? sbitmap_queue_clear+0xae/0x1e0
+[ 1265.724497]  ? is_cpu_allowed+0x520/0x520
+[ 1265.724500]  ? __blkdev_direct_IO_simple+0x630/0x630
+[ 1265.724502]  ? update_curr+0x315/0x600
+[ 1265.724505]  ? fsnotify+0x3370/0x3370
+[ 1265.724508]  blkdev_read_iter+0x277/0x660
+[ 1265.724511]  vfs_read+0x642/0x9f0
+[ 1265.724513]  ? kernel_read+0x50/0x50
+[ 1265.724516]  ? finish_task_switch.isra.0+0x211/0xab0
+[ 1265.724519]  ? fdget+0x53/0x680
+[ 1265.724521]  ksys_pread64+0xd8/0x1f0
+[ 1265.724524]  ? __x64_sys_write+0xc0/0xc0
+[ 1265.724526]  ? switch_fpu_return+0xf5/0x250
+[ 1265.724529]  do_syscall_64+0x60/0x320
+[ 1265.724531]  entry_SYSCALL_64_after_hwframe+0x4b/0x53
+[ 1265.724533] RIP: 0033:0x7fdcf6e4eefe
+[ 1265.724535] RSP: 002b:00007fff9b80b558 EFLAGS: 00000246 ORIG_RAX: 0000000000000011
+[ 1265.724538] RAX: ffffffffffffffda RBX: 000055594b50c600 RCX: 00007fdcf6e4eefe
+[ 1265.724539] RDX: 0000000000001000 RSI: 000055594b55d000 RDI: 0000000000000008
+[ 1265.724540] RBP: 00007fdcebe46c78 R08: 0000000000000000 R09: 0000000000000000
+[ 1265.724541] R10: 0000000001233000 R11: 0000000000000246 R12: 0000000000000000
+[ 1265.724542] R13: 0000000000001000 R14: 0000000000000000 R15: 00007fdcebe46c78
+[ 1265.724544]  </TASK>
