@@ -1,0 +1,9 @@
+{
+  "schema": 2,
+  "commit": "e2fbe2a29b68abf0d9e8c0e3d051e037f52d9df7",
+  "config": "sha256:bebb9f06809666a598b9ec8f7076e6c276257de9a0ccb3b9c6d9250164d7d33c",
+  "objects": [
+    "block/t10-pi.o"
+  ],
+  "unbuilt": []
+}
