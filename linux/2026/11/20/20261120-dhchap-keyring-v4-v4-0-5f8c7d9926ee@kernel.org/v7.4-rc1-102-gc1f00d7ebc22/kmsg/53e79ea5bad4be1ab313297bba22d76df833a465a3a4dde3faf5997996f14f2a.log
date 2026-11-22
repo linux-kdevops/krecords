@@ -1,0 +1,53 @@
+[ 8825.499029] run blktests nvme/044 at 2026-11-22 05:22:29.525497910
+[ 8825.597470] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 8825.711158] nvme nvme3: NVME-FC{0}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "blktests-subsystem-1"
+[ 8825.711277] nvmet_fc: {0:0}: Association created
+[ 8825.712830] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349 with DH-HMAC-CHAP.
+[ 8825.719417] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[ 8825.719442] nvme nvme3: qid 0: authenticated
+[ 8825.720846] nvme nvme3: NVME-FC{0}: controller connect complete
+[ 8825.720966] nvme nvme3: NVME-FC{0}: new ctrl: NQN "blktests-subsystem-1", hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 8825.772051] nvme nvme4: NVME-FC{1}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 8825.772194] nvmet_fc: {0:1}: Association created
+[ 8825.772481] nvmet: Created discovery controller 2 for subsystem nqn.2014-08.org.nvmexpress.discovery for NQN nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321.
+[ 8825.773169] nvme nvme4: NVME-FC{1}: controller connect complete
+[ 8825.773188] nvme nvme4: NVME-FC{1}: new ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery", hostnqn: nqn.2014-08.org.nvmexpress:uuid:45367d97-fdd0-400f-a60c-42d18f8c8321
+[ 8825.777723] nvme nvme4: Removing ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 8825.784113] nvmet_fc: {0:1}: Association deleted
+[ 8825.787772] nvmet_fc: {0:1}: Association freed
+[ 8825.787793] (NULL device *): Disconnect LS failed: No Association
+[ 8825.863330] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 8825.923825] nvmet_fc: {0:0}: Association deleted
+[ 8825.955114] nvmet_fc: {0:0}: Association freed
+[ 8825.955141] (NULL device *): Disconnect LS failed: No Association
+[ 8825.975617] nvme nvme3: NVME-FC{0}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "blktests-subsystem-1"
+[ 8825.975738] nvmet_fc: {0:0}: Association created
+[ 8825.977256] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349 with DH-HMAC-CHAP.
+[ 8825.985194] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[ 8825.985199] nvme nvme3: qid 0: controller authentication failed
+[ 8825.985235] nvmet: ctrl 1 fatal error occurred!
+[ 8825.985289] nvme nvme3: qid 0: authentication failed, error -129
+[ 8825.985298] nvme nvme3: NVME-FC{0}: create_assoc failed, assoc_id f38e53d6d4f00000 ret -129
+[ 8825.985324] nvme nvme3: NVME-FC{0}: reset: Reconnect attempt failed (-129)
+[ 8825.985327] nvme nvme3: NVME-FC{0}: Max reconnect attempts (1) reached.
+[ 8825.985340] nvmet_fc: {0}: Disconnect LS failed: No Association
+[ 8825.985346] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 8825.985560] nvme nvme3: NVME-FC{0}: new ctrl: NQN "blktests-subsystem-1", hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 8825.990738] nvmet_fc: {0:0}: Association deleted
+[ 8826.007067] nvmet_fc: {0:0}: Association freed
+[ 8826.007084] (NULL device *): Disconnect LS failed: No Association
+[ 8826.054194] nvme nvme3: NVME-FC{0}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "blktests-subsystem-1"
+[ 8826.054491] nvmet_fc: {0:0}: Association created
+[ 8826.056505] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349 with DH-HMAC-CHAP.
+[ 8826.062731] nvme nvme3: qid 0: authenticated with hash hmac(sha256) dhgroup ffdhe2048
+[ 8826.062735] nvme nvme3: qid 0: controller authenticated
+[ 8826.062791] nvme nvme3: qid 0: authenticated
+[ 8826.064329] nvme nvme3: NVME-FC{0}: controller connect complete
+[ 8826.065112] nvme nvme3: NVME-FC{0}: new ctrl: NQN "blktests-subsystem-1", hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 8826.173111] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 8826.230277] nvmet_fc: {0:0}: Association deleted
+[ 8826.267030] nvmet_fc: {0:0}: Association freed
+[ 8826.267045] (NULL device *): Disconnect LS failed: No Association
+[ 8826.268812] refresh dhchap psk '2b2899bf-8933-4240-8cdc-8c42e2ada0b8' failed, error -129
+[ 8826.378613] nvme_fc: nvme_fc_create_ctrl: nn-0x10001100ab000001:pn-0x20001100ab000001 - nn-0x10001100aa000001:pn-0x20001100aa000001 combination not found
+[ 8827.820494] kmemleak: 1 new suspected memory leaks (see /sys/kernel/debug/kmemleak)
