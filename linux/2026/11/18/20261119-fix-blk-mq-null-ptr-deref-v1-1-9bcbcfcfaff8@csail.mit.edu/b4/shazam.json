@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "subject": {
+    "project": "linux",
+    "message_id": "20261119-fix-blk-mq-null-ptr-deref-v1-1-9bcbcfcfaff8@csail.mit.edu"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "b4",
+          "version": "0.16.0",
+          "build": "debian:b4 0.16.0-2"
+        }
+      ],
+      "command": "b4 shazam",
+      "env": {},
+      "status": "pass",
+      "exit": 0,
+      "output": "Looking up 20261119-fix-blk-mq-null-ptr-deref-v1-1-9bcbcfcfaff8@csail.mit.edu\nChecking for newer revisions\nGrabbing search results from lore.kernel.org\nServer returned an error.\nAnalyzing 7 messages in the thread\nLooking for additional code-review trailers on lore.kernel.org\nAnalyzing 0 code-review messages\nChecking attestation on all messages, may take a moment...\n---\n  \u001b[31m✗\u001b[0m [PATCH] block: Fix NULL pointer dereference in blk_mq_complete_request_remote\n    + Fixes: f168420c62e7 (\"blk-mq: don't redirect completion for hctx withs only one ctx mapping\") (\u001b[32m✓\u001b[0m DKIM/kernel.org)\n    + Link: https://patch.msgid.link/20261119-fix-blk-mq-null-ptr-deref-v1-1-9bcbcfcfaff8@csail.mit.edu\n  ---\n  \u001b[31m✗\u001b[0m BADSIG: DKIM/outgoing.csail.mit.edu\n---\nTotal patches: 1\n---\n Base: 20eef29b7c8465ac98d7dd6d6f2ac07a8d8056ca (use --merge-base to override)\nMagic: Preparing a sparse worktree\n---\nApplying: block: Fix NULL pointer dereference in blk_mq_complete_request_remote\n---\nFetching into FETCH_HEAD\nYou can now merge or checkout FETCH_HEAD\n  e.g.: git merge --no-ff -F .git/b4-cover --no-edit FETCH_HEAD --signoff\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "8a944a8"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T14:47:53Z",
+          "seconds": 4,
+          "resources": {
+            "cpu": {
+              "seconds": 1.958,
+              "user_seconds": 1.262,
+              "system_seconds": 0.696,
+              "stalled_seconds": 0.001
+            },
+            "memory": {
+              "peak": 481763328,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 311
+            },
+            "io": {
+              "stalled_seconds": 0.085
+            },
+            "tasks": {
+              "peak": 8
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}

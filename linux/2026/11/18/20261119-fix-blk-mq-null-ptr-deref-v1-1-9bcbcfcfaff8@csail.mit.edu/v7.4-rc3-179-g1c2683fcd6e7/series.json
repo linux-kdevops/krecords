@@ -1,0 +1,33 @@
+{
+  "schema": 2,
+  "commit": "1c2683fcd6e7d39cda4d70dae83243c0202619e8",
+  "message_id": "20261119-fix-blk-mq-null-ptr-deref-v1-1-9bcbcfcfaff8@csail.mit.edu",
+  "ref": "b4/20261119-fix-blk-mq-null-ptr-deref-v1-1-9bcbcfcfaff8",
+  "trees": [],
+  "base": "20eef29b7c8465ac98d7dd6d6f2ac07a8d8056ca",
+  "base_name": "v7.4-rc3-178-g20eef29b7c84",
+  "base_trees": [
+    {
+      "remote": "origin",
+      "url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git"
+    }
+  ],
+  "commits": [
+    {
+      "commit": "1c2683fcd6e7d39cda4d70dae83243c0202619e8",
+      "subject": "block: Fix NULL pointer dereference in blk_mq_complete_request_remote",
+      "author": "Srivatsa S. Bhat (Microsoft) <srivatsa@csail.mit.edu>",
+      "link": "https://patch.msgid.link/20261119-fix-blk-mq-null-ptr-deref-v1-1-9bcbcfcfaff8@csail.mit.edu"
+    }
+  ],
+  "sources": [
+    "block/blk-mq.c"
+  ],
+  "docs": [],
+  "added": [],
+  "lists": [
+    "linux-block@vger.kernel.org",
+    "linux-hyperv@vger.kernel.org",
+    "linux-kernel@vger.kernel.org"
+  ]
+}

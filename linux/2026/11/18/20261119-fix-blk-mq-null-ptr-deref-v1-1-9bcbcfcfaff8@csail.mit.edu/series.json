@@ -1,0 +1,11 @@
+{
+  "schema": 2,
+  "message_id": "20261119-fix-blk-mq-null-ptr-deref-v1-1-9bcbcfcfaff8@csail.mit.edu",
+  "subject": "[PATCH] block: Fix NULL pointer dereference in blk_mq_complete_request_remote",
+  "author": "Srivatsa S. Bhat (Microsoft) <srivatsa@csail.mit.edu>",
+  "date": "2026-11-18T19:28:44Z",
+  "change_id": "20261118-fix-blk-mq-null-ptr-deref-7f376cd5ad90",
+  "revision": 1,
+  "text": "",
+  "patches": 1
+}
