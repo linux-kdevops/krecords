@@ -1,0 +1,32 @@
+[ 8506.568375] run blktests nvme/034 at 2026-11-22 01:56:59.965081395
+[ 8506.736171] infiniband enp0s2_rxe: set active
+[ 8506.736179] infiniband enp0s2_rxe: added enp0s2
+[ 8506.831514] nvmet_rdma: enabling port 0 (10.0.2.15:4420)
+[ 8506.876444] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 8506.881317] nvme nvme3: creating 2 I/O queues.
+[ 8506.881418] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 8506.891718] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 10.0.2.15:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 8584.468690] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 8584.470255] nvme_ns_head_submit_bio: 15 callbacks suppressed
+[ 8584.470259] block nvme3n1: no available path - failing I/O
+[ 8584.471471] block nvme3n1: no available path - failing I/O
+[ 8584.471573] block nvme3n1: no available path - failing I/O
+[ 8584.471578] buffer_io_error: 11 callbacks suppressed
+[ 8584.471579] Buffer I/O error on dev nvme3n1, logical block 60, async page read
+[ 8584.471585] block nvme3n1: no available path - failing I/O
+[ 8584.471588] Buffer I/O error on dev nvme3n1, logical block 61, async page read
+[ 8584.471592] block nvme3n1: no available path - failing I/O
+[ 8584.471594] Buffer I/O error on dev nvme3n1, logical block 62, async page read
+[ 8584.471599] block nvme3n1: no available path - failing I/O
+[ 8584.471601] Buffer I/O error on dev nvme3n1, logical block 63, async page read
+[ 8584.472100] block nvme3n1: no available path - failing I/O
+[ 8584.472105] Buffer I/O error on dev nvme3n1, logical block 64, async page read
+[ 8584.472110] block nvme3n1: no available path - failing I/O
+[ 8584.472113] Buffer I/O error on dev nvme3n1, logical block 65, async page read
+[ 8584.472116] block nvme3n1: no available path - failing I/O
+[ 8584.472119] Buffer I/O error on dev nvme3n1, logical block 66, async page read
+[ 8584.472122] block nvme3n1: no available path - failing I/O
+[ 8584.472125] Buffer I/O error on dev nvme3n1, logical block 67, async page read
+[ 8584.472129] Buffer I/O error on dev nvme3n1, logical block 68, async page read
+[ 8584.472134] Buffer I/O error on dev nvme3n1, logical block 69, async page read
+[ 8584.840829] rdma_rxe: unloaded
