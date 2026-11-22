@@ -1,0 +1,65 @@
+{
+  "schema": 2,
+  "subject": {
+    "project": "linux",
+    "commit": "022e91e9e34534c8b433d4b175747bc3365af640",
+    "range": "e8017d29067fd1310a65c3494ce1a1b492adbac6..022e91e9e34534c8b433d4b175747bc3365af640"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "checkpatch.pl",
+          "version": "",
+          "build": "tree"
+        }
+      ],
+      "command": "scripts/checkpatch.pl --strict --git e8017d29067fd1310a65c3494ce1a1b492adbac6..022e91e9e34534c8b433d4b175747bc3365af640",
+      "env": {},
+      "status": "fail",
+      "exit": 1,
+      "output": "WARNING: Non-standard signature: Assisted-by:\n#72: \nAssisted-by: Claude:claude-opus-4-8 checkpatch\n\nERROR: Unrecognized email address: 'Claude:claude-opus-4-8 checkpatch'\n#72: \nAssisted-by: Claude:claude-opus-4-8 checkpatch\n\nWARNING: memory barrier without comment\n#200: FILE: block/blk-mq.c:2384:\n+\t\tsmp_mb();\n\ntotal: 1 errors, 2 warnings, 0 checks, 134 lines checked\n\nNOTE: For some of the reported defects, checkpatch may be able to\n      mechanically convert to the typical style using --fix or --fix-inplace.\n\nCommit 022e91e9e345 (\"block/blk-mq: use atomic_t for quiesce_depth to avoid lock contention on RT\") has style problems, please review.\n\nNOTE: If any of the errors are false positives, please report\n      them to the maintainer, see CHECKPATCH in MAINTAINERS.\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "8a944a8"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T21:46:45Z",
+          "seconds": 1,
+          "resources": {
+            "cpu": {
+              "seconds": 1.099,
+              "user_seconds": 0.831,
+              "system_seconds": 0.267,
+              "stalled_seconds": 0.001
+            },
+            "memory": {
+              "peak": 52146176,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 18
+            },
+            "io": {
+              "stalled_seconds": 0.002
+            },
+            "tasks": {
+              "peak": 3
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}
