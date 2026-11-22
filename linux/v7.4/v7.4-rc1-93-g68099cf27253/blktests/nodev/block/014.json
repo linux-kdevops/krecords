@@ -54,6 +54,26 @@
             "Buffer I/O error on dev faultb#, logical block #, async page read",
             "timeout error, dev faultb#, sector # op #:(READ) flags # phys_seg # prio class #"
           ]
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "d21d96d"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T04:30:52Z",
+          "seconds": 37,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538685952
+          },
+          "fingerprint": [
+            "Buffer I/O error on dev faultb#, logical block #, async page read",
+            "timeout error, dev faultb#, sector # op #:(READ) flags # phys_seg # prio class #"
+          ]
         }
       ]
     }
