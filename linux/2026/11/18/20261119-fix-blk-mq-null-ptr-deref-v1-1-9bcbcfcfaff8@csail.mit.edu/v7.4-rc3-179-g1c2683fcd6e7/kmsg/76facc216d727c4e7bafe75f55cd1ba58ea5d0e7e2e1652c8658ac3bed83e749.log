@@ -1,0 +1,30 @@
+[ 6894.993734] run blktests nvme/034 at 2026-11-22 16:52:46.242576463
+[ 6895.150588] infiniband enp0s2_rxe: set active
+[ 6895.150594] infiniband enp0s2_rxe: added enp0s2
+[ 6895.237565] nvmet_rdma: enabling port 0 (10.0.2.15:4420)
+[ 6895.279976] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 6895.283672] nvme nvme3: creating 2 I/O queues.
+[ 6895.283778] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 6895.293782] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 10.0.2.15:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 6955.687608] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 6955.688694] block nvme3n1: no available path - failing I/O
+[ 6955.688751] block nvme3n1: no available path - failing I/O
+[ 6955.688842] block nvme3n1: no available path - failing I/O
+[ 6955.688848] Buffer I/O error on dev nvme3n1, logical block 28, async page read
+[ 6955.688857] block nvme3n1: no available path - failing I/O
+[ 6955.688861] Buffer I/O error on dev nvme3n1, logical block 29, async page read
+[ 6955.688867] block nvme3n1: no available path - failing I/O
+[ 6955.688870] Buffer I/O error on dev nvme3n1, logical block 30, async page read
+[ 6955.688876] block nvme3n1: no available path - failing I/O
+[ 6955.688880] Buffer I/O error on dev nvme3n1, logical block 31, async page read
+[ 6955.689265] block nvme3n1: no available path - failing I/O
+[ 6955.689270] Buffer I/O error on dev nvme3n1, logical block 28, async page read
+[ 6955.689276] block nvme3n1: no available path - failing I/O
+[ 6955.689279] Buffer I/O error on dev nvme3n1, logical block 29, async page read
+[ 6955.689285] block nvme3n1: no available path - failing I/O
+[ 6955.689289] Buffer I/O error on dev nvme3n1, logical block 30, async page read
+[ 6955.689295] block nvme3n1: no available path - failing I/O
+[ 6955.689298] Buffer I/O error on dev nvme3n1, logical block 31, async page read
+[ 6955.689548] Buffer I/O error on dev nvme3n1, logical block 64, async page read
+[ 6955.689556] Buffer I/O error on dev nvme3n1, logical block 65, async page read
+[ 6956.055345] rdma_rxe: unloaded
