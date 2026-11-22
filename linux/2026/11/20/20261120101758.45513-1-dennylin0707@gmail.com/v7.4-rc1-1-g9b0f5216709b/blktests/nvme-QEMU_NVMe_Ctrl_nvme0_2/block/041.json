@@ -1,0 +1,60 @@
+{
+  "schema": 2,
+  "subject": {
+    "project": "linux",
+    "commit": "9b0f5216709bdd990b3ea0b4da8f7c2317671863",
+    "test": "block/041"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "blktests",
+          "version": "",
+          "build": "954e1b58bcd5"
+        },
+        {
+          "name": "qemu",
+          "version": "11.1.3",
+          "build": "debian:qemu-system-x86 1:11.1.3+ds-1"
+        }
+      ],
+      "command": "check block/041",
+      "env": {
+        "TEST_DEVS": "/dev/disk/by-id/nvme-QEMU_NVMe_Ctrl_nvme0_2"
+      },
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:4adaf7b8604781482ff23b7591468bc71a03b09b8bbc99379fb45d13427174bb",
+      "status": "skip",
+      "exit": 0,
+      "output": "runtime    ...  0.004s\nIntegrity not supported on /dev/disk/by-id/nvme-QEMU_NVMe_Ctrl_nvme0_2\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "d21d96d"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T01:19:50Z",
+          "seconds": 0,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538685952
+          }
+        }
+      ]
+    }
+  ]
+}
