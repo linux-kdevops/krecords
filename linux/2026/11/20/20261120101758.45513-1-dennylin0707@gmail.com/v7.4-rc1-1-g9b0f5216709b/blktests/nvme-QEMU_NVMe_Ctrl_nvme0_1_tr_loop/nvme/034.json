@@ -142,6 +142,26 @@
           },
           "fingerprint": [],
           "kmsg": "sha256:768c757015bd500014a0e1b4c4986fb8a293c1cda778f9a2d61dfc0aac2d8834"
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "d21d96d"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-22T01:47:41Z",
+          "seconds": 5,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538685952
+          },
+          "fingerprint": [
+            "nvme nvme#: failed nvme_keep_alive_end_io error=#"
+          ],
+          "kmsg": "sha256:363b735de1d41d7502726fc417d61024841f5b9a0f5eee738bfd09924e56ab90"
         }
       ]
     }
