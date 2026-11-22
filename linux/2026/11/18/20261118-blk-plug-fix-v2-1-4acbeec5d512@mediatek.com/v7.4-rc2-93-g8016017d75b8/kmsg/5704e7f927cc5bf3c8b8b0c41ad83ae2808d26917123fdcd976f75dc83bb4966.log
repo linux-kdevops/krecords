@@ -1,0 +1,23 @@
+[ 6277.355915] run blktests nvme/062 at 2026-11-22 14:32:01.507169014
+[ 6277.466193] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 6277.478043] nvmet: Allow non-TLS connections while TLS1.3 is enabled
+[ 6277.482598] nvmet_tcp: enabling port 0 (127.0.0.1:4420)
+[ 6277.523157] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 6277.525237] nvme nvme3: creating 2 I/O queues.
+[ 6277.525362] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 6277.527645] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 6277.734921] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 6277.846762] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349, TLS.
+[ 6277.848986] nvme nvme3: creating 2 I/O queues.
+[ 6277.849106] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 6277.887183] nvme nvme3: queue 2: TLS handshake complete, error -110
+[ 6280.476913] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[ 6280.493703] nvmet_tcp: enabling port 0 (127.0.0.1:4420)
+[ 6280.566890] nvme_tcp: queue 0: failed to receive icresp, error -104
+[ 6280.638040] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349, TLS.
+[ 6280.643693] nvme nvme3: creating 2 I/O queues.
+[ 6280.643812] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 6280.657823] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 6280.840873] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 6281.395354] rdma_rxe: loaded
+[ 6285.351055] rdma_rxe: unloaded
