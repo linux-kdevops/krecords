@@ -1,0 +1,11 @@
+{
+  "schema": 2,
+  "message_id": "20261121042743.1139584-1-csander@purestorage.com",
+  "subject": "[PATCH v2] block/t10-pi: deduplicate blk_reftag_remap_{prepare,complete}()",
+  "author": "Caleb Sander Mateos <csander@purestorage.com>",
+  "date": "2026-11-21T04:27:42Z",
+  "change_id": "",
+  "revision": 2,
+  "text": "",
+  "patches": 1
+}

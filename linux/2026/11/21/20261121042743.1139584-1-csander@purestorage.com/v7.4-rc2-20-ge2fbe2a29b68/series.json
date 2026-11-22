@@ -1,0 +1,27 @@
+{
+  "schema": 2,
+  "commit": "e2fbe2a29b68abf0d9e8c0e3d051e037f52d9df7",
+  "message_id": "20261121042743.1139584-1-csander@purestorage.com",
+  "ref": "b4/20261121042743.1139584-1-csander",
+  "trees": [],
+  "base": "6e6d4b23e92742a9f56008beb35c20ed4902611b",
+  "base_name": "v7.4-rc2-19-g6e6d4b23e927",
+  "base_trees": [],
+  "commits": [
+    {
+      "commit": "e2fbe2a29b68abf0d9e8c0e3d051e037f52d9df7",
+      "subject": "block/t10-pi: deduplicate blk_reftag_remap_{prepare,complete}()",
+      "author": "Caleb Sander Mateos <csander@purestorage.com>",
+      "link": "https://patch.msgid.link/20261121042743.1139584-1-csander@purestorage.com"
+    }
+  ],
+  "sources": [
+    "block/t10-pi.c"
+  ],
+  "docs": [],
+  "added": [],
+  "lists": [
+    "linux-block@vger.kernel.org",
+    "linux-kernel@vger.kernel.org"
+  ]
+}
