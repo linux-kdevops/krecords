@@ -1,0 +1,9 @@
+{
+  "schema": 2,
+  "commit": "fdb63bf8fb99639423696b762b4c34bc3ed589b5",
+  "config": "sha256:66036a76898d6fab3a09fcd0e7709e08a4e910270f1d32b9ba6c10aca05ce256",
+  "objects": [
+    "block/bio-integrity.o"
+  ],
+  "unbuilt": []
+}
