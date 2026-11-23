@@ -1,0 +1,86 @@
+{
+  "schema": 2,
+  "subject": {
+    "project": "linux",
+    "commit": "022e91e9e34534c8b433d4b175747bc3365af640",
+    "file": "block/blk-mq-debugfs.o"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "make",
+          "version": "4.4.1",
+          "build": "debian:make 4.4.1-3"
+        },
+        {
+          "name": "smatch",
+          "version": "0.5.0",
+          "build": "v0.5.0-9187-g5189e3fb"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "make C=2 CHECK=\"smatch --project=kernel --fatal-checks\" block/blk-mq-debugfs.o",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:ff58ae3f439a3241717f0fd34b1e8bf275af83b4e372cf68bbf025abbc4a0a76",
+      "status": "pass",
+      "exit": 0,
+      "output": "make[1]: Entering directory 'build'\n  CHECK   scripts/mod/empty.c\n  CHECK   block/blk-mq-debugfs.c\nmake[1]: Leaving directory 'build'\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "04cc1ca-dirty"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-23T08:40:54Z",
+          "seconds": 2,
+          "resources": {
+            "cpu": {
+              "seconds": 2.283,
+              "user_seconds": 1.205,
+              "system_seconds": 1.078,
+              "stalled_seconds": 0.008
+            },
+            "memory": {
+              "peak": 122388480,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 0
+            },
+            "io": {
+              "stalled_seconds": 0.0
+            },
+            "tasks": {
+              "peak": 43
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}
