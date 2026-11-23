@@ -1,0 +1,86 @@
+{
+  "schema": 2,
+  "subject": {
+    "project": "linux",
+    "commit": "8016017d75b81d797191fddaa02d1caf87c94195",
+    "file": "block/blk-core.o"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "make",
+          "version": "4.4.1",
+          "build": "debian:make 4.4.1-3"
+        },
+        {
+          "name": "sparse",
+          "version": "0.6.5",
+          "build": "v0.6.5-rc1-21-g84ec0658"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "make C=2 CF=-Wsparse-error block/blk-core.o",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:bebb9f06809666a598b9ec8f7076e6c276257de9a0ccb3b9c6d9250164d7d33c",
+      "status": "fail",
+      "exit": 2,
+      "output": "../block/blk-core.c: note: in included file (through ../include/trace/trace_events.h, ../include/trace/define_trace.h, ../include/trace/events/block.h):\n../include/trace/events/block.h:244:1: error: restricted blk_mq_req_flags_t degrades to integer\n../block/blk-core.c: note: in included file (through ../include/trace/perf.h, ../include/trace/define_trace.h, ../include/trace/events/block.h):\n../include/trace/events/block.h:244:1: error: restricted blk_mq_req_flags_t degrades to integer\n../block/blk-core.c:143:33: error: cast to restricted blk_opf_t\nmake[4]: *** [../scripts/Makefile.build:291: block/blk-core.o] Error 1\nmake[3]: *** [../scripts/Makefile.build:572: block] Error 2\nmake[2]: *** [Makefile:2244: .] Error 2\nmake[1]: *** [Makefile:248: __sub-make] Error 2\nmake: *** [Makefile:248: __sub-make] Error 2\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "ae15187-dirty"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-23T08:36:06Z",
+          "seconds": 2,
+          "resources": {
+            "cpu": {
+              "seconds": 2.014,
+              "user_seconds": 0.946,
+              "system_seconds": 1.068,
+              "stalled_seconds": 0.012
+            },
+            "memory": {
+              "peak": 174571520,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 143
+            },
+            "io": {
+              "stalled_seconds": 0.012
+            },
+            "tasks": {
+              "peak": 45
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}
