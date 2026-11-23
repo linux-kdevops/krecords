@@ -123,6 +123,45 @@
           "fingerprint": [
             "nvme nvme#: starting error recovery"
           ]
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "8f8c250"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-23T12:27:44Z",
+          "seconds": 9,
+          "resources": {
+            "cpu": {
+              "seconds": 1.978,
+              "user_seconds": 0.174,
+              "system_seconds": 1.805,
+              "stalled_seconds": 0.32
+            },
+            "memory": {
+              "peak": 13352960,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 0
+            },
+            "io": {
+              "stalled_seconds": 5.883
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538608128
+          },
+          "fingerprint": [
+            "nvme nvme#: starting error recovery"
+          ]
         }
       ]
     }
