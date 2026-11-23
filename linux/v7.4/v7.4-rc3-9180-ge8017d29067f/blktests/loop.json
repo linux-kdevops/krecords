@@ -129,6 +129,80 @@
           }
         }
       ]
+    },
+    {
+      "tools": [
+        {
+          "name": "blktests",
+          "version": "",
+          "build": "c4e25499062d"
+        },
+        {
+          "name": "qemu",
+          "version": "11.1.3",
+          "build": "debian:qemu-system-x86 1:11.1.3+ds-1"
+        }
+      ],
+      "command": "check loop",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:ff58ae3f439a3241717f0fd34b1e8bf275af83b4e372cf68bbf025abbc4a0a76",
+      "shape": "sha256:7bf7420caddffdca25ee646065c67d518eb0d637c097c4ea46774c9036d891f7",
+      "status": "fail",
+      "exit": 1,
+      "output": "nodev/loop/007\n",
+      "tests": 12,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "be401c2-dirty"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-23T09:41:36Z",
+          "seconds": 126,
+          "resources": {
+            "cpu": {
+              "seconds": 103.998,
+              "user_seconds": 6.171,
+              "system_seconds": 97.827,
+              "stalled_seconds": 19.832
+            },
+            "memory": {
+              "peak": 106991616,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 19
+            },
+            "io": {
+              "stalled_seconds": 2.78,
+              "read_bytes": 249062912,
+              "write_bytes": 25132544,
+              "read_operations": 60204,
+              "write_operations": 526
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3537915904
+          }
+        }
+      ]
     }
   ]
 }
