@@ -201,6 +201,46 @@
           },
           "fingerprint": [],
           "kmsg": "sha256:71cee01315457cc172db33c95d746f6756400af673fc6af5f8b9d3d073f1ea26"
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "ea093e2"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-23T12:02:07Z",
+          "seconds": 6,
+          "resources": {
+            "cpu": {
+              "seconds": 0.347,
+              "user_seconds": 0.016,
+              "system_seconds": 0.331,
+              "stalled_seconds": 0.038
+            },
+            "memory": {
+              "peak": 3371008,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 0
+            },
+            "io": {
+              "stalled_seconds": 0.004
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538608128
+          },
+          "fingerprint": [
+            "nvme nvme#: failed nvme_keep_alive_end_io error=#"
+          ],
+          "kmsg": "sha256:19c1ee600e463c2193c78bc0bd91200f1ea68c3fb45beebb8554f60fca323fd9"
         }
       ]
     },
