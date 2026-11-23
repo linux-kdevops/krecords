@@ -58,6 +58,79 @@
           ]
         }
       ]
+    },
+    {
+      "tools": [
+        {
+          "name": "blktests",
+          "version": "",
+          "build": "c4a4ba7c9f37"
+        },
+        {
+          "name": "qemu",
+          "version": "11.1.3",
+          "build": "debian:qemu-system-x86 1:11.1.3+ds-1"
+        }
+      ],
+      "command": "check block/044",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:248740d46ee573ef512c3f0b421b3dda47eaa403a70d0f98c793bf348907a9fc",
+      "status": "fail",
+      "exit": 1,
+      "output": "Running block/044\nTesting unload without rules\nTesting valid rules\npwrite: Cannot allocate memory\npread: Input/output error\nTesting invalid rules\ntests/block/044: line 49: echo: write error: Invalid argument\ntests/block/044: line 50: echo: write error: Invalid argument\nTest complete\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "ea093e2"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-23T10:38:27Z",
+          "seconds": 2,
+          "resources": {
+            "cpu": {
+              "seconds": 0.32,
+              "user_seconds": 0.015,
+              "system_seconds": 0.305,
+              "stalled_seconds": 0.031
+            },
+            "memory": {
+              "peak": 2035712,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 0
+            },
+            "io": {
+              "stalled_seconds": 0.0
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538608128
+          },
+          "fingerprint": [
+            "Buffer I/O error on dev sdb, logical block #, async page read",
+            "sdb: injecting I/O error for READ at sector #:#",
+            "sdb: injecting kernel resource error for WRITE at sector #:#"
+          ]
+        }
+      ]
     }
   ]
 }
