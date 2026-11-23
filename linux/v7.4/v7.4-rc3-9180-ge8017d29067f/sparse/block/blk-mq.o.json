@@ -1,0 +1,86 @@
+{
+  "schema": 2,
+  "subject": {
+    "project": "linux",
+    "commit": "e8017d29067fd1310a65c3494ce1a1b492adbac6",
+    "file": "block/blk-mq.o"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "make",
+          "version": "4.4.1",
+          "build": "debian:make 4.4.1-3"
+        },
+        {
+          "name": "sparse",
+          "version": "0.6.5",
+          "build": "v0.6.5-rc1-21-g84ec0658"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "make C=2 CF=-Wsparse-error block/blk-mq.o",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:ff58ae3f439a3241717f0fd34b1e8bf275af83b4e372cf68bbf025abbc4a0a76",
+      "status": "fail",
+      "exit": 2,
+      "output": "../block/blk-mq.c:4446:16: error: incorrect type in argument 1 (different address spaces)\n../block/blk-mq.c:4446:16:    expected void const *objp\n../block/blk-mq.c:4446:16:    got struct blk_mq_hw_ctx *[noderef] __rcu *queue_hw_ctx\n../block/blk-mq.c:4591:41: error: incorrect type in initializer (different address spaces)\n../block/blk-mq.c:4591:41:    expected struct blk_mq_hw_ctx **hctxs\n../block/blk-mq.c:4591:41:    got struct blk_mq_hw_ctx *[noderef] __rcu *queue_hw_ctx\n../block/blk-mq.c:766:36: error: dereference of noderef expression\n../block/blk-mq.c:5322:31: error: dereference of noderef expression\nmake[4]: *** [../scripts/Makefile.build:322: block/blk-mq.o] Error 1\nmake[3]: *** [../scripts/Makefile.build:606: block] Error 2\nmake[2]: *** [Makefile:2257: .] Error 2\nmake[1]: *** [Makefile:248: __sub-make] Error 2\nmake: *** [Makefile:248: __sub-make] Error 2\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "04cc1ca-dirty"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-23T08:41:06Z",
+          "seconds": 1,
+          "resources": {
+            "cpu": {
+              "seconds": 1.951,
+              "user_seconds": 0.963,
+              "system_seconds": 0.988,
+              "stalled_seconds": 0.012
+            },
+            "memory": {
+              "peak": 129998848,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 0
+            },
+            "io": {
+              "stalled_seconds": 0.0
+            },
+            "tasks": {
+              "peak": 43
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}
