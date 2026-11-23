@@ -1,0 +1,20 @@
+[ 4627.837895] run blktests nvme/035 at 2026-11-23 11:21:04.513899513
+[ 4628.070734] nvme nvme3: NVME-FC{0}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "blktests-subsystem-1"
+[ 4628.070863] nvmet_fc: {0:0}: Association created
+[ 4628.071071] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 4628.079070] nvme nvme3: NVME-FC{0}: controller connect complete
+[ 4628.080058] nvme nvme3: NVME-FC{0}: new ctrl: NQN "blktests-subsystem-1", hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 4628.136317] nvme nvme4: NVME-FC{1}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 4628.136420] nvmet_fc: {0:1}: Association created
+[ 4628.137609] nvmet: Created discovery controller 2 for subsystem nqn.2014-08.org.nvmexpress.discovery for NQN nqn.2014-08.org.nvmexpress:uuid:e424b52b-2404-4b87-882f-2839e80ed72c.
+[ 4628.138095] nvme nvme4: NVME-FC{1}: controller connect complete
+[ 4628.139799] nvme nvme4: NVME-FC{1}: new ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery", hostnqn: nqn.2014-08.org.nvmexpress:uuid:e424b52b-2404-4b87-882f-2839e80ed72c
+[ 4628.144045] nvme nvme4: Removing ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[ 4628.148205] nvmet_fc: {0:1}: Association deleted
+[ 4628.150413] nvmet_fc: {0:1}: Association freed
+[ 4628.150790] (NULL device *): Disconnect LS failed: No Association
+[ 4633.222059] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 4633.324658] nvmet_fc: {0:0}: Association deleted
+[ 4633.358546] nvmet_fc: {0:0}: Association freed
+[ 4633.358672] (NULL device *): Disconnect LS failed: No Association
+[ 4633.417182] nvme_fc: nvme_fc_create_ctrl: nn-0x10001100ab000001:pn-0x20001100ab000001 - nn-0x10001100aa000001:pn-0x20001100aa000001 combination not found
