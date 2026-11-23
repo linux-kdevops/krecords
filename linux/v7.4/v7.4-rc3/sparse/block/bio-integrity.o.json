@@ -1,0 +1,85 @@
+{
+  "schema": 2,
+  "subject": {
+    "project": "linux",
+    "commit": "aebb7274476403040d582c61478df8f4a7bf9cd3",
+    "file": "block/bio-integrity.o"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "make",
+          "version": "4.4.1",
+          "build": "debian:make 4.4.1-3"
+        },
+        {
+          "name": "sparse",
+          "version": "0.6.5",
+          "build": "v0.6.5-rc1-21-g84ec0658"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "make C=2 CF=-Wsparse-error block/bio-integrity.o",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:248740d46ee573ef512c3f0b421b3dda47eaa403a70d0f98c793bf348907a9fc",
+      "status": "pass",
+      "exit": 0,
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "cbfa1ed"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-23T08:43:03Z",
+          "seconds": 2,
+          "resources": {
+            "cpu": {
+              "seconds": 2.263,
+              "user_seconds": 1.191,
+              "system_seconds": 1.073,
+              "stalled_seconds": 0.009
+            },
+            "memory": {
+              "peak": 143953920,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 0
+            },
+            "io": {
+              "stalled_seconds": 0.04
+            },
+            "tasks": {
+              "peak": 43
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}
