@@ -1,0 +1,28 @@
+[  602.678029] run blktests nvme/010 at 2026-11-23 10:13:59.407101099
+[  602.803232] nvmet: adding nsid 1 to subsystem blktests-subsystem-1
+[  602.917600] nvme nvme3: NVME-FC{0}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "blktests-subsystem-1"
+[  602.917720] nvmet_fc: {0:0}: Association created
+[  602.917923] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[  602.925327] nvme nvme3: NVME-FC{0}: controller connect complete
+[  602.925385] nvme nvme3: NVME-FC{0}: new ctrl: NQN "blktests-subsystem-1", hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[  602.977981] nvme nvme4: NVME-FC{1}: create association : host wwpn 0x20001100aa000001  rport wwpn 0x20001100ab000001: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[  602.978098] nvmet_fc: {0:1}: Association created
+[  602.978294] nvmet: Created discovery controller 2 for subsystem nqn.2014-08.org.nvmexpress.discovery for NQN nqn.2014-08.org.nvmexpress:uuid:e424b52b-2404-4b87-882f-2839e80ed72c.
+[  602.978760] nvme nvme4: NVME-FC{1}: controller connect complete
+[  602.980221] nvme nvme4: NVME-FC{1}: new ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery", hostnqn: nqn.2014-08.org.nvmexpress:uuid:e424b52b-2404-4b87-882f-2839e80ed72c
+[  602.982081] nvme nvme4: Removing ctrl: NQN "nqn.2014-08.org.nvmexpress.discovery"
+[  602.992216] nvmet_fc: {0:1}: Association deleted
+[  603.008291] nvmet_fc: {0:1}: Association freed
+[  603.008319] (NULL device *): Disconnect LS failed: No Association
+[  657.153978] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[  657.154087] block nvme3n1: no available path - failing I/O
+[  657.154106] block nvme3n1: no available path - failing I/O
+[  657.154110] Buffer I/O error on dev nvme3n1, logical block 261758, async page read
+[  657.160306] block nvme3n1: no available path - failing I/O
+[  657.160314] Buffer I/O error on dev nvme3n1, logical block 261758, async page read
+[  657.214353] nvmet_fc: {0:0}: Association deleted
+[  657.253431] nvmet_fc: {0:0}: Association freed
+[  657.253458] (NULL device *): Disconnect LS failed: No Association
+[  657.346654] nvme_fc: nvme_fc_create_ctrl: nn-0x10001100ab000001:pn-0x20001100ab000001 - nn-0x10001100aa000001:pn-0x20001100aa000001 combination not found
+[  660.072654] SGI XFS with ACLs, security attributes, no debug enabled
+[  660.210843] loop: module loaded

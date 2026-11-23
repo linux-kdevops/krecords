@@ -57,6 +57,78 @@
           "kmsg": "sha256:6e77ced679224ac33ddf5e07df3dd08d54a953b0ac566992a98265faca200793"
         }
       ]
+    },
+    {
+      "tools": [
+        {
+          "name": "blktests",
+          "version": "",
+          "build": "c4a4ba7c9f37"
+        },
+        {
+          "name": "qemu",
+          "version": "11.1.3",
+          "build": "debian:qemu-system-x86 1:11.1.3+ds-1"
+        }
+      ],
+      "command": "check nvme/050",
+      "env": {
+        "TEST_DEVS": "/dev/disk/by-id/nvme-QEMU_NVMe_Ctrl_nvme0_2"
+      },
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:248740d46ee573ef512c3f0b421b3dda47eaa403a70d0f98c793bf348907a9fc",
+      "status": "fail",
+      "exit": 1,
+      "output": "Running nvme/050\nTest failed\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "ea093e2"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-23T10:47:36Z",
+          "seconds": 61,
+          "resources": {
+            "cpu": {
+              "seconds": 30.151,
+              "user_seconds": 1.22,
+              "system_seconds": 28.931,
+              "stalled_seconds": 7.748
+            },
+            "memory": {
+              "peak": 10240000,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 0
+            },
+            "io": {
+              "stalled_seconds": 35.512
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538608128
+          },
+          "fingerprint": [],
+          "kmsg": "sha256:8e652c00951971fe1a25b2a3bdfe8ec260cb464e237464177e3b6bf6f65940eb"
+        }
+      ]
     }
   ]
 }
