@@ -1,0 +1,25 @@
+[ 4928.788128] run blktests nvme/034 at 2026-11-23 11:26:05.456547406
+[ 4928.894205] nvmet_tcp: enabling port 0 (127.0.0.1:4420)
+[ 4928.936210] nvmet: Created nvm controller 1 for subsystem blktests-subsystem-1 for NQN nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349.
+[ 4928.940053] nvmet_tcp: failed cmd 0000000051d284a3 id 4102 opcode 130, data_len: 2048, status: c002
+[ 4928.940626] nvme nvme3: creating 2 I/O queues.
+[ 4928.940759] nvme nvme3: mapped 2/0/0 default/read/poll queues.
+[ 4928.945789] nvme nvme3: new ctrl: NQN "blktests-subsystem-1", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:0f01fb42-9f7f-4856-b0b3-51e60b8de349
+[ 4928.945851] nvmet_tcp: failed cmd 00000000bbec63da id 8198 opcode 6, data_len: 4096, status: 8002
+[ 4928.947532] nvmet_tcp: failed cmd 000000002ad78d79 id 16391 opcode 6, data_len: 4096, status: 8002
+[ 4928.954723] nvmet_tcp: failed cmd 00000000afb311cd id 12296 opcode 6, data_len: 4096, status: 8002
+[ 4928.964860]  nvme3n2: [POWERTEC] p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12
+[ 4928.964918] nvme3n2: p1 start 428947920 is beyond EOD, truncated
+[ 4928.964920] nvme3n2: p2 size 1374355457 extends beyond EOD, truncated
+[ 4928.965327] nvme3n2: p3 start 2576095056 is beyond EOD, truncated
+[ 4928.965330] nvme3n2: p4 start 1785930049 is beyond EOD, truncated
+[ 4928.965331] nvme3n2: p5 start 2608115760 is beyond EOD, truncated
+[ 4928.965332] nvme3n2: p6 start 4052170013 is beyond EOD, truncated
+[ 4928.965333] nvme3n2: p7 start 222246096 is beyond EOD, truncated
+[ 4928.965334] nvme3n2: p8 start 1915104648 is beyond EOD, truncated
+[ 4928.965335] nvme3n2: p9 start 2220599008 is beyond EOD, truncated
+[ 4928.965336] nvme3n2: p10 start 1814161189 is beyond EOD, truncated
+[ 4928.965337] nvme3n2: p11 start 1495251952 is beyond EOD, truncated
+[ 4928.965338] nvme3n2: p12 start 2816508393 is beyond EOD, truncated
+[ 4934.083619] nvme nvme3: Removing ctrl: NQN "blktests-subsystem-1"
+[ 4934.788618] rdma_rxe: loaded
