@@ -1,0 +1,86 @@
+{
+  "schema": 2,
+  "subject": {
+    "project": "linux",
+    "commit": "68099cf27253a8c89d703a282d3d811446d9453b",
+    "file": "drivers/nvme/common/keyring.o"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "make",
+          "version": "4.4.1",
+          "build": "debian:make 4.4.1-3"
+        },
+        {
+          "name": "smatch",
+          "version": "0.5.0",
+          "build": "v0.5.0-9187-g5189e3fb"
+        },
+        {
+          "name": "gcc",
+          "version": "16.2.0",
+          "build": "debian:gcc-16-x86-64-linux-gnu 16.2.0-4"
+        }
+      ],
+      "command": "make C=2 CHECK=\"smatch --project=kernel --fatal-checks\" drivers/nvme/common/keyring.o",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:4adaf7b8604781482ff23b7591468bc71a03b09b8bbc99379fb45d13427174bb",
+      "status": "pass",
+      "exit": 0,
+      "output": "make[1]: Entering directory 'build'\n  DESCEND objtool\n  DESCEND bpf/resolve_btfids\n  CHECK   scripts/mod/empty.c\n  CHECK   drivers/nvme/common/keyring.c\nmake[1]: Leaving directory 'build'\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "9e5246d"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-23T08:44:18Z",
+          "seconds": 2,
+          "resources": {
+            "cpu": {
+              "seconds": 2.403,
+              "user_seconds": 1.297,
+              "system_seconds": 1.106,
+              "stalled_seconds": 0.009
+            },
+            "memory": {
+              "peak": 98930688,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 33
+            },
+            "io": {
+              "stalled_seconds": 0.009
+            },
+            "tasks": {
+              "peak": 45
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 16,
+            "memory": 66496024576
+          }
+        }
+      ]
+    }
+  ]
+}
