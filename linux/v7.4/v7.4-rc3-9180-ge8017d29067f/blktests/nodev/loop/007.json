@@ -1,0 +1,132 @@
+{
+  "schema": 2,
+  "subject": {
+    "project": "linux",
+    "commit": "e8017d29067fd1310a65c3494ce1a1b492adbac6",
+    "test": "loop/007"
+  },
+  "entries": [
+    {
+      "tools": [
+        {
+          "name": "blktests",
+          "version": "",
+          "build": "233d11776bb9"
+        },
+        {
+          "name": "qemu",
+          "version": "11.1.3",
+          "build": "debian:qemu-system-x86 1:11.1.3+ds-1"
+        }
+      ],
+      "command": "check loop/007",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:ff58ae3f439a3241717f0fd34b1e8bf275af83b4e372cf68bbf025abbc4a0a76",
+      "status": "fail",
+      "exit": 1,
+      "output": "Running loop/007\nmount: /var/lib/blktests/7.4.0-rc3-next-20261118-ff58ae3f439a/loop/tmpdir.loop.007.qJE/mnt: fsconfig() failed: Structure needs cleaning.\n       dmesg(1) may have more information after failed mount system call.\numount: /var/lib/blktests/7.4.0-rc3-next-20261118-ff58ae3f439a/loop/tmpdir.loop.007.qJE/mnt: not mounted.\nTest complete\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "c3c6e88"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-23T08:48:18Z",
+          "seconds": 0,
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3537915904
+          },
+          "fingerprint": []
+        }
+      ]
+    },
+    {
+      "tools": [
+        {
+          "name": "blktests",
+          "version": "",
+          "build": "f9b023d644fa"
+        },
+        {
+          "name": "qemu",
+          "version": "11.1.3",
+          "build": "debian:qemu-system-x86 1:11.1.3+ds-1"
+        }
+      ],
+      "command": "check loop/007",
+      "env": {},
+      "build": {
+        "configuration": [
+          "blktests",
+          "block-layer",
+          "guest",
+          "nvm-express-driver"
+        ],
+        "arch": "x86_64",
+        "compiler": "gcc"
+      },
+      "config": "sha256:ff58ae3f439a3241717f0fd34b1e8bf275af83b4e372cf68bbf025abbc4a0a76",
+      "status": "fail",
+      "exit": 1,
+      "output": "Running loop/007\nmount: /var/lib/blktests/7.4.0-rc3-next-20261118-ff58ae3f439a/loop/tmpdir.loop.007.cKk/mnt: fsconfig() failed: Structure needs cleaning.\n       dmesg(1) may have more information after failed mount system call.\numount: /var/lib/blktests/7.4.0-rc3-next-20261118-ff58ae3f439a/loop/tmpdir.loop.007.cKk/mnt: not mounted.\nTest complete\n",
+      "invocations": [
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "9986ac2-dirty"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-23T09:30:35Z",
+          "seconds": 0,
+          "resources": {
+            "cpu": {
+              "seconds": 0.075,
+              "user_seconds": 0.007,
+              "system_seconds": 0.067,
+              "stalled_seconds": 0.013
+            },
+            "memory": {
+              "peak": 4599808,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 2
+            },
+            "io": {
+              "stalled_seconds": 0.018,
+              "read_bytes": 1742848,
+              "write_bytes": 18387968,
+              "read_operations": 383,
+              "write_operations": 385
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3537915904
+          },
+          "fingerprint": []
+        }
+      ]
+    }
+  ]
+}
