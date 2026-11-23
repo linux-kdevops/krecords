@@ -460,6 +460,43 @@
           },
           "fingerprint": [],
           "kmsg": "sha256:27e1d2e4425b12cb38d846f1d3b2f575d810d4e819288faa1f73b062929badff"
+        },
+        {
+          "producer": {
+            "name": "kdevops-ng",
+            "version": "ea093e2"
+          },
+          "origin": "d99",
+          "run": "manual",
+          "started": "2026-11-23T12:13:38Z",
+          "seconds": 5,
+          "resources": {
+            "cpu": {
+              "seconds": 0.206,
+              "user_seconds": 0.017,
+              "system_seconds": 0.19,
+              "stalled_seconds": 0.021
+            },
+            "memory": {
+              "peak": 3391488,
+              "swap_peak": 0,
+              "stalled_seconds": 0.0,
+              "high_events": 0,
+              "max_events": 0,
+              "oom_kills": 0,
+              "major_faults": 0
+            },
+            "io": {
+              "stalled_seconds": 0.001
+            }
+          },
+          "machine": {
+            "arch": "x86_64",
+            "cpu": "AMD Ryzen 7 PRO 8700GE w/ Radeon 780M Graphics",
+            "cpus": 2,
+            "memory": 3538608128
+          },
+          "fingerprint": []
         }
       ]
     }
